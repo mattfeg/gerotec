@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_739c925a0ed5f5e744a981b1ea81cf77 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_739c925a0ed5f5e744a981b1ea81cf77" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_739c925a0ed5f5e744a981b1ea81cf77 = L.map(
+                "map_739c925a0ed5f5e744a981b1ea81cf77",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb973c73e9be662427d127d54de75e3c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_eb973c73e9be662427d127d54de75e3c.addTo(map_739c925a0ed5f5e744a981b1ea81cf77);
+        
+    
+            var circle_marker_e40dc3f56a86fdaf34ed1314f9714390 = L.circleMarker(
+                [-2.8857993844743963, -40.11621624812955],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_739c925a0ed5f5e744a981b1ea81cf77);
+        
+    
+        var popup_307c8874903824ea0a6c24a0b3e5abbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f288fbb34c8e1d8b528e115a042dbd7 = $(`<div id="html_3f288fbb34c8e1d8b528e115a042dbd7" style="width: 100.0%; height: 100.0%;">HOSP DR MOURA FERREIRA</div>`)[0];
+                popup_307c8874903824ea0a6c24a0b3e5abbb.setContent(html_3f288fbb34c8e1d8b528e115a042dbd7);
+            
+        
+
+        circle_marker_e40dc3f56a86fdaf34ed1314f9714390.bindPopup(popup_307c8874903824ea0a6c24a0b3e5abbb)
+        ;
+
+        
+    
+    
+            var circle_marker_626a5f3c44e22e91257d8df491c597c7 = L.circleMarker(
+                [-3.1183744, -40.1498955],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_739c925a0ed5f5e744a981b1ea81cf77);
+        
+    
+        var popup_608f761de4a74d776c11de1c4d47f6fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9926994b20e1b8b7691eb576e1e774d2 = $(`<div id="html_9926994b20e1b8b7691eb576e1e774d2" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JAIME OSTERNO</div>`)[0];
+                popup_608f761de4a74d776c11de1c4d47f6fe.setContent(html_9926994b20e1b8b7691eb576e1e774d2);
+            
+        
+
+        circle_marker_626a5f3c44e22e91257d8df491c597c7.bindPopup(popup_608f761de4a74d776c11de1c4d47f6fe)
+        ;
+
+        
+    
+    
+            var circle_marker_176b2111d351e309ad5197fd70dc0ebf = L.circleMarker(
+                [-2.92015541127297, -39.91522126457491],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_739c925a0ed5f5e744a981b1ea81cf77);
+        
+    
+        var popup_907a4b9a07b865baf8c78651e64e014d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6cdd3f70df1c03c7ecdad74a8e0aa9e = $(`<div id="html_a6cdd3f70df1c03c7ecdad74a8e0aa9e" style="width: 100.0%; height: 100.0%;">HOSP MUNICIPAL NATERCIA JUNIOR RIOS</div>`)[0];
+                popup_907a4b9a07b865baf8c78651e64e014d.setContent(html_a6cdd3f70df1c03c7ecdad74a8e0aa9e);
+            
+        
+
+        circle_marker_176b2111d351e309ad5197fd70dc0ebf.bindPopup(popup_907a4b9a07b865baf8c78651e64e014d)
+        ;
+
+        
+    
+    
+            var poly_line_86b5a121c6295f4b11cbb17296f65611 = L.polyline(
+                [[-2.8857993844743963, -40.11621624812955], [-3.1183744, -40.1498955]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_739c925a0ed5f5e744a981b1ea81cf77);
+        
+    
+            poly_line_86b5a121c6295f4b11cbb17296f65611.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f08282365164045cb0b09c37ef184e07 = L.polyline(
+                [[-2.8857993844743963, -40.11621624812955], [-2.92015541127297, -39.91522126457491]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_739c925a0ed5f5e744a981b1ea81cf77);
+        
+    
+            poly_line_f08282365164045cb0b09c37ef184e07.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_739c925a0ed5f5e744a981b1ea81cf77.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

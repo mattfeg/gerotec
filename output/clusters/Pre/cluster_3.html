@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2759d166235f3dbe56ff05041f0da89f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2759d166235f3dbe56ff05041f0da89f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2759d166235f3dbe56ff05041f0da89f = L.map(
+                "map_2759d166235f3dbe56ff05041f0da89f",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c3cb60813fb6503b6a33b331e1908338 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c3cb60813fb6503b6a33b331e1908338.addTo(map_2759d166235f3dbe56ff05041f0da89f);
+        
+    
+            var circle_marker_02d97bad7e341ab00428ef2a965af05f = L.circleMarker(
+                [-5.182763636489275, -40.66716290409968],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2759d166235f3dbe56ff05041f0da89f);
+        
+    
+        var popup_69108fac1be8068a125863b5ecd0ed23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08da06c542c3c59e1648d2cbe745dfaf = $(`<div id="html_08da06c542c3c59e1648d2cbe745dfaf" style="width: 100.0%; height: 100.0%;">HOSPITAL SAO LUCAS</div>`)[0];
+                popup_69108fac1be8068a125863b5ecd0ed23.setContent(html_08da06c542c3c59e1648d2cbe745dfaf);
+            
+        
+
+        circle_marker_02d97bad7e341ab00428ef2a965af05f.bindPopup(popup_69108fac1be8068a125863b5ecd0ed23)
+        ;
+
+        
+    
+    
+            var circle_marker_39dd6228483600d06ea5b154d4cea76e = L.circleMarker(
+                [-4.5425791, -40.7173442],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2759d166235f3dbe56ff05041f0da89f);
+        
+    
+        var popup_24e7a06b67f3341c2a68f1cd45af3426 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a92fdde7e5ac2406eab94f5a39affde7 = $(`<div id="html_a92fdde7e5ac2406eab94f5a39affde7" style="width: 100.0%; height: 100.0%;">HOSP MATERN OTACILIO MOTA</div>`)[0];
+                popup_24e7a06b67f3341c2a68f1cd45af3426.setContent(html_a92fdde7e5ac2406eab94f5a39affde7);
+            
+        
+
+        circle_marker_39dd6228483600d06ea5b154d4cea76e.bindPopup(popup_24e7a06b67f3341c2a68f1cd45af3426)
+        ;
+
+        
+    
+    
+            var circle_marker_f2231a99c5a63cc88a565d4a8bb37b54 = L.circleMarker(
+                [-4.4151213, -40.9042025],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2759d166235f3dbe56ff05041f0da89f);
+        
+    
+        var popup_05ede9b4af132118ee11e2a8448013d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d80b9c8b23ceb8aa38a33834cc01f8a6 = $(`<div id="html_d80b9c8b23ceb8aa38a33834cc01f8a6" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL MONSENHOR ANTONINO</div>`)[0];
+                popup_05ede9b4af132118ee11e2a8448013d0.setContent(html_d80b9c8b23ceb8aa38a33834cc01f8a6);
+            
+        
+
+        circle_marker_f2231a99c5a63cc88a565d4a8bb37b54.bindPopup(popup_05ede9b4af132118ee11e2a8448013d0)
+        ;
+
+        
+    
+    
+            var poly_line_94db04b75a2f412bee79d4312338809b = L.polyline(
+                [[-5.182763636489275, -40.66716290409968], [-4.5425791, -40.7173442]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2759d166235f3dbe56ff05041f0da89f);
+        
+    
+            poly_line_94db04b75a2f412bee79d4312338809b.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8a0e7cf493c0bea8c451220b940b96b9 = L.polyline(
+                [[-5.182763636489275, -40.66716290409968], [-4.4151213, -40.9042025]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2759d166235f3dbe56ff05041f0da89f);
+        
+    
+            poly_line_8a0e7cf493c0bea8c451220b940b96b9.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_740f43b6b23efe2e1ebc3631b75f91b8 = L.polyline(
+                [[-4.5425791, -40.7173442], [-4.4151213, -40.9042025]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2759d166235f3dbe56ff05041f0da89f);
+        
+    
+            poly_line_740f43b6b23efe2e1ebc3631b75f91b8.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_2759d166235f3dbe56ff05041f0da89f.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>
