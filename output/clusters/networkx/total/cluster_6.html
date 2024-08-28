@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0963e46c72fb04f21ca767ac5bd16128 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0963e46c72fb04f21ca767ac5bd16128" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0963e46c72fb04f21ca767ac5bd16128 = L.map(
+                "map_0963e46c72fb04f21ca767ac5bd16128",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8afcd983de872815bf0abeb5fd4ce697 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8afcd983de872815bf0abeb5fd4ce697.addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            var circle_marker_bfa5c4cb5c652e7cdb121bf70e409070 = L.circleMarker(
+                [-4.7146173, -40.5619107],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_852e2e16219f2a161a577c19981cefe8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dff7026381e131872b2a1374b63e415 = $(`<div id="html_7dff7026381e131872b2a1374b63e415" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOSE GONCALVES ROSA</div>`)[0];
+                popup_852e2e16219f2a161a577c19981cefe8.setContent(html_7dff7026381e131872b2a1374b63e415);
+            
+        
+
+        circle_marker_bfa5c4cb5c652e7cdb121bf70e409070.bindPopup(popup_852e2e16219f2a161a577c19981cefe8)
+        ;
+
+        
+    
+    
+            var circle_marker_ad9ab755d5c6c409d28048881a2d07ba = L.circleMarker(
+                [-3.0530863, -40.1667241],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_835d26ca6cb44e479e0972d02bc53372 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd6064723d375f9638dfe1cf4b30a72a = $(`<div id="html_fd6064723d375f9638dfe1cf4b30a72a" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE BELA CRUZ</div>`)[0];
+                popup_835d26ca6cb44e479e0972d02bc53372.setContent(html_fd6064723d375f9638dfe1cf4b30a72a);
+            
+        
+
+        circle_marker_ad9ab755d5c6c409d28048881a2d07ba.bindPopup(popup_835d26ca6cb44e479e0972d02bc53372)
+        ;
+
+        
+    
+    
+            var circle_marker_2b49b4d6b74d0e9813f37dc6735035aa = L.circleMarker(
+                [-3.5315279, -40.3418157],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_97cd1e0da9c55829aa0474d6f84bd046 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf6d6f0798d8af03d9ad405c4f09d332 = $(`<div id="html_cf6d6f0798d8af03d9ad405c4f09d332" style="width: 100.0%; height: 100.0%;">HOSPITAL SENADOR OZIRES PONTES</div>`)[0];
+                popup_97cd1e0da9c55829aa0474d6f84bd046.setContent(html_cf6d6f0798d8af03d9ad405c4f09d332);
+            
+        
+
+        circle_marker_2b49b4d6b74d0e9813f37dc6735035aa.bindPopup(popup_97cd1e0da9c55829aa0474d6f84bd046)
+        ;
+
+        
+    
+    
+            var circle_marker_60cd33e7f02b1c5c6d71f6dedca287be = L.circleMarker(
+                [-6.514021899999999, -39.51603619999999],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_215fd32506ab1a59df5daef8bc262e54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2fcf8ede50ef6631a604f9a615394c1 = $(`<div id="html_d2fcf8ede50ef6631a604f9a615394c1" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOSE FACUNDO FILHO</div>`)[0];
+                popup_215fd32506ab1a59df5daef8bc262e54.setContent(html_d2fcf8ede50ef6631a604f9a615394c1);
+            
+        
+
+        circle_marker_60cd33e7f02b1c5c6d71f6dedca287be.bindPopup(popup_215fd32506ab1a59df5daef8bc262e54)
+        ;
+
+        
+    
+    
+            var circle_marker_9f4206cac621acdc637a8e0a35c78d31 = L.circleMarker(
+                [-6.559705954690768, -40.12125205584911],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_ef09820d778793ab23f104c1fa724444 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6749e57f3d6f199664235e8f5468088b = $(`<div id="html_6749e57f3d6f199664235e8f5468088b" style="width: 100.0%; height: 100.0%;">HOSP NOSSA SRA DO PATROCINIO</div>`)[0];
+                popup_ef09820d778793ab23f104c1fa724444.setContent(html_6749e57f3d6f199664235e8f5468088b);
+            
+        
+
+        circle_marker_9f4206cac621acdc637a8e0a35c78d31.bindPopup(popup_ef09820d778793ab23f104c1fa724444)
+        ;
+
+        
+    
+    
+            var circle_marker_ac71d5c344b0369c2d4b66d88c151542 = L.circleMarker(
+                [-4.320780151851159, -40.71289828579279],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_955674f488934ceddf3a3c5ed28d45da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc7b6b7aed82943668b0df21785bab10 = $(`<div id="html_fc7b6b7aed82943668b0df21785bab10" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DR JOSE EVANGELISTA DE OLIVEIRA</div>`)[0];
+                popup_955674f488934ceddf3a3c5ed28d45da.setContent(html_fc7b6b7aed82943668b0df21785bab10);
+            
+        
+
+        circle_marker_ac71d5c344b0369c2d4b66d88c151542.bindPopup(popup_955674f488934ceddf3a3c5ed28d45da)
+        ;
+
+        
+    
+    
+            var circle_marker_9f3f3b95840ffe110f86d5018ab397a6 = L.circleMarker(
+                [-5.74745594232208, -39.63152567670205],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_1b15d4d93257ba464271f2f22e76db24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f57a3d5c67c44fc5db0ab0b4b8618f99 = $(`<div id="html_f57a3d5c67c44fc5db0ab0b4b8618f99" style="width: 100.0%; height: 100.0%;">HOSP MATERN ANT ADERALDO CASTELO</div>`)[0];
+                popup_1b15d4d93257ba464271f2f22e76db24.setContent(html_f57a3d5c67c44fc5db0ab0b4b8618f99);
+            
+        
+
+        circle_marker_9f3f3b95840ffe110f86d5018ab397a6.bindPopup(popup_1b15d4d93257ba464271f2f22e76db24)
+        ;
+
+        
+    
+    
+            var circle_marker_f6e812d6d23a449cf9a377ad51feacc4 = L.circleMarker(
+                [-4.140736873364953, -40.57734831645635],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_a6a64a47e2d2b5e83914f77cfd95d1ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05fa7f5a0250c3b4953735c0197e010c = $(`<div id="html_05fa7f5a0250c3b4953735c0197e010c" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE RITA DO VALE REGO</div>`)[0];
+                popup_a6a64a47e2d2b5e83914f77cfd95d1ba.setContent(html_05fa7f5a0250c3b4953735c0197e010c);
+            
+        
+
+        circle_marker_f6e812d6d23a449cf9a377ad51feacc4.bindPopup(popup_a6a64a47e2d2b5e83914f77cfd95d1ba)
+        ;
+
+        
+    
+    
+            var circle_marker_29a61263b7b80c14be7bdf788344ac74 = L.circleMarker(
+                [-4.419082614330919, -39.0448010131946],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_297c9ff15b5506a2d8c36e9c3b17f09d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da1778746d9f6407c5f49144a71cf33e = $(`<div id="html_da1778746d9f6407c5f49144a71cf33e" style="width: 100.0%; height: 100.0%;">SOCIEDADE HOSPITALAR PE DIONISIO</div>`)[0];
+                popup_297c9ff15b5506a2d8c36e9c3b17f09d.setContent(html_da1778746d9f6407c5f49144a71cf33e);
+            
+        
+
+        circle_marker_29a61263b7b80c14be7bdf788344ac74.bindPopup(popup_297c9ff15b5506a2d8c36e9c3b17f09d)
+        ;
+
+        
+    
+    
+            var circle_marker_6bdae022b55123c79a8076ec99868df4 = L.circleMarker(
+                [-3.7473816, -38.5535314],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+        var popup_76fb579f51fcea6b3f15ba330dc16fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab90c6a9774d97d5e8eb0dbac7523677 = $(`<div id="html_ab90c6a9774d97d5e8eb0dbac7523677" style="width: 100.0%; height: 100.0%;">HOSPITAL HAROLDO JUACABA</div>`)[0];
+                popup_76fb579f51fcea6b3f15ba330dc16fd9.setContent(html_ab90c6a9774d97d5e8eb0dbac7523677);
+            
+        
+
+        circle_marker_6bdae022b55123c79a8076ec99868df4.bindPopup(popup_76fb579f51fcea6b3f15ba330dc16fd9)
+        ;
+
+        
+    
+    
+            var poly_line_dced7f7c87ece9a955f648fb99bd402e = L.polyline(
+                [[-3.7473816, -38.5535314], [-4.7146173, -40.5619107]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_dced7f7c87ece9a955f648fb99bd402e.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8d8dc96097a95ae272cd8919202080ad = L.polyline(
+                [[-3.7473816, -38.5535314], [-5.74745594232208, -39.63152567670205]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_8d8dc96097a95ae272cd8919202080ad.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5346c1243928170aaed110d1ba19ed4f = L.polyline(
+                [[-3.7473816, -38.5535314], [-3.5315279, -40.3418157]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_5346c1243928170aaed110d1ba19ed4f.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_931544d869fa23bc0ba7e4084a25ec60 = L.polyline(
+                [[-3.7473816, -38.5535314], [-4.320780151851159, -40.71289828579279]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_931544d869fa23bc0ba7e4084a25ec60.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6ae266ff17ce58bc16d4965b72d01784 = L.polyline(
+                [[-3.7473816, -38.5535314], [-4.140736873364953, -40.57734831645635]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_6ae266ff17ce58bc16d4965b72d01784.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6ba7780c4541c3f29c9f8083d7f56b03 = L.polyline(
+                [[-3.7473816, -38.5535314], [-3.0530863, -40.1667241]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_6ba7780c4541c3f29c9f8083d7f56b03.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c7f41ffd965d944f34141e5b6d891540 = L.polyline(
+                [[-3.7473816, -38.5535314], [-6.559705954690768, -40.12125205584911]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_c7f41ffd965d944f34141e5b6d891540.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aebe11ff045c363ad22049a11f6a3e08 = L.polyline(
+                [[-3.7473816, -38.5535314], [-6.514021899999999, -39.51603619999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_aebe11ff045c363ad22049a11f6a3e08.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6dae553ead49b597dcc5a0787ffd01d1 = L.polyline(
+                [[-3.7473816, -38.5535314], [-4.419082614330919, -39.0448010131946]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0963e46c72fb04f21ca767ac5bd16128);
+        
+    
+            poly_line_6dae553ead49b597dcc5a0787ffd01d1.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_0963e46c72fb04f21ca767ac5bd16128.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

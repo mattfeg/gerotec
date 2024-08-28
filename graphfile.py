@@ -174,17 +174,18 @@ def plotar_grafo(G, partition=None):
         v_lat = G.nodes[v]['latitude']
         v_lon = G.nodes[v]['longitude']
 
-        ax.plot([u_lon, v_lon], [u_lat, v_lat], color='gray', alpha=0.1)
+        ax.plot([u_lon, v_lon], [u_lat, v_lat], color='black', alpha=0.5)
 
-    # Add labels to nodes
-    for x, y, label in zip(gdf_nodes.geometry.x, gdf_nodes.geometry.y, gdf_nodes['name']):
-        ax.text(x, y, label, fontsize=5, ha='right')
+    # # Add labels to nodes
+    # for x, y, label in zip(gdf_nodes.geometry.x, gdf_nodes.geometry.y, gdf_nodes['name']):
+    #     ax.text(x, y, label, fontsize=5, ha='right')
 
     # Add title, legend, and labels
     plt.title('Grafo Bipartido Direcionado Georreferenciado')
     plt.legend(title='Comunidades')
     plt.xlabel('Longitude')
     plt.ylabel('Latitude')
+    plt.savefig('./output/Imagens/img1.png', format='png', transparent=True)
     plt.show()
 
 def projetar_grafo_hospitais(G):

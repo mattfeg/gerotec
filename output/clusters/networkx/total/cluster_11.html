@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_765afa382a05d9b0d88c27becb4fee51 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_765afa382a05d9b0d88c27becb4fee51" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_765afa382a05d9b0d88c27becb4fee51 = L.map(
+                "map_765afa382a05d9b0d88c27becb4fee51",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4d0eabd63aa4ec5c7608957ad0fdfcc1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4d0eabd63aa4ec5c7608957ad0fdfcc1.addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+            var circle_marker_a86d700cc2686be1d2094960028b2056 = L.circleMarker(
+                [-5.5170711161614605, -38.26968923830824],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+        var popup_3edf8b391b6e43d76d1f0478c8d050db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bc13393b594bc24803b36b191f2fbb6 = $(`<div id="html_5bc13393b594bc24803b36b191f2fbb6" style="width: 100.0%; height: 100.0%;">HOSPITAL MATERNIDADE SANTA RITA</div>`)[0];
+                popup_3edf8b391b6e43d76d1f0478c8d050db.setContent(html_5bc13393b594bc24803b36b191f2fbb6);
+            
+        
+
+        circle_marker_a86d700cc2686be1d2094960028b2056.bindPopup(popup_3edf8b391b6e43d76d1f0478c8d050db)
+        ;
+
+        
+    
+    
+            var circle_marker_54bc9156a4da541e87023120ede19295 = L.circleMarker(
+                [-5.074420477760048, -37.98889649191031],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+        var popup_895beceac09324a9151620d378ac047d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39f4025848c60c0040fbef9e96eca3ce = $(`<div id="html_39f4025848c60c0040fbef9e96eca3ce" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOAQUIM MANOEL OLIVEIRA</div>`)[0];
+                popup_895beceac09324a9151620d378ac047d.setContent(html_39f4025848c60c0040fbef9e96eca3ce);
+            
+        
+
+        circle_marker_54bc9156a4da541e87023120ede19295.bindPopup(popup_895beceac09324a9151620d378ac047d)
+        ;
+
+        
+    
+    
+            var circle_marker_ae68b394d26ca7d870cdd32a3223741d = L.circleMarker(
+                [-5.250982695891236, -38.13391455864896],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+        var popup_72be3ac5be3cda1d9a8a23020540b895 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f20a403b69f0f231c49642c880a0d16 = $(`<div id="html_3f20a403b69f0f231c49642c880a0d16" style="width: 100.0%; height: 100.0%;">CASA DE SAUDE MATERNIDADE CELESTINA COLARES</div>`)[0];
+                popup_72be3ac5be3cda1d9a8a23020540b895.setContent(html_3f20a403b69f0f231c49642c880a0d16);
+            
+        
+
+        circle_marker_ae68b394d26ca7d870cdd32a3223741d.bindPopup(popup_72be3ac5be3cda1d9a8a23020540b895)
+        ;
+
+        
+    
+    
+            var circle_marker_997cb3513a47c92d41d48d33ff0102f7 = L.circleMarker(
+                [-3.7307661, -38.50626099999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+        var popup_42526c955a42242ddeec10aaedff5cca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b96b517cfb9f279400ebb2ca1b7b6d30 = $(`<div id="html_b96b517cfb9f279400ebb2ca1b7b6d30" style="width: 100.0%; height: 100.0%;">HOSPITAL SAO RAIMUNDO</div>`)[0];
+                popup_42526c955a42242ddeec10aaedff5cca.setContent(html_b96b517cfb9f279400ebb2ca1b7b6d30);
+            
+        
+
+        circle_marker_997cb3513a47c92d41d48d33ff0102f7.bindPopup(popup_42526c955a42242ddeec10aaedff5cca)
+        ;
+
+        
+    
+    
+            var circle_marker_0a20579f935b53655175a86486ee4ec5 = L.circleMarker(
+                [-6.889104799999999, -39.2255098],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+        var popup_7ddbbe810b6d8f705c78b92434bca860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aaecf9bcae595833734625b59c162216 = $(`<div id="html_aaecf9bcae595833734625b59c162216" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE GRANJEIRO</div>`)[0];
+                popup_7ddbbe810b6d8f705c78b92434bca860.setContent(html_aaecf9bcae595833734625b59c162216);
+            
+        
+
+        circle_marker_0a20579f935b53655175a86486ee4ec5.bindPopup(popup_7ddbbe810b6d8f705c78b92434bca860)
+        ;
+
+        
+    
+    
+            var poly_line_6a2185bd6e44c20cdcfa81a2a140d045 = L.polyline(
+                [[-3.7307661, -38.50626099999999], [-5.074420477760048, -37.98889649191031]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+            poly_line_6a2185bd6e44c20cdcfa81a2a140d045.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_94fc64405af2c2f3dbf9ffe71a0d91bf = L.polyline(
+                [[-3.7307661, -38.50626099999999], [-5.250982695891236, -38.13391455864896]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+            poly_line_94fc64405af2c2f3dbf9ffe71a0d91bf.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_414ae1b2d46614aa744e6f24ad5e4920 = L.polyline(
+                [[-3.7307661, -38.50626099999999], [-6.889104799999999, -39.2255098]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+            poly_line_414ae1b2d46614aa744e6f24ad5e4920.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8dd21ce5025ad35113649689715bf2ad = L.polyline(
+                [[-3.7307661, -38.50626099999999], [-5.5170711161614605, -38.26968923830824]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_765afa382a05d9b0d88c27becb4fee51);
+        
+    
+            poly_line_8dd21ce5025ad35113649689715bf2ad.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_765afa382a05d9b0d88c27becb4fee51.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

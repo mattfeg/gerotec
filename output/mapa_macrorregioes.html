@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_24b3406649821db1d14ab45b5f61873b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_24b3406649821db1d14ab45b5f61873b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_24b3406649821db1d14ab45b5f61873b = L.map(
+                "map_24b3406649821db1d14ab45b5f61873b",
+                {
+                    center: [-5.42, -39.67],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc89217638eee752c6b0cacfd8dfff56 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fc89217638eee752c6b0cacfd8dfff56.addTo(map_24b3406649821db1d14ab45b5f61873b);
+        
+    
+            var polygon_d45aa33d8644e5c4f8c487b234e6634a = L.polygon(
+                [[-3.7, -38.5], [-3.7, -38.4], [-3.6, -38.4], [-3.6, -38.5], [-3.7, -38.5]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_24b3406649821db1d14ab45b5f61873b);
+        
+    
+        var popup_ce47ef45afad32dc2384189a2b695cff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06b30a50c6fc0bd94c4c185c3f9a7cb5 = $(`<div id="html_06b30a50c6fc0bd94c4c185c3f9a7cb5" style="width: 100.0%; height: 100.0%;">Fortaleza</div>`)[0];
+                popup_ce47ef45afad32dc2384189a2b695cff.setContent(html_06b30a50c6fc0bd94c4c185c3f9a7cb5);
+            
+        
+
+        polygon_d45aa33d8644e5c4f8c487b234e6634a.bindPopup(popup_ce47ef45afad32dc2384189a2b695cff)
+        ;
+
+        
+    
+    
+            var polygon_64ebbf7c03652b93de127661d39da8ed = L.polygon(
+                [[-4.5, -39.0], [-4.5, -38.9], [-4.4, -38.9], [-4.4, -39.0], [-4.5, -39.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_24b3406649821db1d14ab45b5f61873b);
+        
+    
+        var popup_813e6ed4cce3fe2b33a403f057a620d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d9c422e11227c8e0836fddf862c1908 = $(`<div id="html_7d9c422e11227c8e0836fddf862c1908" style="width: 100.0%; height: 100.0%;">Sertão Central</div>`)[0];
+                popup_813e6ed4cce3fe2b33a403f057a620d0.setContent(html_7d9c422e11227c8e0836fddf862c1908);
+            
+        
+
+        polygon_64ebbf7c03652b93de127661d39da8ed.bindPopup(popup_813e6ed4cce3fe2b33a403f057a620d0)
+        ;
+
+        
+    
+    
+            var polygon_97924fe1703544496c28045442056152 = L.polygon(
+                [[-4.0, -37.5], [-4.0, -37.4], [-3.9, -37.4], [-3.9, -37.5], [-4.0, -37.5]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_24b3406649821db1d14ab45b5f61873b);
+        
+    
+        var popup_119b3a5788e201ac4c8df31c1a666f6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5ee75fa150053f19d5316472816b500 = $(`<div id="html_d5ee75fa150053f19d5316472816b500" style="width: 100.0%; height: 100.0%;">Litoral Leste/Jaguaribe</div>`)[0];
+                popup_119b3a5788e201ac4c8df31c1a666f6e.setContent(html_d5ee75fa150053f19d5316472816b500);
+            
+        
+
+        polygon_97924fe1703544496c28045442056152.bindPopup(popup_119b3a5788e201ac4c8df31c1a666f6e)
+        ;
+
+        
+    
+    
+            var circle_marker_932cc54f2cb4bd409c5541d7ed1cb7d0 = L.circleMarker(
+                [-3.716, -38.543],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_24b3406649821db1d14ab45b5f61873b);
+        
+    
+        var popup_127d1885876b32c807dd6f5f08d39219 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_364b51de2b7a21942e00c75b1111f125 = $(`<div id="html_364b51de2b7a21942e00c75b1111f125" style="width: 100.0%; height: 100.0%;">Hospital A</div>`)[0];
+                popup_127d1885876b32c807dd6f5f08d39219.setContent(html_364b51de2b7a21942e00c75b1111f125);
+            
+        
+
+        circle_marker_932cc54f2cb4bd409c5541d7ed1cb7d0.bindPopup(popup_127d1885876b32c807dd6f5f08d39219)
+        ;
+
+        
+    
+    
+            var circle_marker_1e7e8babf69ca211275bd6e6b77ba9f2 = L.circleMarker(
+                [-3.727, -38.533],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_24b3406649821db1d14ab45b5f61873b);
+        
+    
+        var popup_7c86bc6579096144e7ecefb8e87085b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8af3bdc51b37fa4a46c8caab3b5ec036 = $(`<div id="html_8af3bdc51b37fa4a46c8caab3b5ec036" style="width: 100.0%; height: 100.0%;">Hospital B</div>`)[0];
+                popup_7c86bc6579096144e7ecefb8e87085b4.setContent(html_8af3bdc51b37fa4a46c8caab3b5ec036);
+            
+        
+
+        circle_marker_1e7e8babf69ca211275bd6e6b77ba9f2.bindPopup(popup_7c86bc6579096144e7ecefb8e87085b4)
+        ;
+
+        
+    
+    
+            var circle_marker_74360ae64c5805a8215059c82bd17312 = L.circleMarker(
+                [-3.73, -38.526],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_24b3406649821db1d14ab45b5f61873b);
+        
+    
+        var popup_c7d67d5628076aa8b51a572f33833a59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3019389be2e6b187468cd3ff29e76777 = $(`<div id="html_3019389be2e6b187468cd3ff29e76777" style="width: 100.0%; height: 100.0%;">Hospital C</div>`)[0];
+                popup_c7d67d5628076aa8b51a572f33833a59.setContent(html_3019389be2e6b187468cd3ff29e76777);
+            
+        
+
+        circle_marker_74360ae64c5805a8215059c82bd17312.bindPopup(popup_c7d67d5628076aa8b51a572f33833a59)
+        ;
+
+        
+    
+    
+            var layer_control_a220fc4ff76a151365a96360d7e335cc_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_fc89217638eee752c6b0cacfd8dfff56,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_a220fc4ff76a151365a96360d7e335cc = L.control.layers(
+                layer_control_a220fc4ff76a151365a96360d7e335cc_layers.base_layers,
+                layer_control_a220fc4ff76a151365a96360d7e335cc_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_24b3406649821db1d14ab45b5f61873b);
+
+        
+</script>
+</html>

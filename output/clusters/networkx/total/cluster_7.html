@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b2aa8425b033ef769c8d39fe37c27b17 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b2aa8425b033ef769c8d39fe37c27b17" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b2aa8425b033ef769c8d39fe37c27b17 = L.map(
+                "map_b2aa8425b033ef769c8d39fe37c27b17",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dc52f0783adf3c339bee08ab264e4f87 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_dc52f0783adf3c339bee08ab264e4f87.addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+            var circle_marker_0c7df92a081329b78fc58274f319ecb9 = L.circleMarker(
+                [-4.300184799999999, -38.49822200000001],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+        var popup_04d63c094890a273af621fb4c2021780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78691e92625fe6b90ffc8ba3fca32e99 = $(`<div id="html_78691e92625fe6b90ffc8ba3fca32e99" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE CHOROZINHO</div>`)[0];
+                popup_04d63c094890a273af621fb4c2021780.setContent(html_78691e92625fe6b90ffc8ba3fca32e99);
+            
+        
+
+        circle_marker_0c7df92a081329b78fc58274f319ecb9.bindPopup(popup_04d63c094890a273af621fb4c2021780)
+        ;
+
+        
+    
+    
+            var circle_marker_65b2185989264c108642501a8ce0aa1b = L.circleMarker(
+                [-3.7401048, -38.4759043],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+        var popup_773bf9ef38f046e6ee9d4119df785811 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2ae16768690496a0e0e70894835ff1b = $(`<div id="html_c2ae16768690496a0e0e70894835ff1b" style="width: 100.0%; height: 100.0%;">HGF HOSPITAL GERAL DE FORTALEZA</div>`)[0];
+                popup_773bf9ef38f046e6ee9d4119df785811.setContent(html_c2ae16768690496a0e0e70894835ff1b);
+            
+        
+
+        circle_marker_65b2185989264c108642501a8ce0aa1b.bindPopup(popup_773bf9ef38f046e6ee9d4119df785811)
+        ;
+
+        
+    
+    
+            var circle_marker_1cbf6832597130e983ad5cb3f72dfd2c = L.circleMarker(
+                [-4.225734648360887, -38.91983731641233],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+        var popup_ac64730e23b8390c73ebc58159b58ae8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7922498323b69f116dbf92e81d9c2057 = $(`<div id="html_7922498323b69f116dbf92e81d9c2057" style="width: 100.0%; height: 100.0%;">HOSPITAL PADRE QUILIANO E MATERNIDADE DONA NEUSA HOLANDA</div>`)[0];
+                popup_ac64730e23b8390c73ebc58159b58ae8.setContent(html_7922498323b69f116dbf92e81d9c2057);
+            
+        
+
+        circle_marker_1cbf6832597130e983ad5cb3f72dfd2c.bindPopup(popup_ac64730e23b8390c73ebc58159b58ae8)
+        ;
+
+        
+    
+    
+            var circle_marker_71f39165726b14e362252ff23fae6a5b = L.circleMarker(
+                [-4.224501286840884, -38.72827271402963],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+        var popup_4764423037806af429e8c00772d1aefd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0c812be7eea191bc769fb4d34991086 = $(`<div id="html_b0c812be7eea191bc769fb4d34991086" style="width: 100.0%; height: 100.0%;">HOSP MATERN PAULO SARASATE</div>`)[0];
+                popup_4764423037806af429e8c00772d1aefd.setContent(html_b0c812be7eea191bc769fb4d34991086);
+            
+        
+
+        circle_marker_71f39165726b14e362252ff23fae6a5b.bindPopup(popup_4764423037806af429e8c00772d1aefd)
+        ;
+
+        
+    
+    
+            var circle_marker_457943ef9b96bd465f972c4efb4c4218 = L.circleMarker(
+                [-4.455745438944914, -37.796012234845065],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+        var popup_d0eab3a598b03e133789f5e9260c9c81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bf48f52bb5e7ac881fb04c53168a933 = $(`<div id="html_0bf48f52bb5e7ac881fb04c53168a933" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DO FORTIM DR WALDEMAR ALCANTARA</div>`)[0];
+                popup_d0eab3a598b03e133789f5e9260c9c81.setContent(html_0bf48f52bb5e7ac881fb04c53168a933);
+            
+        
+
+        circle_marker_457943ef9b96bd465f972c4efb4c4218.bindPopup(popup_d0eab3a598b03e133789f5e9260c9c81)
+        ;
+
+        
+    
+    
+            var circle_marker_fea31a00e6be2195edc8e95a36c8fa8e = L.circleMarker(
+                [-6.0032289, -40.3004006],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+        var popup_e30fda635b27ea43a6745b0c89fcfa29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bab81b71499a2d4be5ad6a5156bea6f = $(`<div id="html_5bab81b71499a2d4be5ad6a5156bea6f" style="width: 100.0%; height: 100.0%;">HOSPITAL DR ALBERTO FEITOSA LIMA</div>`)[0];
+                popup_e30fda635b27ea43a6745b0c89fcfa29.setContent(html_5bab81b71499a2d4be5ad6a5156bea6f);
+            
+        
+
+        circle_marker_fea31a00e6be2195edc8e95a36c8fa8e.bindPopup(popup_e30fda635b27ea43a6745b0c89fcfa29)
+        ;
+
+        
+    
+    
+            var circle_marker_be887f368ec3f9b9af8de38b3e823434 = L.circleMarker(
+                [-5.8096095, -38.3015293],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+        var popup_b3f8fdc20ffbfc010af118747694f7fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec421b0c42fdb3eb6c82f9aee1ae5ec2 = $(`<div id="html_ec421b0c42fdb3eb6c82f9aee1ae5ec2" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE MARIA ROQUE DE MACEDO</div>`)[0];
+                popup_b3f8fdc20ffbfc010af118747694f7fa.setContent(html_ec421b0c42fdb3eb6c82f9aee1ae5ec2);
+            
+        
+
+        circle_marker_be887f368ec3f9b9af8de38b3e823434.bindPopup(popup_b3f8fdc20ffbfc010af118747694f7fa)
+        ;
+
+        
+    
+    
+            var poly_line_bc7ce3aa45ecfa4289379ee243d9b3fd = L.polyline(
+                [[-3.7401048, -38.4759043], [-6.0032289, -40.3004006]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+            poly_line_bc7ce3aa45ecfa4289379ee243d9b3fd.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4b64564ad05262e9e84de9cc1a5eb8ee = L.polyline(
+                [[-3.7401048, -38.4759043], [-4.455745438944914, -37.796012234845065]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+            poly_line_4b64564ad05262e9e84de9cc1a5eb8ee.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_682ecf360b8c2ae9f131c6fe68b18175 = L.polyline(
+                [[-3.7401048, -38.4759043], [-4.224501286840884, -38.72827271402963]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+            poly_line_682ecf360b8c2ae9f131c6fe68b18175.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4f308c0592c6e979ac86edd797cb56fb = L.polyline(
+                [[-3.7401048, -38.4759043], [-4.300184799999999, -38.49822200000001]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+            poly_line_4f308c0592c6e979ac86edd797cb56fb.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_51cf817d8a20874bb723d1341a051429 = L.polyline(
+                [[-3.7401048, -38.4759043], [-5.8096095, -38.3015293]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+            poly_line_51cf817d8a20874bb723d1341a051429.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_404ecd5bd07a00a0fa3875bf676295cb = L.polyline(
+                [[-3.7401048, -38.4759043], [-4.225734648360887, -38.91983731641233]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b2aa8425b033ef769c8d39fe37c27b17);
+        
+    
+            poly_line_404ecd5bd07a00a0fa3875bf676295cb.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_b2aa8425b033ef769c8d39fe37c27b17.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

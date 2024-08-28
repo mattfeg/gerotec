@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1c5d1188a08b095da5b9c9884d9291c6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1c5d1188a08b095da5b9c9884d9291c6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1c5d1188a08b095da5b9c9884d9291c6 = L.map(
+                "map_1c5d1188a08b095da5b9c9884d9291c6",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e912a7baec7289e126758021113f93c3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e912a7baec7289e126758021113f93c3.addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+            var circle_marker_113b9daa05126452ecf97ae07b365671 = L.circleMarker(
+                [-5.110884599999999, -38.3690232],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+        var popup_45e702e043ae06a63b53f4dc9f421f21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6248bc261cfeecd93f936d9310360f5f = $(`<div id="html_6248bc261cfeecd93f936d9310360f5f" style="width: 100.0%; height: 100.0%;">SANTA CASA DE MORADA NOVA</div>`)[0];
+                popup_45e702e043ae06a63b53f4dc9f421f21.setContent(html_6248bc261cfeecd93f936d9310360f5f);
+            
+        
+
+        circle_marker_113b9daa05126452ecf97ae07b365671.bindPopup(popup_45e702e043ae06a63b53f4dc9f421f21)
+        ;
+
+        
+    
+    
+            var circle_marker_2033e17355b0631f9929f70245a7376a = L.circleMarker(
+                [-4.181112008182183, -38.13127361007147],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+        var popup_e38f6c4b739330b7da19ac9ea5be9c50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12c7fbf8572b3ec40db06442042505aa = $(`<div id="html_12c7fbf8572b3ec40db06442042505aa" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL MONSENHOR DOURADO</div>`)[0];
+                popup_e38f6c4b739330b7da19ac9ea5be9c50.setContent(html_12c7fbf8572b3ec40db06442042505aa);
+            
+        
+
+        circle_marker_2033e17355b0631f9929f70245a7376a.bindPopup(popup_e38f6c4b739330b7da19ac9ea5be9c50)
+        ;
+
+        
+    
+    
+            var circle_marker_0110a7e8b2d102c038bf8e3d1e1dec72 = L.circleMarker(
+                [-3.7132653, -38.5727437],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+        var popup_b954ed951d034d844e255b091c026c36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84c3870de7ecf55a4481cdeff312e82d = $(`<div id="html_84c3870de7ecf55a4481cdeff312e82d" style="width: 100.0%; height: 100.0%;">CRIO CENTRO REGIONAL INTEGRADO DE ONCOLOGIA</div>`)[0];
+                popup_b954ed951d034d844e255b091c026c36.setContent(html_84c3870de7ecf55a4481cdeff312e82d);
+            
+        
+
+        circle_marker_0110a7e8b2d102c038bf8e3d1e1dec72.bindPopup(popup_b954ed951d034d844e255b091c026c36)
+        ;
+
+        
+    
+    
+            var circle_marker_9bc12c4b6c6483edb4488eed359c3f97 = L.circleMarker(
+                [-5.104074499999999, -38.3627461],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+        var popup_208377e95dc34cc4285aede55a02f1f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f6c885819d843cecdef1a2c165d36d5 = $(`<div id="html_4f6c885819d843cecdef1a2c165d36d5" style="width: 100.0%; height: 100.0%;">HOSPITAL REGIONAL FRANCISCO GALVAO DE OLIVEIRA</div>`)[0];
+                popup_208377e95dc34cc4285aede55a02f1f9.setContent(html_4f6c885819d843cecdef1a2c165d36d5);
+            
+        
+
+        circle_marker_9bc12c4b6c6483edb4488eed359c3f97.bindPopup(popup_208377e95dc34cc4285aede55a02f1f9)
+        ;
+
+        
+    
+    
+            var poly_line_a29e349d00a792221d98035c02d0c194 = L.polyline(
+                [[-3.7132653, -38.5727437], [-5.110884599999999, -38.3690232]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+            poly_line_a29e349d00a792221d98035c02d0c194.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3ae14bcf25eafaa47743075286bb4d39 = L.polyline(
+                [[-3.7132653, -38.5727437], [-4.181112008182183, -38.13127361007147]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+            poly_line_3ae14bcf25eafaa47743075286bb4d39.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5884bfafd3a8910900455a6b7757ef34 = L.polyline(
+                [[-3.7132653, -38.5727437], [-5.104074499999999, -38.3627461]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+            poly_line_5884bfafd3a8910900455a6b7757ef34.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9d8bdd5d1616cae9b525ee26b3c34579 = L.polyline(
+                [[-5.110884599999999, -38.3690232], [-5.104074499999999, -38.3627461]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1c5d1188a08b095da5b9c9884d9291c6);
+        
+    
+            poly_line_9d8bdd5d1616cae9b525ee26b3c34579.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_1c5d1188a08b095da5b9c9884d9291c6.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>
