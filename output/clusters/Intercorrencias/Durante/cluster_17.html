@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_729385a1f1bf82a2974271b68b5ced1a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_729385a1f1bf82a2974271b68b5ced1a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_729385a1f1bf82a2974271b68b5ced1a = L.map(
+                "map_729385a1f1bf82a2974271b68b5ced1a",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_429861ca7fff64e35bce13e9fab80e27 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_429861ca7fff64e35bce13e9fab80e27.addTo(map_729385a1f1bf82a2974271b68b5ced1a);
+        
+    
+            var circle_marker_e542afbe7bfeec10d53531739807fa5b = L.circleMarker(
+                [-5.1467293, -38.0964766],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_729385a1f1bf82a2974271b68b5ced1a);
+        
+    
+        var popup_7a99dcace4d29eb6f915d4b3439af66c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3aba05a4a940bf05bea3d41d080e1080 = $(`<div id="html_3aba05a4a940bf05bea3d41d080e1080" style="width: 100.0%; height: 100.0%;">LIMOEIRO DO NORTE, CE</div>`)[0];
+                popup_7a99dcace4d29eb6f915d4b3439af66c.setContent(html_3aba05a4a940bf05bea3d41d080e1080);
+            
+        
+
+        circle_marker_e542afbe7bfeec10d53531739807fa5b.bindPopup(popup_7a99dcace4d29eb6f915d4b3439af66c)
+        ;
+
+        
+    
+    
+            var circle_marker_bc8392e731b7789fcfe049b315b52ec5 = L.circleMarker(
+                [-3.7307661, -38.50626099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_729385a1f1bf82a2974271b68b5ced1a);
+        
+    
+        var popup_232a6b35d7caf14643af1c65234dbe7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6889ebb688e71aa00645fa206ee1cf80 = $(`<div id="html_6889ebb688e71aa00645fa206ee1cf80" style="width: 100.0%; height: 100.0%;">HOSPITAL SAO RAIMUNDO</div>`)[0];
+                popup_232a6b35d7caf14643af1c65234dbe7d.setContent(html_6889ebb688e71aa00645fa206ee1cf80);
+            
+        
+
+        circle_marker_bc8392e731b7789fcfe049b315b52ec5.bindPopup(popup_232a6b35d7caf14643af1c65234dbe7d)
+        ;
+
+        
+    
+    
+            var poly_line_ed9c602ba91498bcbbef04a4efbcee0b = L.polyline(
+                [[-5.1467293, -38.0964766], [-3.7307661, -38.50626099999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_729385a1f1bf82a2974271b68b5ced1a);
+        
+    
+            poly_line_ed9c602ba91498bcbbef04a4efbcee0b.bindTooltip(
+                `<div>
+                     Peso: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_729385a1f1bf82a2974271b68b5ced1a.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1a21f25457018fece8b188559c91b589 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1a21f25457018fece8b188559c91b589" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1a21f25457018fece8b188559c91b589 = L.map(
+                "map_1a21f25457018fece8b188559c91b589",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_98d1db80a47d15f9db8237f9225a81f9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_98d1db80a47d15f9db8237f9225a81f9.addTo(map_1a21f25457018fece8b188559c91b589);
+        
+    
+            var circle_marker_76f4d933096172638f4ef424ffe7e5fa = L.circleMarker(
+                [-5.1982962, -39.2955312],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a21f25457018fece8b188559c91b589);
+        
+    
+        var popup_d3b52bb0505d835e7abc2e13faddecfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1884d9e91f0ab35cce35c945b07b6ce4 = $(`<div id="html_1884d9e91f0ab35cce35c945b07b6ce4" style="width: 100.0%; height: 100.0%;">QUIXERAMOBIM, CE</div>`)[0];
+                popup_d3b52bb0505d835e7abc2e13faddecfc.setContent(html_1884d9e91f0ab35cce35c945b07b6ce4);
+            
+        
+
+        circle_marker_76f4d933096172638f4ef424ffe7e5fa.bindPopup(popup_d3b52bb0505d835e7abc2e13faddecfc)
+        ;
+
+        
+    
+    
+            var circle_marker_7e5b7869151eaaad0665127f70a34cee = L.circleMarker(
+                [-5.1954883, -39.3117054],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a21f25457018fece8b188559c91b589);
+        
+    
+        var popup_12a8894a600163a5c0f7d4fe15aaffc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71ff9315c9067dd50ec2ca4e02c2a5be = $(`<div id="html_71ff9315c9067dd50ec2ca4e02c2a5be" style="width: 100.0%; height: 100.0%;">HOSPITAL REGIONAL DR PONTES NETO</div>`)[0];
+                popup_12a8894a600163a5c0f7d4fe15aaffc5.setContent(html_71ff9315c9067dd50ec2ca4e02c2a5be);
+            
+        
+
+        circle_marker_7e5b7869151eaaad0665127f70a34cee.bindPopup(popup_12a8894a600163a5c0f7d4fe15aaffc5)
+        ;
+
+        
+    
+    
+            var poly_line_43b817a5b156cffaba39b3e743185b1e = L.polyline(
+                [[-5.1982962, -39.2955312], [-5.1954883, -39.3117054]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1a21f25457018fece8b188559c91b589);
+        
+    
+            poly_line_43b817a5b156cffaba39b3e743185b1e.bindTooltip(
+                `<div>
+                     Peso: 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_1a21f25457018fece8b188559c91b589.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88863c430e13fcb3ed67e91ebdb1cf8a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88863c430e13fcb3ed67e91ebdb1cf8a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_88863c430e13fcb3ed67e91ebdb1cf8a = L.map(
+                "map_88863c430e13fcb3ed67e91ebdb1cf8a",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8955a3221c2146d6c4a4c6992ec08e92 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8955a3221c2146d6c4a4c6992ec08e92.addTo(map_88863c430e13fcb3ed67e91ebdb1cf8a);
+        
+    
+            var circle_marker_7062124a6e336dea41dcc044f0714a53 = L.circleMarker(
+                [-3.0352838, -41.2433845],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_88863c430e13fcb3ed67e91ebdb1cf8a);
+        
+    
+        var popup_5da4c63eeb3b33602498548a432ebc5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d701178b8cf4dc154d503f17c2afd32 = $(`<div id="html_5d701178b8cf4dc154d503f17c2afd32" style="width: 100.0%; height: 100.0%;">CHAVAL, CE</div>`)[0];
+                popup_5da4c63eeb3b33602498548a432ebc5b.setContent(html_5d701178b8cf4dc154d503f17c2afd32);
+            
+        
+
+        circle_marker_7062124a6e336dea41dcc044f0714a53.bindPopup(popup_5da4c63eeb3b33602498548a432ebc5b)
+        ;
+
+        
+    
+    
+            var circle_marker_b7aea6129738cfbc5df51000d7ddde1d = L.circleMarker(
+                [-2.9008808, -40.8419427],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_88863c430e13fcb3ed67e91ebdb1cf8a);
+        
+    
+        var popup_677f16fab53e5510ef36bc180fa302d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8b414668935042f082346aae8240216 = $(`<div id="html_c8b414668935042f082346aae8240216" style="width: 100.0%; height: 100.0%;">HOSPITAL DEPUTADO MURILO AGUIAR</div>`)[0];
+                popup_677f16fab53e5510ef36bc180fa302d1.setContent(html_c8b414668935042f082346aae8240216);
+            
+        
+
+        circle_marker_b7aea6129738cfbc5df51000d7ddde1d.bindPopup(popup_677f16fab53e5510ef36bc180fa302d1)
+        ;
+
+        
+    
+    
+            var circle_marker_72e730410f7f92de1d8d6980d1befde7 = L.circleMarker(
+                [-3.1184636, -40.8303492],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_88863c430e13fcb3ed67e91ebdb1cf8a);
+        
+    
+        var popup_d27963f54e2293e03d925baad9c17189 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07ddbb24c431a82b9ffb7e5bfaba8abe = $(`<div id="html_07ddbb24c431a82b9ffb7e5bfaba8abe" style="width: 100.0%; height: 100.0%;">GRANJA, CE</div>`)[0];
+                popup_d27963f54e2293e03d925baad9c17189.setContent(html_07ddbb24c431a82b9ffb7e5bfaba8abe);
+            
+        
+
+        circle_marker_72e730410f7f92de1d8d6980d1befde7.bindPopup(popup_d27963f54e2293e03d925baad9c17189)
+        ;
+
+        
+    
+    
+            var poly_line_3da4e18d825e467de2e11b43b3e0a4a0 = L.polyline(
+                [[-3.0352838, -41.2433845], [-2.9008808, -40.8419427]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_88863c430e13fcb3ed67e91ebdb1cf8a);
+        
+    
+            poly_line_3da4e18d825e467de2e11b43b3e0a4a0.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9c90245420a3a0e7a5be3e282a22c011 = L.polyline(
+                [[-3.1184636, -40.8303492], [-2.9008808, -40.8419427]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_88863c430e13fcb3ed67e91ebdb1cf8a);
+        
+    
+            poly_line_9c90245420a3a0e7a5be3e282a22c011.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_88863c430e13fcb3ed67e91ebdb1cf8a.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

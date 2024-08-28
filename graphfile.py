@@ -354,6 +354,10 @@ def baixar_arquivo(output_path):
     # Fornecer link para download
     return FileLink('./output' + output_path)
 
+import os
+import folium
+import networkx as nx
+
 def plotar_clusters_individualmente(G, partition, output_dir='output/clusters'):
     """
     Plota os clusters individualmente em mapas interativos usando folium.
@@ -369,9 +373,6 @@ def plotar_clusters_individualmente(G, partition, output_dir='output/clusters'):
     # Criar o diretório de saída, se não existir
     os.makedirs(output_dir, exist_ok=True)
 
-    # Cores para diferentes clusters
-    colors = ['red', 'blue', 'green', 'purple', 'orange', 'cyan', 'pink', 'yellow', 'brown', 'gray']
-
     # Plotar cada cluster individualmente
     for cluster in set(partition.values()):
         nodes_in_cluster = [node for node in partition if partition[node] == cluster]
@@ -380,7 +381,8 @@ def plotar_clusters_individualmente(G, partition, output_dir='output/clusters'):
         for node in nodes_in_cluster:
             lat = G.nodes[node]['latitude']
             lon = G.nodes[node]['longitude']
-            color = colors[cluster % len(colors)]
+            color = 'blue' if G.nodes[node]['bipartite'] == 0 else 'red'
+            
             folium.CircleMarker(
                 location=[lat, lon],
                 radius=5,

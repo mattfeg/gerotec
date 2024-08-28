@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5b47099e47953ed6b4defbd507590de5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5b47099e47953ed6b4defbd507590de5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5b47099e47953ed6b4defbd507590de5 = L.map(
+                "map_5b47099e47953ed6b4defbd507590de5",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e0bca7dc326021804b80ab36bd0374f2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e0bca7dc326021804b80ab36bd0374f2.addTo(map_5b47099e47953ed6b4defbd507590de5);
+        
+    
+            var circle_marker_e44e4e86ea89f0bb5784c1d7281dd188 = L.circleMarker(
+                [-6.540717099999999, -39.90627509999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5b47099e47953ed6b4defbd507590de5);
+        
+    
+        var popup_1b7e291c034c0c198554417977ee2a49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dd4d9f5bdc86d473c00b57db802cc23 = $(`<div id="html_8dd4d9f5bdc86d473c00b57db802cc23" style="width: 100.0%; height: 100.0%;">SABOEIRO, CE</div>`)[0];
+                popup_1b7e291c034c0c198554417977ee2a49.setContent(html_8dd4d9f5bdc86d473c00b57db802cc23);
+            
+        
+
+        circle_marker_e44e4e86ea89f0bb5784c1d7281dd188.bindPopup(popup_1b7e291c034c0c198554417977ee2a49)
+        ;
+
+        
+    
+    
+            var circle_marker_ed9b6452491e20d67137023145e5b2b3 = L.circleMarker(
+                [-6.53522, -39.9024205],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5b47099e47953ed6b4defbd507590de5);
+        
+    
+        var popup_c50dec5cc8c0d17cc057d86f1dc8d228 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4fc1fd9858476e46f47df873e317e34 = $(`<div id="html_d4fc1fd9858476e46f47df873e317e34" style="width: 100.0%; height: 100.0%;">UNID MISTA DE SABOEIRO</div>`)[0];
+                popup_c50dec5cc8c0d17cc057d86f1dc8d228.setContent(html_d4fc1fd9858476e46f47df873e317e34);
+            
+        
+
+        circle_marker_ed9b6452491e20d67137023145e5b2b3.bindPopup(popup_c50dec5cc8c0d17cc057d86f1dc8d228)
+        ;
+
+        
+    
+    
+            var poly_line_1e2ee75f46fbfacbc8f7f1006245ba0d = L.polyline(
+                [[-6.540717099999999, -39.90627509999999], [-6.53522, -39.9024205]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5b47099e47953ed6b4defbd507590de5);
+        
+    
+            poly_line_1e2ee75f46fbfacbc8f7f1006245ba0d.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_5b47099e47953ed6b4defbd507590de5.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

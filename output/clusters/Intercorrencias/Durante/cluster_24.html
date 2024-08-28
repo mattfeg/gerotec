@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09b7f2c895074f83cdcb7d07518d3eaa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09b7f2c895074f83cdcb7d07518d3eaa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09b7f2c895074f83cdcb7d07518d3eaa = L.map(
+                "map_09b7f2c895074f83cdcb7d07518d3eaa",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad3b402986ae6e8bc5916205049454aa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ad3b402986ae6e8bc5916205049454aa.addTo(map_09b7f2c895074f83cdcb7d07518d3eaa);
+        
+    
+            var circle_marker_21a4bfb262fbaedb03100d5a5056cd03 = L.circleMarker(
+                [-5.2442316, -38.1286594],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_09b7f2c895074f83cdcb7d07518d3eaa);
+        
+    
+        var popup_90f05d839ef34d074e07f5629b57b9f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d9a5059d22c4aee6ef6e84b8947286b = $(`<div id="html_4d9a5059d22c4aee6ef6e84b8947286b" style="width: 100.0%; height: 100.0%;">TABULEIRO DO NORTE, CE</div>`)[0];
+                popup_90f05d839ef34d074e07f5629b57b9f7.setContent(html_4d9a5059d22c4aee6ef6e84b8947286b);
+            
+        
+
+        circle_marker_21a4bfb262fbaedb03100d5a5056cd03.bindPopup(popup_90f05d839ef34d074e07f5629b57b9f7)
+        ;
+
+        
+    
+    
+            var circle_marker_f1115984976f667fa25eda902ef41331 = L.circleMarker(
+                [-5.250982695891236, -38.133914558648954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_09b7f2c895074f83cdcb7d07518d3eaa);
+        
+    
+        var popup_a827d03c1c88ee4414e7a7607686e08a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c437b90665938b603096d33af422364 = $(`<div id="html_8c437b90665938b603096d33af422364" style="width: 100.0%; height: 100.0%;">CASA DE SAUDE MATERNIDADE CELESTINA COLARES</div>`)[0];
+                popup_a827d03c1c88ee4414e7a7607686e08a.setContent(html_8c437b90665938b603096d33af422364);
+            
+        
+
+        circle_marker_f1115984976f667fa25eda902ef41331.bindPopup(popup_a827d03c1c88ee4414e7a7607686e08a)
+        ;
+
+        
+    
+    
+            var poly_line_ffd505428898d20d0cf936f634c07e34 = L.polyline(
+                [[-5.2442316, -38.1286594], [-5.250982695891236, -38.133914558648954]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_09b7f2c895074f83cdcb7d07518d3eaa);
+        
+    
+            poly_line_ffd505428898d20d0cf936f634c07e34.bindTooltip(
+                `<div>
+                     Peso: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_09b7f2c895074f83cdcb7d07518d3eaa.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

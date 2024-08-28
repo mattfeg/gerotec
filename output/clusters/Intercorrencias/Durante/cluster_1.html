@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b805bdf57e0825228b1fae4b9360afc5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b805bdf57e0825228b1fae4b9360afc5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b805bdf57e0825228b1fae4b9360afc5 = L.map(
+                "map_b805bdf57e0825228b1fae4b9360afc5",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5a23d8e254595f50b168a4908e518a7c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5a23d8e254595f50b168a4908e518a7c.addTo(map_b805bdf57e0825228b1fae4b9360afc5);
+        
+    
+            var circle_marker_991d3e2267acdb31320a99ca23419432 = L.circleMarker(
+                [-6.043627499999999, -38.460721],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b805bdf57e0825228b1fae4b9360afc5);
+        
+    
+        var popup_94dddb7dce9bc5cbe149d695c141cd48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c68a9a34814345cc7aec0933d32a0fe = $(`<div id="html_6c68a9a34814345cc7aec0933d32a0fe" style="width: 100.0%; height: 100.0%;">PEREIRO, CE</div>`)[0];
+                popup_94dddb7dce9bc5cbe149d695c141cd48.setContent(html_6c68a9a34814345cc7aec0933d32a0fe);
+            
+        
+
+        circle_marker_991d3e2267acdb31320a99ca23419432.bindPopup(popup_94dddb7dce9bc5cbe149d695c141cd48)
+        ;
+
+        
+    
+    
+            var circle_marker_1682e5464cc0ec1b3ec09306689df5d8 = L.circleMarker(
+                [-6.0453716976661545, -38.4599073930398],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b805bdf57e0825228b1fae4b9360afc5);
+        
+    
+        var popup_9e0aba4edd487011c0f9eae3c8345164 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30637516be94eba8f6eb97493163ff57 = $(`<div id="html_30637516be94eba8f6eb97493163ff57" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL HUMBERTO DE QUEIROZ</div>`)[0];
+                popup_9e0aba4edd487011c0f9eae3c8345164.setContent(html_30637516be94eba8f6eb97493163ff57);
+            
+        
+
+        circle_marker_1682e5464cc0ec1b3ec09306689df5d8.bindPopup(popup_9e0aba4edd487011c0f9eae3c8345164)
+        ;
+
+        
+    
+    
+            var poly_line_302abe6bef16edb52319f89c784c1d41 = L.polyline(
+                [[-6.043627499999999, -38.460721], [-6.0453716976661545, -38.4599073930398]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b805bdf57e0825228b1fae4b9360afc5);
+        
+    
+            poly_line_302abe6bef16edb52319f89c784c1d41.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_b805bdf57e0825228b1fae4b9360afc5.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

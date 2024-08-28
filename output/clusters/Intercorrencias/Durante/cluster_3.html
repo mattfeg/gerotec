@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b344374220ed7d7682f9059430c8b403 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b344374220ed7d7682f9059430c8b403" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b344374220ed7d7682f9059430c8b403 = L.map(
+                "map_b344374220ed7d7682f9059430c8b403",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_737d4f943169b25b941cea84d5203599 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_737d4f943169b25b941cea84d5203599.addTo(map_b344374220ed7d7682f9059430c8b403);
+        
+    
+            var circle_marker_46b78923c92efc2a1cf00ca77555127f = L.circleMarker(
+                [-4.1431403, -40.5815662],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b344374220ed7d7682f9059430c8b403);
+        
+    
+        var popup_2ede2437aca45a202799fe3b3e1edca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b421a96e85b38025bc36df2ba977d3c5 = $(`<div id="html_b421a96e85b38025bc36df2ba977d3c5" style="width: 100.0%; height: 100.0%;">RERIUTABA, CE</div>`)[0];
+                popup_2ede2437aca45a202799fe3b3e1edca9.setContent(html_b421a96e85b38025bc36df2ba977d3c5);
+            
+        
+
+        circle_marker_46b78923c92efc2a1cf00ca77555127f.bindPopup(popup_2ede2437aca45a202799fe3b3e1edca9)
+        ;
+
+        
+    
+    
+            var circle_marker_8a5137388a6ba3cdfb3a4b2b41b5e348 = L.circleMarker(
+                [-4.140736873364953, -40.57734831645635],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b344374220ed7d7682f9059430c8b403);
+        
+    
+        var popup_4777c0ffac2fe751b82488f91c317298 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c14756d71cb668c5897c714f3397ff8 = $(`<div id="html_0c14756d71cb668c5897c714f3397ff8" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE RITA DO VALE REGO</div>`)[0];
+                popup_4777c0ffac2fe751b82488f91c317298.setContent(html_0c14756d71cb668c5897c714f3397ff8);
+            
+        
+
+        circle_marker_8a5137388a6ba3cdfb3a4b2b41b5e348.bindPopup(popup_4777c0ffac2fe751b82488f91c317298)
+        ;
+
+        
+    
+    
+            var poly_line_98d2562908626357b5deaee63747c725 = L.polyline(
+                [[-4.1431403, -40.5815662], [-4.140736873364953, -40.57734831645635]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b344374220ed7d7682f9059430c8b403);
+        
+    
+            poly_line_98d2562908626357b5deaee63747c725.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_b344374220ed7d7682f9059430c8b403.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

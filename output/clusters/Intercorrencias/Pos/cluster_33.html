@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a703276cbb8b65e2ab070c6f1194bf13 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a703276cbb8b65e2ab070c6f1194bf13" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a703276cbb8b65e2ab070c6f1194bf13 = L.map(
+                "map_a703276cbb8b65e2ab070c6f1194bf13",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f868c85df48497c4a1e9fefa632848c4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f868c85df48497c4a1e9fefa632848c4.addTo(map_a703276cbb8b65e2ab070c6f1194bf13);
+        
+    
+            var circle_marker_0cc8b17f671fe85284cd60318d97b0f3 = L.circleMarker(
+                [-2.9242369, -39.9129274],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a703276cbb8b65e2ab070c6f1194bf13);
+        
+    
+        var popup_f8ad0bf1c838c6353d5cbccbccf35905 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02b7f7645af676a8cf2a21cb7b360eae = $(`<div id="html_02b7f7645af676a8cf2a21cb7b360eae" style="width: 100.0%; height: 100.0%;">ITAREMA, CE</div>`)[0];
+                popup_f8ad0bf1c838c6353d5cbccbccf35905.setContent(html_02b7f7645af676a8cf2a21cb7b360eae);
+            
+        
+
+        circle_marker_0cc8b17f671fe85284cd60318d97b0f3.bindPopup(popup_f8ad0bf1c838c6353d5cbccbccf35905)
+        ;
+
+        
+    
+    
+            var circle_marker_470ba224f8e1c8b3e2774026c9f9d067 = L.circleMarker(
+                [-2.92015541127297, -39.91522126457491],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a703276cbb8b65e2ab070c6f1194bf13);
+        
+    
+        var popup_f3f0b7a363da35b5d4f5306319f7806b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4694c4eca7692bdf4b430414a03c79b0 = $(`<div id="html_4694c4eca7692bdf4b430414a03c79b0" style="width: 100.0%; height: 100.0%;">HOSP MUNICIPAL NATERCIA JUNIOR RIOS</div>`)[0];
+                popup_f3f0b7a363da35b5d4f5306319f7806b.setContent(html_4694c4eca7692bdf4b430414a03c79b0);
+            
+        
+
+        circle_marker_470ba224f8e1c8b3e2774026c9f9d067.bindPopup(popup_f3f0b7a363da35b5d4f5306319f7806b)
+        ;
+
+        
+    
+    
+            var poly_line_aeb3047401d810cbc1f1b841a45b675c = L.polyline(
+                [[-2.9242369, -39.9129274], [-2.92015541127297, -39.91522126457491]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_a703276cbb8b65e2ab070c6f1194bf13);
+        
+    
+            poly_line_aeb3047401d810cbc1f1b841a45b675c.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_a703276cbb8b65e2ab070c6f1194bf13.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

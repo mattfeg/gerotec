@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_64e76305ad5e9a506922936a5ef6e48c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_64e76305ad5e9a506922936a5ef6e48c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_64e76305ad5e9a506922936a5ef6e48c = L.map(
+                "map_64e76305ad5e9a506922936a5ef6e48c",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_657c1fab69615b1890f90f6d53edfc74 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_657c1fab69615b1890f90f6d53edfc74.addTo(map_64e76305ad5e9a506922936a5ef6e48c);
+        
+    
+            var circle_marker_a4f1fb4aafec4a3efc8577fde571ed38 = L.circleMarker(
+                [-4.3220187, -40.7092475],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_64e76305ad5e9a506922936a5ef6e48c);
+        
+    
+        var popup_0766960745c35fb256262b526b02da0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fff3d3a91dec2df9e09d64de47c50fe = $(`<div id="html_0fff3d3a91dec2df9e09d64de47c50fe" style="width: 100.0%; height: 100.0%;">IPU, CE</div>`)[0];
+                popup_0766960745c35fb256262b526b02da0c.setContent(html_0fff3d3a91dec2df9e09d64de47c50fe);
+            
+        
+
+        circle_marker_a4f1fb4aafec4a3efc8577fde571ed38.bindPopup(popup_0766960745c35fb256262b526b02da0c)
+        ;
+
+        
+    
+    
+            var circle_marker_3426fb30b7ec385906ba0509c34f4e06 = L.circleMarker(
+                [-4.320780151851159, -40.71289828579279],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_64e76305ad5e9a506922936a5ef6e48c);
+        
+    
+        var popup_6f654fa68c86900775f43f1654f4d677 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b6b50a4b8ecb8028070a387ada3f6d0 = $(`<div id="html_7b6b50a4b8ecb8028070a387ada3f6d0" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DR JOSE EVANGELISTA DE OLIVEIRA</div>`)[0];
+                popup_6f654fa68c86900775f43f1654f4d677.setContent(html_7b6b50a4b8ecb8028070a387ada3f6d0);
+            
+        
+
+        circle_marker_3426fb30b7ec385906ba0509c34f4e06.bindPopup(popup_6f654fa68c86900775f43f1654f4d677)
+        ;
+
+        
+    
+    
+            var poly_line_d2a53ba4e72ffa7a9693dc2ed9241676 = L.polyline(
+                [[-4.3220187, -40.7092475], [-4.320780151851159, -40.71289828579279]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_64e76305ad5e9a506922936a5ef6e48c);
+        
+    
+            poly_line_d2a53ba4e72ffa7a9693dc2ed9241676.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_64e76305ad5e9a506922936a5ef6e48c.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>
