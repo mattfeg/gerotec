@@ -550,7 +550,7 @@ def plotar_grafo_por_macrorregiao(G, macrorregiao, municipios_macrorregiao, outp
     - output_dir (str): Diretório para salvar o arquivo HTML do mapa interativo.
     
     Returns:
-    - folium.Map: Mapa interativo gerado.
+    - folium.Map: Mapa interativo gerado ou None se não houver nós na macrorregião.
     """
     # Criar um subgrafo contendo apenas os nós dos municípios da macrorregião e os hospitais conectados a eles
     subgrafo = nx.DiGraph()
@@ -562,6 +562,11 @@ def plotar_grafo_por_macrorregiao(G, macrorregiao, municipios_macrorregiao, outp
                 if hospital not in subgrafo.nodes:
                     subgrafo.add_node(hospital, **G.nodes[hospital])
                 subgrafo.add_edge(municipio, hospital, **G.edges[municipio, hospital])
+
+    # Verificar se o subgrafo contém nós
+    if not subgrafo.nodes:
+        print(f"Nenhum nó encontrado para a macrorregião '{macrorregiao}'. Mapa não será gerado.")
+        return None
 
     # Determinar os limites do mapa com base nos nós do subgrafo
     latitudes = [data['latitude'] for node, data in subgrafo.nodes(data=True)]
