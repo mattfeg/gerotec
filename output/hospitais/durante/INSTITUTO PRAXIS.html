@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9596368f1578671cd99e902b3d43a964 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9596368f1578671cd99e902b3d43a964" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9596368f1578671cd99e902b3d43a964 = L.map(
+                "map_9596368f1578671cd99e902b3d43a964",
+                {
+                    center: [-3.7126438386619824, -38.57299115943082],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cff84115b9b0beaa1e13fdae5da71e61 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cff84115b9b0beaa1e13fdae5da71e61.addTo(map_9596368f1578671cd99e902b3d43a964);
+        
+    
+            var marker_8d96b6e64781a1a6fed35ee45120a875 = L.marker(
+                [-3.7126438386619824, -38.57299115943082],
+                {}
+            ).addTo(map_9596368f1578671cd99e902b3d43a964);
+        
+    
+            var icon_82affdf56ae5c1f8b91eaadc28ce5d37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d96b6e64781a1a6fed35ee45120a875.setIcon(icon_82affdf56ae5c1f8b91eaadc28ce5d37);
+        
+    
+        var popup_d4a9185691a5817e5418264009d9a335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b38ac22d0f96ea9ac99a364e2545bfd8 = $(`<div id="html_b38ac22d0f96ea9ac99a364e2545bfd8" style="width: 100.0%; height: 100.0%;">INSTITUTO PRAXIS</div>`)[0];
+                popup_d4a9185691a5817e5418264009d9a335.setContent(html_b38ac22d0f96ea9ac99a364e2545bfd8);
+            
+        
+
+        marker_8d96b6e64781a1a6fed35ee45120a875.bindPopup(popup_d4a9185691a5817e5418264009d9a335)
+        ;
+
+        
+    
+    
+            var circle_marker_02b39272db51e1ece2e5768d397c8537 = L.circleMarker(
+                [-4.5612094, -37.7688612],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_9596368f1578671cd99e902b3d43a964);
+        
+    
+        var popup_950acd324ee24b6b5b9f7bf0fc312a53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b030ecfc121fedc656a1b0df328e681 = $(`<div id="html_4b030ecfc121fedc656a1b0df328e681" style="width: 100.0%; height: 100.0%;">ARACATI, CE</div>`)[0];
+                popup_950acd324ee24b6b5b9f7bf0fc312a53.setContent(html_4b030ecfc121fedc656a1b0df328e681);
+            
+        
+
+        circle_marker_02b39272db51e1ece2e5768d397c8537.bindPopup(popup_950acd324ee24b6b5b9f7bf0fc312a53)
+        ;
+
+        
+    
+    
+            var poly_line_ea8789836b32a1bc9c36afdb3b8a5805 = L.polyline(
+                [[-3.7126438386619824, -38.57299115943082], [-4.5612094, -37.7688612]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9596368f1578671cd99e902b3d43a964);
+        
+    
+            poly_line_ea8789836b32a1bc9c36afdb3b8a5805.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_9596368f1578671cd99e902b3d43a964.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

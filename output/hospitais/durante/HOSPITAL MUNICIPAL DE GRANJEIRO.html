@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_184f0f023d74b0b4a00650882c28d4d2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_184f0f023d74b0b4a00650882c28d4d2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_184f0f023d74b0b4a00650882c28d4d2 = L.map(
+                "map_184f0f023d74b0b4a00650882c28d4d2",
+                {
+                    center: [-6.889104799999999, -39.2255098],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac8c89f26b5e97c82aeb8f8407453509 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ac8c89f26b5e97c82aeb8f8407453509.addTo(map_184f0f023d74b0b4a00650882c28d4d2);
+        
+    
+            var marker_f0295f25df8073c57544ff7a4ca9bdac = L.marker(
+                [-6.889104799999999, -39.2255098],
+                {}
+            ).addTo(map_184f0f023d74b0b4a00650882c28d4d2);
+        
+    
+            var icon_b4fe990cce1542fc07e9e604f02dbff1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f0295f25df8073c57544ff7a4ca9bdac.setIcon(icon_b4fe990cce1542fc07e9e604f02dbff1);
+        
+    
+        var popup_6d4e50b5f0bf7e731b18df2c4e43835e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f688c1dbb45141c98d49c7b8a1e85c35 = $(`<div id="html_f688c1dbb45141c98d49c7b8a1e85c35" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE GRANJEIRO</div>`)[0];
+                popup_6d4e50b5f0bf7e731b18df2c4e43835e.setContent(html_f688c1dbb45141c98d49c7b8a1e85c35);
+            
+        
+
+        marker_f0295f25df8073c57544ff7a4ca9bdac.bindPopup(popup_6d4e50b5f0bf7e731b18df2c4e43835e)
+        ;
+
+        
+    
+    
+            var circle_marker_2a1a62e6cc780b1eb3c4893db9393bff = L.circleMarker(
+                [-6.889683799999999, -39.21822600000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_184f0f023d74b0b4a00650882c28d4d2);
+        
+    
+        var popup_d6dead4ad9dacb6e6badc511fae03eda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9516b049a8f6f92b80dc4c8b24401423 = $(`<div id="html_9516b049a8f6f92b80dc4c8b24401423" style="width: 100.0%; height: 100.0%;">GRANJEIRO, CE</div>`)[0];
+                popup_d6dead4ad9dacb6e6badc511fae03eda.setContent(html_9516b049a8f6f92b80dc4c8b24401423);
+            
+        
+
+        circle_marker_2a1a62e6cc780b1eb3c4893db9393bff.bindPopup(popup_d6dead4ad9dacb6e6badc511fae03eda)
+        ;
+
+        
+    
+    
+            var poly_line_3604ba4b16039cfd486ac32d36a3978b = L.polyline(
+                [[-6.889104799999999, -39.2255098], [-6.889683799999999, -39.21822600000001]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_184f0f023d74b0b4a00650882c28d4d2);
+        
+    
+            poly_line_3604ba4b16039cfd486ac32d36a3978b.bindTooltip(
+                `<div>
+                     Frequência: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_184f0f023d74b0b4a00650882c28d4d2.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd4b1ed5efdac961b158a0f4f4cbd11a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd4b1ed5efdac961b158a0f4f4cbd11a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd4b1ed5efdac961b158a0f4f4cbd11a = L.map(
+                "map_fd4b1ed5efdac961b158a0f4f4cbd11a",
+                {
+                    center: [-6.0453716976661545, -38.4599073930398],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_779d4e54c2d07419e6e8f4b779474117 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_779d4e54c2d07419e6e8f4b779474117.addTo(map_fd4b1ed5efdac961b158a0f4f4cbd11a);
+        
+    
+            var marker_0d51eeed525bc8ca22d9343562d6461e = L.marker(
+                [-6.0453716976661545, -38.4599073930398],
+                {}
+            ).addTo(map_fd4b1ed5efdac961b158a0f4f4cbd11a);
+        
+    
+            var icon_b95f6249b8dafdee994ea47ddcec4ae9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d51eeed525bc8ca22d9343562d6461e.setIcon(icon_b95f6249b8dafdee994ea47ddcec4ae9);
+        
+    
+        var popup_431ff3fe9dc732904028e9cf4afea95f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49d42286f8f143c1ff9841a92e24dfa7 = $(`<div id="html_49d42286f8f143c1ff9841a92e24dfa7" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL HUMBERTO DE QUEIROZ</div>`)[0];
+                popup_431ff3fe9dc732904028e9cf4afea95f.setContent(html_49d42286f8f143c1ff9841a92e24dfa7);
+            
+        
+
+        marker_0d51eeed525bc8ca22d9343562d6461e.bindPopup(popup_431ff3fe9dc732904028e9cf4afea95f)
+        ;
+
+        
+    
+    
+            var circle_marker_7b443e07178e407541d9c08260d3cc31 = L.circleMarker(
+                [-6.043627499999999, -38.460721],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_fd4b1ed5efdac961b158a0f4f4cbd11a);
+        
+    
+        var popup_99cdee426c559ec5f351d7ac3e79fa16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da47c7793e73496397d0c4d473a0f35e = $(`<div id="html_da47c7793e73496397d0c4d473a0f35e" style="width: 100.0%; height: 100.0%;">PEREIRO, CE</div>`)[0];
+                popup_99cdee426c559ec5f351d7ac3e79fa16.setContent(html_da47c7793e73496397d0c4d473a0f35e);
+            
+        
+
+        circle_marker_7b443e07178e407541d9c08260d3cc31.bindPopup(popup_99cdee426c559ec5f351d7ac3e79fa16)
+        ;
+
+        
+    
+    
+            var poly_line_8db4b900be666d67fd3d2df488c650a7 = L.polyline(
+                [[-6.0453716976661545, -38.4599073930398], [-6.043627499999999, -38.460721]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fd4b1ed5efdac961b158a0f4f4cbd11a);
+        
+    
+            poly_line_8db4b900be666d67fd3d2df488c650a7.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_fd4b1ed5efdac961b158a0f4f4cbd11a.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

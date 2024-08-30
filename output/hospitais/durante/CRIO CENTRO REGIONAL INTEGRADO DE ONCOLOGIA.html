@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_810a8ce1b9c44c65667fcdd9e486265d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_810a8ce1b9c44c65667fcdd9e486265d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_810a8ce1b9c44c65667fcdd9e486265d = L.map(
+                "map_810a8ce1b9c44c65667fcdd9e486265d",
+                {
+                    center: [-3.7132653, -38.5727437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_df72c2a6f41aa7cb6f2d22db06b33fb5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_df72c2a6f41aa7cb6f2d22db06b33fb5.addTo(map_810a8ce1b9c44c65667fcdd9e486265d);
+        
+    
+            var marker_0dec0a2a6734713192b247b3aec29706 = L.marker(
+                [-3.7132653, -38.5727437],
+                {}
+            ).addTo(map_810a8ce1b9c44c65667fcdd9e486265d);
+        
+    
+            var icon_628ad91a4a0f35a5cffc14312aed2da9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0dec0a2a6734713192b247b3aec29706.setIcon(icon_628ad91a4a0f35a5cffc14312aed2da9);
+        
+    
+        var popup_cba37b2745db2ad6a26e6a624bad3973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e19f3d45344cc2935ee88d42080b03d = $(`<div id="html_1e19f3d45344cc2935ee88d42080b03d" style="width: 100.0%; height: 100.0%;">CRIO CENTRO REGIONAL INTEGRADO DE ONCOLOGIA</div>`)[0];
+                popup_cba37b2745db2ad6a26e6a624bad3973.setContent(html_1e19f3d45344cc2935ee88d42080b03d);
+            
+        
+
+        marker_0dec0a2a6734713192b247b3aec29706.bindPopup(popup_cba37b2745db2ad6a26e6a624bad3973)
+        ;
+
+        
+    
+    
+            var circle_marker_301ab801d1d3ce52632fb05cf2bd6e6a = L.circleMarker(
+                [-3.7327203, -38.5270134],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_810a8ce1b9c44c65667fcdd9e486265d);
+        
+    
+        var popup_a0984be7db18bb433d54b3f862922b6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27f7e349fa7541c5a3c0d352f6c60be1 = $(`<div id="html_27f7e349fa7541c5a3c0d352f6c60be1" style="width: 100.0%; height: 100.0%;">FORTALEZA, CE</div>`)[0];
+                popup_a0984be7db18bb433d54b3f862922b6b.setContent(html_27f7e349fa7541c5a3c0d352f6c60be1);
+            
+        
+
+        circle_marker_301ab801d1d3ce52632fb05cf2bd6e6a.bindPopup(popup_a0984be7db18bb433d54b3f862922b6b)
+        ;
+
+        
+    
+    
+            var poly_line_a2ad9dd087538849df6ce7ced9751938 = L.polyline(
+                [[-3.7132653, -38.5727437], [-3.7327203, -38.5270134]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_810a8ce1b9c44c65667fcdd9e486265d);
+        
+    
+            poly_line_a2ad9dd087538849df6ce7ced9751938.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_75b6d53dcc354223b0ee9a379bc80981 = L.circleMarker(
+                [-4.0449071, -40.8651372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_810a8ce1b9c44c65667fcdd9e486265d);
+        
+    
+        var popup_2af1ae7365c5109df8d69f1f70a14875 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bbf1a0b40bfd9fa2156ac6f87c6e065 = $(`<div id="html_3bbf1a0b40bfd9fa2156ac6f87c6e065" style="width: 100.0%; height: 100.0%;">SAO BENEDITO, CE</div>`)[0];
+                popup_2af1ae7365c5109df8d69f1f70a14875.setContent(html_3bbf1a0b40bfd9fa2156ac6f87c6e065);
+            
+        
+
+        circle_marker_75b6d53dcc354223b0ee9a379bc80981.bindPopup(popup_2af1ae7365c5109df8d69f1f70a14875)
+        ;
+
+        
+    
+    
+            var poly_line_85f4df85808f5272e32879c91a3fee93 = L.polyline(
+                [[-3.7132653, -38.5727437], [-4.0449071, -40.8651372]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_810a8ce1b9c44c65667fcdd9e486265d);
+        
+    
+            poly_line_85f4df85808f5272e32879c91a3fee93.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_810a8ce1b9c44c65667fcdd9e486265d.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

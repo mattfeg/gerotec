@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b05c67ebeec8a5c743e708aa0844b540 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b05c67ebeec8a5c743e708aa0844b540" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b05c67ebeec8a5c743e708aa0844b540 = L.map(
+                "map_b05c67ebeec8a5c743e708aa0844b540",
+                {
+                    center: [-4.7146173, -40.5619107],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a81b12fbb53180f40584d24016abfcef = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a81b12fbb53180f40584d24016abfcef.addTo(map_b05c67ebeec8a5c743e708aa0844b540);
+        
+    
+            var marker_00c445d7933893041280f891555d2ce0 = L.marker(
+                [-4.7146173, -40.5619107],
+                {}
+            ).addTo(map_b05c67ebeec8a5c743e708aa0844b540);
+        
+    
+            var icon_a393683c4352fa4e94ec21b065669003 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00c445d7933893041280f891555d2ce0.setIcon(icon_a393683c4352fa4e94ec21b065669003);
+        
+    
+        var popup_8676b1b460e918d2615bfd7918a74c41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae177e3e5982773043bdd9d08be26a3e = $(`<div id="html_ae177e3e5982773043bdd9d08be26a3e" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOSE GONCALVES ROSA</div>`)[0];
+                popup_8676b1b460e918d2615bfd7918a74c41.setContent(html_ae177e3e5982773043bdd9d08be26a3e);
+            
+        
+
+        marker_00c445d7933893041280f891555d2ce0.bindPopup(popup_8676b1b460e918d2615bfd7918a74c41)
+        ;
+
+        
+    
+    
+            var circle_marker_57f1da3ef9bfdd37dbc4d905145c9c80 = L.circleMarker(
+                [-4.7066511, -40.5626139],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b05c67ebeec8a5c743e708aa0844b540);
+        
+    
+        var popup_db3e33dd027ebc8a4756c3b1e5b054a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9d10fa275ac126f993fec7192e88c8c = $(`<div id="html_a9d10fa275ac126f993fec7192e88c8c" style="width: 100.0%; height: 100.0%;">NOVA RUSSAS, CE</div>`)[0];
+                popup_db3e33dd027ebc8a4756c3b1e5b054a9.setContent(html_a9d10fa275ac126f993fec7192e88c8c);
+            
+        
+
+        circle_marker_57f1da3ef9bfdd37dbc4d905145c9c80.bindPopup(popup_db3e33dd027ebc8a4756c3b1e5b054a9)
+        ;
+
+        
+    
+    
+            var poly_line_231d387228abebf83ba98f940fb3c9bb = L.polyline(
+                [[-4.7146173, -40.5619107], [-4.7066511, -40.5626139]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b05c67ebeec8a5c743e708aa0844b540);
+        
+    
+            poly_line_231d387228abebf83ba98f940fb3c9bb.bindTooltip(
+                `<div>
+                     Frequência: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_b05c67ebeec8a5c743e708aa0844b540.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

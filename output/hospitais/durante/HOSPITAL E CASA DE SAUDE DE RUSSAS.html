@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d65f6fdc2244b41da6331773562737f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d65f6fdc2244b41da6331773562737f7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d65f6fdc2244b41da6331773562737f7 = L.map(
+                "map_d65f6fdc2244b41da6331773562737f7",
+                {
+                    center: [-4.9380111, -37.9695161],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9f02e5e61cdffc2ff943dc83ef681921 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9f02e5e61cdffc2ff943dc83ef681921.addTo(map_d65f6fdc2244b41da6331773562737f7);
+        
+    
+            var marker_a6bdabe6b722150eea70c3d439dc4697 = L.marker(
+                [-4.9380111, -37.9695161],
+                {}
+            ).addTo(map_d65f6fdc2244b41da6331773562737f7);
+        
+    
+            var icon_81c34d5ddce110dfb5a3428c1afde97c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6bdabe6b722150eea70c3d439dc4697.setIcon(icon_81c34d5ddce110dfb5a3428c1afde97c);
+        
+    
+        var popup_6745eb8940f6c3b6517a11ba477da3c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfa7bc0ee1a44ee6f87dd8261bc56d98 = $(`<div id="html_bfa7bc0ee1a44ee6f87dd8261bc56d98" style="width: 100.0%; height: 100.0%;">HOSPITAL E CASA DE SAUDE DE RUSSAS</div>`)[0];
+                popup_6745eb8940f6c3b6517a11ba477da3c6.setContent(html_bfa7bc0ee1a44ee6f87dd8261bc56d98);
+            
+        
+
+        marker_a6bdabe6b722150eea70c3d439dc4697.bindPopup(popup_6745eb8940f6c3b6517a11ba477da3c6)
+        ;
+
+        
+    
+    
+            var circle_marker_36fba14a265bac401744343678741c58 = L.circleMarker(
+                [-4.9414188, -37.976262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d65f6fdc2244b41da6331773562737f7);
+        
+    
+        var popup_73ecd8762dcfac96b59e81df6f1cbc57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35b72b8e9eded7c9f849ebba1cba155c = $(`<div id="html_35b72b8e9eded7c9f849ebba1cba155c" style="width: 100.0%; height: 100.0%;">RUSSAS, CE</div>`)[0];
+                popup_73ecd8762dcfac96b59e81df6f1cbc57.setContent(html_35b72b8e9eded7c9f849ebba1cba155c);
+            
+        
+
+        circle_marker_36fba14a265bac401744343678741c58.bindPopup(popup_73ecd8762dcfac96b59e81df6f1cbc57)
+        ;
+
+        
+    
+    
+            var poly_line_90878b6fa79594d5c65db34ac3775c73 = L.polyline(
+                [[-4.9380111, -37.9695161], [-4.9414188, -37.976262]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_d65f6fdc2244b41da6331773562737f7);
+        
+    
+            poly_line_90878b6fa79594d5c65db34ac3775c73.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_d65f6fdc2244b41da6331773562737f7.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87c3206c00ba548e4d3e2c6fec9f46ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_87c3206c00ba548e4d3e2c6fec9f46ef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_87c3206c00ba548e4d3e2c6fec9f46ef = L.map(
+                "map_87c3206c00ba548e4d3e2c6fec9f46ef",
+                {
+                    center: [-6.0032289, -40.3004006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bc8985a36ea7d5c86577aeca87e872dc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bc8985a36ea7d5c86577aeca87e872dc.addTo(map_87c3206c00ba548e4d3e2c6fec9f46ef);
+        
+    
+            var marker_3e8f6a365f15c402c8737096312e7add = L.marker(
+                [-6.0032289, -40.3004006],
+                {}
+            ).addTo(map_87c3206c00ba548e4d3e2c6fec9f46ef);
+        
+    
+            var icon_436151e122248b1fd06c769d173e2605 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e8f6a365f15c402c8737096312e7add.setIcon(icon_436151e122248b1fd06c769d173e2605);
+        
+    
+        var popup_dccfbdb84700f22edd33427546733695 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2ca90733e9d9dd0120cbd7ae12acbfd = $(`<div id="html_a2ca90733e9d9dd0120cbd7ae12acbfd" style="width: 100.0%; height: 100.0%;">HOSPITAL DR ALBERTO FEITOSA LIMA</div>`)[0];
+                popup_dccfbdb84700f22edd33427546733695.setContent(html_a2ca90733e9d9dd0120cbd7ae12acbfd);
+            
+        
+
+        marker_3e8f6a365f15c402c8737096312e7add.bindPopup(popup_dccfbdb84700f22edd33427546733695)
+        ;
+
+        
+    
+    
+            var circle_marker_554204dd2e2ff4e625099d2cc8d47e55 = L.circleMarker(
+                [-6.0032698, -40.2946389],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_87c3206c00ba548e4d3e2c6fec9f46ef);
+        
+    
+        var popup_f6cef63f8055bd6bba75f10d4babf672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a728df030cccf55153d0be8195400346 = $(`<div id="html_a728df030cccf55153d0be8195400346" style="width: 100.0%; height: 100.0%;">TAUA, CE</div>`)[0];
+                popup_f6cef63f8055bd6bba75f10d4babf672.setContent(html_a728df030cccf55153d0be8195400346);
+            
+        
+
+        circle_marker_554204dd2e2ff4e625099d2cc8d47e55.bindPopup(popup_f6cef63f8055bd6bba75f10d4babf672)
+        ;
+
+        
+    
+    
+            var poly_line_0cec37840201e0da88833cba94d9533b = L.polyline(
+                [[-6.0032289, -40.3004006], [-6.0032698, -40.2946389]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_87c3206c00ba548e4d3e2c6fec9f46ef);
+        
+    
+            poly_line_0cec37840201e0da88833cba94d9533b.bindTooltip(
+                `<div>
+                     Frequência: 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_87c3206c00ba548e4d3e2c6fec9f46ef.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

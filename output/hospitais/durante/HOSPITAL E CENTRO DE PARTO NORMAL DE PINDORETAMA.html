@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b1bb29df4b9beafaa9ffa394c17d2b93 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b1bb29df4b9beafaa9ffa394c17d2b93" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b1bb29df4b9beafaa9ffa394c17d2b93 = L.map(
+                "map_b1bb29df4b9beafaa9ffa394c17d2b93",
+                {
+                    center: [-4.0304585, -38.3036892],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7cd0628a0b8335d831b82dcba3029592 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7cd0628a0b8335d831b82dcba3029592.addTo(map_b1bb29df4b9beafaa9ffa394c17d2b93);
+        
+    
+            var marker_a5dfd07787c79b4adbf812dd41e0d8b4 = L.marker(
+                [-4.0304585, -38.3036892],
+                {}
+            ).addTo(map_b1bb29df4b9beafaa9ffa394c17d2b93);
+        
+    
+            var icon_e5894d6efd04b0860771b63d026e4e09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5dfd07787c79b4adbf812dd41e0d8b4.setIcon(icon_e5894d6efd04b0860771b63d026e4e09);
+        
+    
+        var popup_76e2bcd306c70ec4375864e41006b108 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11f7f30134fb453155b39dfb67589c13 = $(`<div id="html_11f7f30134fb453155b39dfb67589c13" style="width: 100.0%; height: 100.0%;">HOSPITAL E CENTRO DE PARTO NORMAL DE PINDORETAMA</div>`)[0];
+                popup_76e2bcd306c70ec4375864e41006b108.setContent(html_11f7f30134fb453155b39dfb67589c13);
+            
+        
+
+        marker_a5dfd07787c79b4adbf812dd41e0d8b4.bindPopup(popup_76e2bcd306c70ec4375864e41006b108)
+        ;
+
+        
+    
+    
+            var circle_marker_36d4fb2127cc96f4d3ac5f976a1b36f4 = L.circleMarker(
+                [-3.906286399999999, -38.3874738],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_b1bb29df4b9beafaa9ffa394c17d2b93);
+        
+    
+        var popup_a5f1090dda89a57e60fb5a81b3140149 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d932c16aef59a84e873040f99cd492ec = $(`<div id="html_d932c16aef59a84e873040f99cd492ec" style="width: 100.0%; height: 100.0%;">AQUIRAZ, CE</div>`)[0];
+                popup_a5f1090dda89a57e60fb5a81b3140149.setContent(html_d932c16aef59a84e873040f99cd492ec);
+            
+        
+
+        circle_marker_36d4fb2127cc96f4d3ac5f976a1b36f4.bindPopup(popup_a5f1090dda89a57e60fb5a81b3140149)
+        ;
+
+        
+    
+    
+            var poly_line_54889799449d09d337f952b093b66f4a = L.polyline(
+                [[-4.0304585, -38.3036892], [-3.906286399999999, -38.3874738]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_b1bb29df4b9beafaa9ffa394c17d2b93);
+        
+    
+            poly_line_54889799449d09d337f952b093b66f4a.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_b1bb29df4b9beafaa9ffa394c17d2b93.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

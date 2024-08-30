@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7bade096e57d134cf9c1d9660ac496e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7bade096e57d134cf9c1d9660ac496e8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7bade096e57d134cf9c1d9660ac496e8 = L.map(
+                "map_7bade096e57d134cf9c1d9660ac496e8",
+                {
+                    center: [-4.300184799999999, -38.49822200000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24d3f4713e5855d8f8ed0ab0f8a53e63 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_24d3f4713e5855d8f8ed0ab0f8a53e63.addTo(map_7bade096e57d134cf9c1d9660ac496e8);
+        
+    
+            var marker_6d5d700fa57edbd1e0e71904529ba591 = L.marker(
+                [-4.300184799999999, -38.49822200000001],
+                {}
+            ).addTo(map_7bade096e57d134cf9c1d9660ac496e8);
+        
+    
+            var icon_c388af4573c7624295c203adab351fed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d5d700fa57edbd1e0e71904529ba591.setIcon(icon_c388af4573c7624295c203adab351fed);
+        
+    
+        var popup_84f8e6bf61d6a356fd6f9a7a0d04cfe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2deec49935dc47ed1b6a6de7960d9b3e = $(`<div id="html_2deec49935dc47ed1b6a6de7960d9b3e" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE CHOROZINHO</div>`)[0];
+                popup_84f8e6bf61d6a356fd6f9a7a0d04cfe3.setContent(html_2deec49935dc47ed1b6a6de7960d9b3e);
+            
+        
+
+        marker_6d5d700fa57edbd1e0e71904529ba591.bindPopup(popup_84f8e6bf61d6a356fd6f9a7a0d04cfe3)
+        ;
+
+        
+    
+    
+            var circle_marker_cc0f502fe26c14a9dfd795d007e951a2 = L.circleMarker(
+                [-4.300184799999999, -38.49822200000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7bade096e57d134cf9c1d9660ac496e8);
+        
+    
+        var popup_d489f009c730a4cae09670410aa39cfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9272717a07d9b84545cdeaf4eaf47724 = $(`<div id="html_9272717a07d9b84545cdeaf4eaf47724" style="width: 100.0%; height: 100.0%;">CHOROZINHO, CE</div>`)[0];
+                popup_d489f009c730a4cae09670410aa39cfb.setContent(html_9272717a07d9b84545cdeaf4eaf47724);
+            
+        
+
+        circle_marker_cc0f502fe26c14a9dfd795d007e951a2.bindPopup(popup_d489f009c730a4cae09670410aa39cfb)
+        ;
+
+        
+    
+    
+            var poly_line_775a7d53d362634653994bf9c9f7762b = L.polyline(
+                [[-4.300184799999999, -38.49822200000001], [-4.300184799999999, -38.49822200000001]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7bade096e57d134cf9c1d9660ac496e8);
+        
+    
+            poly_line_775a7d53d362634653994bf9c9f7762b.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_7bade096e57d134cf9c1d9660ac496e8.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

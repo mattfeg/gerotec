@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9229023e067070d79b563632863d06c7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9229023e067070d79b563632863d06c7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9229023e067070d79b563632863d06c7 = L.map(
+                "map_9229023e067070d79b563632863d06c7",
+                {
+                    center: [-4.5425791, -40.7173442],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79bba0a9c7aa7774c2a73aa8732e00e2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_79bba0a9c7aa7774c2a73aa8732e00e2.addTo(map_9229023e067070d79b563632863d06c7);
+        
+    
+            var marker_2bdf7efb6c07486c3ab7429b05ab2f8d = L.marker(
+                [-4.5425791, -40.7173442],
+                {}
+            ).addTo(map_9229023e067070d79b563632863d06c7);
+        
+    
+            var icon_6d8915dc5dfc39273211ff73655fda6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2bdf7efb6c07486c3ab7429b05ab2f8d.setIcon(icon_6d8915dc5dfc39273211ff73655fda6a);
+        
+    
+        var popup_fb09e023b8dcf71b9dfc37b230b35cda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be6432273e5951ba9fa936a78f56c105 = $(`<div id="html_be6432273e5951ba9fa936a78f56c105" style="width: 100.0%; height: 100.0%;">HOSP MATERN OTACILIO MOTA</div>`)[0];
+                popup_fb09e023b8dcf71b9dfc37b230b35cda.setContent(html_be6432273e5951ba9fa936a78f56c105);
+            
+        
+
+        marker_2bdf7efb6c07486c3ab7429b05ab2f8d.bindPopup(popup_fb09e023b8dcf71b9dfc37b230b35cda)
+        ;
+
+        
+    
+    
+            var circle_marker_a7050e0cbed0bcc8dcbf530a81bd813f = L.circleMarker(
+                [-4.5425528, -40.71728780000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_9229023e067070d79b563632863d06c7);
+        
+    
+        var popup_92e8893062da7973ea62658bc049d963 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb6494cb6c4c4591f455b3db6611d0be = $(`<div id="html_bb6494cb6c4c4591f455b3db6611d0be" style="width: 100.0%; height: 100.0%;">IPUEIRAS, CE</div>`)[0];
+                popup_92e8893062da7973ea62658bc049d963.setContent(html_bb6494cb6c4c4591f455b3db6611d0be);
+            
+        
+
+        circle_marker_a7050e0cbed0bcc8dcbf530a81bd813f.bindPopup(popup_92e8893062da7973ea62658bc049d963)
+        ;
+
+        
+    
+    
+            var poly_line_696473769a9a9862bfd84dc85eff66b3 = L.polyline(
+                [[-4.5425791, -40.7173442], [-4.5425528, -40.71728780000001]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9229023e067070d79b563632863d06c7);
+        
+    
+            poly_line_696473769a9a9862bfd84dc85eff66b3.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_9229023e067070d79b563632863d06c7.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

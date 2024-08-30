@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3288b6ad00a97f0b17f93dd36545d6dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3288b6ad00a97f0b17f93dd36545d6dd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3288b6ad00a97f0b17f93dd36545d6dd = L.map(
+                "map_3288b6ad00a97f0b17f93dd36545d6dd",
+                {
+                    center: [-7.389319493733981, -38.77165820353597],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a48ffb31319e45159f979b8b00f4dd67 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a48ffb31319e45159f979b8b00f4dd67.addTo(map_3288b6ad00a97f0b17f93dd36545d6dd);
+        
+    
+            var marker_0ac3fb336b15694c4e90976d9439c8ec = L.marker(
+                [-7.389319493733981, -38.77165820353597],
+                {}
+            ).addTo(map_3288b6ad00a97f0b17f93dd36545d6dd);
+        
+    
+            var icon_099cdca720e976018d7e66b0042f60bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0ac3fb336b15694c4e90976d9439c8ec.setIcon(icon_099cdca720e976018d7e66b0042f60bd);
+        
+    
+        var popup_3041e1484a8db270d971307c20c317ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66c9a2c7e3c659ad6a56a10875750f80 = $(`<div id="html_66c9a2c7e3c659ad6a56a10875750f80" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL E MATERNIDADE SAO JOSE</div>`)[0];
+                popup_3041e1484a8db270d971307c20c317ce.setContent(html_66c9a2c7e3c659ad6a56a10875750f80);
+            
+        
+
+        marker_0ac3fb336b15694c4e90976d9439c8ec.bindPopup(popup_3041e1484a8db270d971307c20c317ce)
+        ;
+
+        
+    
+    
+            var circle_marker_e4c53b24797083f3c52f0d35ae8d25f3 = L.circleMarker(
+                [-7.382949299999999, -38.7716665],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3288b6ad00a97f0b17f93dd36545d6dd);
+        
+    
+        var popup_38d40f6425c144a677b5fa1693859d1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fe751916f5588c741a6d5cc0b017334 = $(`<div id="html_5fe751916f5588c741a6d5cc0b017334" style="width: 100.0%; height: 100.0%;">MAURITI, CE</div>`)[0];
+                popup_38d40f6425c144a677b5fa1693859d1e.setContent(html_5fe751916f5588c741a6d5cc0b017334);
+            
+        
+
+        circle_marker_e4c53b24797083f3c52f0d35ae8d25f3.bindPopup(popup_38d40f6425c144a677b5fa1693859d1e)
+        ;
+
+        
+    
+    
+            var poly_line_9a84bac70ea26696d910ce5843c24277 = L.polyline(
+                [[-7.389319493733981, -38.77165820353597], [-7.382949299999999, -38.7716665]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3288b6ad00a97f0b17f93dd36545d6dd);
+        
+    
+            poly_line_9a84bac70ea26696d910ce5843c24277.bindTooltip(
+                `<div>
+                     Frequência: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_3288b6ad00a97f0b17f93dd36545d6dd.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

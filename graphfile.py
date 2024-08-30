@@ -481,4 +481,136 @@ def calcular_diferencas_clusters(G_periodo1, clusters_periodo1, G_periodo2, clus
 
     return diferencas
 
+def plotar_municipios_por_hospital(G, output_dir='output/hospitals'):
+    """
+    Gera mapas interativos mostrando os municípios conectados a cada hospital.
+    
+    Args:
+    - G (nx.DiGraph): Grafo bipartido direcionado, onde os nós representam hospitais e municípios.
+    - output_dir (str): Diretório para salvar os arquivos HTML dos mapas interativos.
+    
+    Returns:
+    - None
+    """
+    # Criar o diretório de saída, se não existir
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Iterar sobre cada nó que representa um hospital no grafo
+    for hospital in [node for node in G.nodes if G.nodes[node]['bipartite'] == 1]:  # Assumindo bipartite=1 para hospitais
+        hospital_map = folium.Map(location=[G.nodes[hospital]['latitude'], G.nodes[hospital]['longitude']], zoom_start=10)
+
+        # Adicionar o marcador do hospital (estilo original)
+        folium.Marker(
+            location=[G.nodes[hospital]['latitude'], G.nodes[hospital]['longitude']],
+            popup=hospital,
+            icon=folium.Icon(color='red')
+        ).add_to(hospital_map)
+
+        # Iterar sobre todos os municípios e verificar quais estão conectados a este hospital
+        for municipio in [node for node in G.nodes if G.nodes[node]['bipartite'] == 0]:  # Assumindo bipartite=0 para municípios
+            if hospital in G.neighbors(municipio):
+                lat = G.nodes[municipio]['latitude']
+                lon = G.nodes[municipio]['longitude']
+
+                folium.CircleMarker(
+                    location=[lat, lon],
+                    radius=5,
+                    popup=municipio,
+                    color='blue',
+                    fill=True,
+                    fill_color='blue'
+                ).add_to(hospital_map)
+
+                # Adicionar a linha que conecta o hospital ao município com tooltip mostrando o peso
+                weight = G.edges[municipio, hospital]['weight']
+                folium.PolyLine(
+                    locations=[[G.nodes[hospital]['latitude'], G.nodes[hospital]['longitude']], [lat, lon]],
+                    color='gray',
+                    weight=2,  # Espessura da linha
+                    opacity=0.5,
+                    tooltip=f"Frequência: {weight}"  # Tooltip exibindo a frequência do deslocamento
+                ).add_to(hospital_map)
+
+        # Ajustar o mapa para os limites do Ceará
+        bounds = [[-7.5, -41.5], [-2.5, -37.0]]
+        hospital_map.fit_bounds(bounds)
+
+        # Salvar o mapa com o nome do hospital
+        hospital_map.save(os.path.join(output_dir, f'{hospital}.html'))
+
+def plotar_grafo_por_macrorregiao(G, macrorregiao, municipios_macrorregiao, output_dir='output/macrorregioes'):
+    """
+    Plota um grafo contendo apenas os nós dos municípios de uma determinada macrorregião de saúde 
+    e os hospitais que se ligam a esses municípios.
+    
+    Args:
+    - G (nx.DiGraph): Grafo bipartido direcionado.
+    - macrorregiao (str): Nome da macrorregião de saúde.
+    - municipios_macrorregiao (list): Lista dos nomes dos municípios que pertencem à macrorregião.
+    - output_dir (str): Diretório para salvar o arquivo HTML do mapa interativo.
+    
+    Returns:
+    - folium.Map: Mapa interativo gerado.
+    """
+    # Criar um subgrafo contendo apenas os nós dos municípios da macrorregião e os hospitais conectados a eles
+    subgrafo = nx.DiGraph()
+
+    for municipio in municipios_macrorregiao:
+        if municipio in G.nodes:
+            subgrafo.add_node(municipio, **G.nodes[municipio])
+            for hospital in G.neighbors(municipio):
+                if hospital not in subgrafo.nodes:
+                    subgrafo.add_node(hospital, **G.nodes[hospital])
+                subgrafo.add_edge(municipio, hospital, **G.edges[municipio, hospital])
+
+    # Determinar os limites do mapa com base nos nós do subgrafo
+    latitudes = [data['latitude'] for node, data in subgrafo.nodes(data=True)]
+    longitudes = [data['longitude'] for node, data in subgrafo.nodes(data=True)]
+    min_lat, max_lat = min(latitudes), max(latitudes)
+    min_lon, max_lon = min(longitudes), max(longitudes)
+
+    # Criar o mapa centrado na macrorregião
+    m = folium.Map(location=[(min_lat + max_lat) / 2, (min_lon + max_lon) / 2], zoom_start=7)
+
+    # Adicionar as arestas ao mapa
+    for u, v, data in subgrafo.edges(data=True):
+        u_lat = subgrafo.nodes[u]['latitude']
+        u_lon = subgrafo.nodes[u]['longitude']
+        v_lat = subgrafo.nodes[v]['latitude']
+        v_lon = subgrafo.nodes[v]['longitude']
+        
+        folium.PolyLine(
+            locations=[[u_lat, u_lon], [v_lat, v_lon]],
+            color='gray',
+            weight=2,
+            opacity=0.5,
+            tooltip=f"Frequência: {data['weight']}"
+        ).add_to(m)
+
+    # Adicionar os nós ao mapa
+    for node, data in subgrafo.nodes(data=True):
+        color = 'red' if data['bipartite'] == 1 else 'blue'  # Vermelho para hospitais, azul para municípios
+        folium.CircleMarker(
+            location=[data['latitude'], data['longitude']],
+            radius=5,
+            popup=node,
+            color=color,
+            fill=True,
+            fill_color=color
+        ).add_to(m)
+
+    # Ajustar o mapa para os limites da macrorregião
+    m.fit_bounds([[min_lat, min_lon], [max_lat, max_lon]])
+
+    # Criar o diretório de saída, se não existir
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Definir o nome do arquivo como o nome da macrorregião
+    output_path = os.path.join(output_dir, f'{macrorregiao}.html')
+
+    # Salvar o mapa como HTML
+    m.save(output_path)
+
+    # Exibir o mapa
+    return m
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d40135d82ef0f3c309ee49d94585bfa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d40135d82ef0f3c309ee49d94585bfa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d40135d82ef0f3c309ee49d94585bfa = L.map(
+                "map_1d40135d82ef0f3c309ee49d94585bfa",
+                {
+                    center: [-3.7391831, -38.6499459],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_13c108b682355693a5a2cdeb4b87b940 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_13c108b682355693a5a2cdeb4b87b940.addTo(map_1d40135d82ef0f3c309ee49d94585bfa);
+        
+    
+            var marker_518cffe42412cc61b56ee73c7c3eee53 = L.marker(
+                [-3.7391831, -38.6499459],
+                {}
+            ).addTo(map_1d40135d82ef0f3c309ee49d94585bfa);
+        
+    
+            var icon_8a713bc2da52f618bd6ad95fe8b9cbb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_518cffe42412cc61b56ee73c7c3eee53.setIcon(icon_8a713bc2da52f618bd6ad95fe8b9cbb7);
+        
+    
+        var popup_4563019e487806ad2a21213779fa89c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b1ae17a8f305d0a706c7be161b8f142 = $(`<div id="html_4b1ae17a8f305d0a706c7be161b8f142" style="width: 100.0%; height: 100.0%;">HOSP MUN ABELARDO GADELHA DA ROCHA</div>`)[0];
+                popup_4563019e487806ad2a21213779fa89c0.setContent(html_4b1ae17a8f305d0a706c7be161b8f142);
+            
+        
+
+        marker_518cffe42412cc61b56ee73c7c3eee53.bindPopup(popup_4563019e487806ad2a21213779fa89c0)
+        ;
+
+        
+    
+    
+            var circle_marker_1b85e9993bce755c18797680af577b98 = L.circleMarker(
+                [-3.7281443, -38.6619214],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1d40135d82ef0f3c309ee49d94585bfa);
+        
+    
+        var popup_16d72e1ae3592784d1627fcd0eec7c26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6506938f018ca6e9697cc43be37ba0d = $(`<div id="html_e6506938f018ca6e9697cc43be37ba0d" style="width: 100.0%; height: 100.0%;">CAUCAIA, CE</div>`)[0];
+                popup_16d72e1ae3592784d1627fcd0eec7c26.setContent(html_e6506938f018ca6e9697cc43be37ba0d);
+            
+        
+
+        circle_marker_1b85e9993bce755c18797680af577b98.bindPopup(popup_16d72e1ae3592784d1627fcd0eec7c26)
+        ;
+
+        
+    
+    
+            var poly_line_9a1199c2a34bba9298d5d3d92bec6c0e = L.polyline(
+                [[-3.7391831, -38.6499459], [-3.7281443, -38.6619214]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1d40135d82ef0f3c309ee49d94585bfa);
+        
+    
+            poly_line_9a1199c2a34bba9298d5d3d92bec6c0e.bindTooltip(
+                `<div>
+                     Frequência: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_1d40135d82ef0f3c309ee49d94585bfa.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

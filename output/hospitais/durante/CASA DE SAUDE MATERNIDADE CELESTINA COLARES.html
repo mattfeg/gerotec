@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ae369a84f55f5118c4c15505da893f6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ae369a84f55f5118c4c15505da893f6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ae369a84f55f5118c4c15505da893f6f = L.map(
+                "map_ae369a84f55f5118c4c15505da893f6f",
+                {
+                    center: [-5.250982695891236, -38.133914558648954],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b19066b0f93a04ad0df18b92d4b9bcd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5b19066b0f93a04ad0df18b92d4b9bcd.addTo(map_ae369a84f55f5118c4c15505da893f6f);
+        
+    
+            var marker_a3c930e8c40e56e8d5275a1d146db4ce = L.marker(
+                [-5.250982695891236, -38.133914558648954],
+                {}
+            ).addTo(map_ae369a84f55f5118c4c15505da893f6f);
+        
+    
+            var icon_f972af8d9a4cf0d36cf3155989e20a68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3c930e8c40e56e8d5275a1d146db4ce.setIcon(icon_f972af8d9a4cf0d36cf3155989e20a68);
+        
+    
+        var popup_2cf8d7ee17b31ad04b8be51bc7000bf4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_020a89d2566393770f20368a849c60a4 = $(`<div id="html_020a89d2566393770f20368a849c60a4" style="width: 100.0%; height: 100.0%;">CASA DE SAUDE MATERNIDADE CELESTINA COLARES</div>`)[0];
+                popup_2cf8d7ee17b31ad04b8be51bc7000bf4.setContent(html_020a89d2566393770f20368a849c60a4);
+            
+        
+
+        marker_a3c930e8c40e56e8d5275a1d146db4ce.bindPopup(popup_2cf8d7ee17b31ad04b8be51bc7000bf4)
+        ;
+
+        
+    
+    
+            var circle_marker_6746187339491795578409b0233be19f = L.circleMarker(
+                [-5.2442316, -38.1286594],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ae369a84f55f5118c4c15505da893f6f);
+        
+    
+        var popup_9e1163424dc799ace876010ca0b33385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cfbaeb313dff2f3fb8f886bba40cb15 = $(`<div id="html_1cfbaeb313dff2f3fb8f886bba40cb15" style="width: 100.0%; height: 100.0%;">TABULEIRO DO NORTE, CE</div>`)[0];
+                popup_9e1163424dc799ace876010ca0b33385.setContent(html_1cfbaeb313dff2f3fb8f886bba40cb15);
+            
+        
+
+        circle_marker_6746187339491795578409b0233be19f.bindPopup(popup_9e1163424dc799ace876010ca0b33385)
+        ;
+
+        
+    
+    
+            var poly_line_4728edb4c6ad1defc156cc4d99b98269 = L.polyline(
+                [[-5.250982695891236, -38.133914558648954], [-5.2442316, -38.1286594]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ae369a84f55f5118c4c15505da893f6f);
+        
+    
+            poly_line_4728edb4c6ad1defc156cc4d99b98269.bindTooltip(
+                `<div>
+                     Frequência: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_ae369a84f55f5118c4c15505da893f6f.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

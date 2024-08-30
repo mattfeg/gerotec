@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_30611d90f611dfbbee0730f0008e0b00 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_30611d90f611dfbbee0730f0008e0b00" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_30611d90f611dfbbee0730f0008e0b00 = L.map(
+                "map_30611d90f611dfbbee0730f0008e0b00",
+                {
+                    center: [-3.869739042658184, -40.91731355088515],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad4c8fc8586f6c5bf0718dc81b43d67f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ad4c8fc8586f6c5bf0718dc81b43d67f.addTo(map_30611d90f611dfbbee0730f0008e0b00);
+        
+    
+            var marker_9f85a1108b1b7d1e64afe233f44d5e63 = L.marker(
+                [-3.869739042658184, -40.91731355088515],
+                {}
+            ).addTo(map_30611d90f611dfbbee0730f0008e0b00);
+        
+    
+            var icon_c63782234d0b01a22e3b706cab59dc99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9f85a1108b1b7d1e64afe233f44d5e63.setIcon(icon_c63782234d0b01a22e3b706cab59dc99);
+        
+    
+        var popup_6563ee267eab944f80be560345e99953 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c83a5ae2ed88f4a75050f6c2bf7be347 = $(`<div id="html_c83a5ae2ed88f4a75050f6c2bf7be347" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL FRANCISCA BELARMINO DA COSTA</div>`)[0];
+                popup_6563ee267eab944f80be560345e99953.setContent(html_c83a5ae2ed88f4a75050f6c2bf7be347);
+            
+        
+
+        marker_9f85a1108b1b7d1e64afe233f44d5e63.bindPopup(popup_6563ee267eab944f80be560345e99953)
+        ;
+
+        
+    
+    
+            var circle_marker_04f84b7be249b26cd6438529ef128f92 = L.circleMarker(
+                [-3.8532113, -40.9195926],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_30611d90f611dfbbee0730f0008e0b00);
+        
+    
+        var popup_6837ebbfb4a0f9d7fcb79836acda2300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f0291a14639d179fa86df8d6ef1aa7d = $(`<div id="html_5f0291a14639d179fa86df8d6ef1aa7d" style="width: 100.0%; height: 100.0%;">UBAJARA, CE</div>`)[0];
+                popup_6837ebbfb4a0f9d7fcb79836acda2300.setContent(html_5f0291a14639d179fa86df8d6ef1aa7d);
+            
+        
+
+        circle_marker_04f84b7be249b26cd6438529ef128f92.bindPopup(popup_6837ebbfb4a0f9d7fcb79836acda2300)
+        ;
+
+        
+    
+    
+            var poly_line_5eb6ea988891d9152788fa792f033800 = L.polyline(
+                [[-3.869739042658184, -40.91731355088515], [-3.8532113, -40.9195926]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_30611d90f611dfbbee0730f0008e0b00);
+        
+    
+            poly_line_5eb6ea988891d9152788fa792f033800.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_30611d90f611dfbbee0730f0008e0b00.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

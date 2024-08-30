@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c766527775f60754a7d55135017a54e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6c766527775f60754a7d55135017a54e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c766527775f60754a7d55135017a54e = L.map(
+                "map_6c766527775f60754a7d55135017a54e",
+                {
+                    center: [-4.140736873364953, -40.57734831645635],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9b43863a549b76a6e1144536c2f5db46 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9b43863a549b76a6e1144536c2f5db46.addTo(map_6c766527775f60754a7d55135017a54e);
+        
+    
+            var marker_a3e304422710574c14b01ea7d2300b9b = L.marker(
+                [-4.140736873364953, -40.57734831645635],
+                {}
+            ).addTo(map_6c766527775f60754a7d55135017a54e);
+        
+    
+            var icon_c5caa7a3f1d6e747bf72537fc3ba6bfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3e304422710574c14b01ea7d2300b9b.setIcon(icon_c5caa7a3f1d6e747bf72537fc3ba6bfc);
+        
+    
+        var popup_2e003bdcd0d5933ecf227643b5671a02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b68464102796eaaa1a312f01d0fde2ce = $(`<div id="html_b68464102796eaaa1a312f01d0fde2ce" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE RITA DO VALE REGO</div>`)[0];
+                popup_2e003bdcd0d5933ecf227643b5671a02.setContent(html_b68464102796eaaa1a312f01d0fde2ce);
+            
+        
+
+        marker_a3e304422710574c14b01ea7d2300b9b.bindPopup(popup_2e003bdcd0d5933ecf227643b5671a02)
+        ;
+
+        
+    
+    
+            var circle_marker_5cfc9e1af56d53e4a879295aa33f1a41 = L.circleMarker(
+                [-4.1431403, -40.5815662],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6c766527775f60754a7d55135017a54e);
+        
+    
+        var popup_9deb670dc34270a6b7b6a064ca66992d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_187c01b57542a87bcef6d2b73c6e2f79 = $(`<div id="html_187c01b57542a87bcef6d2b73c6e2f79" style="width: 100.0%; height: 100.0%;">RERIUTABA, CE</div>`)[0];
+                popup_9deb670dc34270a6b7b6a064ca66992d.setContent(html_187c01b57542a87bcef6d2b73c6e2f79);
+            
+        
+
+        circle_marker_5cfc9e1af56d53e4a879295aa33f1a41.bindPopup(popup_9deb670dc34270a6b7b6a064ca66992d)
+        ;
+
+        
+    
+    
+            var poly_line_f15c95bd64d11fa5adc127b8760c17b1 = L.polyline(
+                [[-4.140736873364953, -40.57734831645635], [-4.1431403, -40.5815662]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_6c766527775f60754a7d55135017a54e);
+        
+    
+            poly_line_f15c95bd64d11fa5adc127b8760c17b1.bindTooltip(
+                `<div>
+                     Frequência: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_6c766527775f60754a7d55135017a54e.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

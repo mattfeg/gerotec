@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43c78b27742274a51fb6384e2783d9d1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_43c78b27742274a51fb6384e2783d9d1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_43c78b27742274a51fb6384e2783d9d1 = L.map(
+                "map_43c78b27742274a51fb6384e2783d9d1",
+                {
+                    center: [-5.6775925, -39.1909504],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9728de00277feb9c77d27fa22b6e32e0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9728de00277feb9c77d27fa22b6e32e0.addTo(map_43c78b27742274a51fb6384e2783d9d1);
+        
+    
+            var marker_b0068425e068209897f0aff870b7c13f = L.marker(
+                [-5.6775925, -39.1909504],
+                {}
+            ).addTo(map_43c78b27742274a51fb6384e2783d9d1);
+        
+    
+            var icon_0c3704c912a86094a7143d0d16d7c8e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0068425e068209897f0aff870b7c13f.setIcon(icon_0c3704c912a86094a7143d0d16d7c8e8);
+        
+    
+        var popup_a3a341e4124acf9bafcec2dbf9f6c3fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b7904d3e3e7ce91bc9b4847f16e4675 = $(`<div id="html_3b7904d3e3e7ce91bc9b4847f16e4675" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOAO LEOPOLDO PINHEIRO LANDIM</div>`)[0];
+                popup_a3a341e4124acf9bafcec2dbf9f6c3fb.setContent(html_3b7904d3e3e7ce91bc9b4847f16e4675);
+            
+        
+
+        marker_b0068425e068209897f0aff870b7c13f.bindPopup(popup_a3a341e4124acf9bafcec2dbf9f6c3fb)
+        ;
+
+        
+    
+    
+            var circle_marker_72941973dfbaa6304d79d1409d7450ca = L.circleMarker(
+                [-5.6761173, -39.19530109999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_43c78b27742274a51fb6384e2783d9d1);
+        
+    
+        var popup_d8b8417603630bc6fcc028fb4915a133 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0ac08511a2a0dca2acf097a01edf893 = $(`<div id="html_f0ac08511a2a0dca2acf097a01edf893" style="width: 100.0%; height: 100.0%;">MILHA, CE</div>`)[0];
+                popup_d8b8417603630bc6fcc028fb4915a133.setContent(html_f0ac08511a2a0dca2acf097a01edf893);
+            
+        
+
+        circle_marker_72941973dfbaa6304d79d1409d7450ca.bindPopup(popup_d8b8417603630bc6fcc028fb4915a133)
+        ;
+
+        
+    
+    
+            var poly_line_c5fcb9a636b500cd502ae0fb473141ab = L.polyline(
+                [[-5.6775925, -39.1909504], [-5.6761173, -39.19530109999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_43c78b27742274a51fb6384e2783d9d1);
+        
+    
+            poly_line_c5fcb9a636b500cd502ae0fb473141ab.bindTooltip(
+                `<div>
+                     Frequência: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_43c78b27742274a51fb6384e2783d9d1.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>
