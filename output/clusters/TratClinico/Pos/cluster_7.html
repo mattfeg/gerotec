@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f91c79b6e01927a10dbff4109c53042f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f91c79b6e01927a10dbff4109c53042f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f91c79b6e01927a10dbff4109c53042f = L.map(
+                "map_f91c79b6e01927a10dbff4109c53042f",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8a9e57d675e82d90379289807f3000e4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8a9e57d675e82d90379289807f3000e4.addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+            var circle_marker_8e54b1f60d5311c9a2195ae7489f87ab = L.circleMarker(
+                [-5.2442316, -38.1286594],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+        var popup_4499d1275917d299455cc0daca3ee7da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d65b817662c10e6c26147e3dddcbe8a3 = $(`<div id="html_d65b817662c10e6c26147e3dddcbe8a3" style="width: 100.0%; height: 100.0%;">TABULEIRO DO NORTE, CE</div>`)[0];
+                popup_4499d1275917d299455cc0daca3ee7da.setContent(html_d65b817662c10e6c26147e3dddcbe8a3);
+            
+        
+
+        circle_marker_8e54b1f60d5311c9a2195ae7489f87ab.bindPopup(popup_4499d1275917d299455cc0daca3ee7da)
+        ;
+
+        
+    
+    
+            var circle_marker_d9b70ae166a82431b9289784f9a2e2f8 = L.circleMarker(
+                [-5.1467293, -38.0964766],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+        var popup_38596803ea13e786217deebc5db4b949 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73d6ce9f4ce50f7eee8014db61ed5c47 = $(`<div id="html_73d6ce9f4ce50f7eee8014db61ed5c47" style="width: 100.0%; height: 100.0%;">LIMOEIRO DO NORTE, CE</div>`)[0];
+                popup_38596803ea13e786217deebc5db4b949.setContent(html_73d6ce9f4ce50f7eee8014db61ed5c47);
+            
+        
+
+        circle_marker_d9b70ae166a82431b9289784f9a2e2f8.bindPopup(popup_38596803ea13e786217deebc5db4b949)
+        ;
+
+        
+    
+    
+            var circle_marker_d9b7261e56c3f01b94ee2abf2b55945a = L.circleMarker(
+                [-3.7307661, -38.50626099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+        var popup_e3fd9cc6de69462b550c28a8bd2a4480 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e600edd31761b982119ea11324cec33a = $(`<div id="html_e600edd31761b982119ea11324cec33a" style="width: 100.0%; height: 100.0%;">HOSPITAL SAO RAIMUNDO</div>`)[0];
+                popup_e3fd9cc6de69462b550c28a8bd2a4480.setContent(html_e600edd31761b982119ea11324cec33a);
+            
+        
+
+        circle_marker_d9b7261e56c3f01b94ee2abf2b55945a.bindPopup(popup_e3fd9cc6de69462b550c28a8bd2a4480)
+        ;
+
+        
+    
+    
+            var circle_marker_53b1c586bbd17fada604e3aa496805a4 = L.circleMarker(
+                [-6.7943548, -39.2982103],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+        var popup_be40dbae1141ad122e70efdffcf0d613 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0923c0769880d4729c3bc0cf98272b9c = $(`<div id="html_0923c0769880d4729c3bc0cf98272b9c" style="width: 100.0%; height: 100.0%;">VARZEA ALEGRE, CE</div>`)[0];
+                popup_be40dbae1141ad122e70efdffcf0d613.setContent(html_0923c0769880d4729c3bc0cf98272b9c);
+            
+        
+
+        circle_marker_53b1c586bbd17fada604e3aa496805a4.bindPopup(popup_be40dbae1141ad122e70efdffcf0d613)
+        ;
+
+        
+    
+    
+            var circle_marker_0973a351a2c8931c3a5798987ca94587 = L.circleMarker(
+                [-5.250982695891236, -38.133914558648954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+        var popup_03a072f6e73534f5d92814f717e19aa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff8f9825c93d895e250238c322d96969 = $(`<div id="html_ff8f9825c93d895e250238c322d96969" style="width: 100.0%; height: 100.0%;">CASA DE SAUDE MATERNIDADE CELESTINA COLARES</div>`)[0];
+                popup_03a072f6e73534f5d92814f717e19aa7.setContent(html_ff8f9825c93d895e250238c322d96969);
+            
+        
+
+        circle_marker_0973a351a2c8931c3a5798987ca94587.bindPopup(popup_03a072f6e73534f5d92814f717e19aa7)
+        ;
+
+        
+    
+    
+            var poly_line_ae6f379e90bc7d02ef96d80b0f06164c = L.polyline(
+                [[-5.2442316, -38.1286594], [-3.7307661, -38.50626099999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+            poly_line_ae6f379e90bc7d02ef96d80b0f06164c.bindTooltip(
+                `<div>
+                     Peso: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1eacfce8f269298f17e6c4b65f0c2e6d = L.polyline(
+                [[-5.2442316, -38.1286594], [-5.250982695891236, -38.133914558648954]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+            poly_line_1eacfce8f269298f17e6c4b65f0c2e6d.bindTooltip(
+                `<div>
+                     Peso: 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1b6d63507e9f3e47bbe0c0cab3e0f49b = L.polyline(
+                [[-5.1467293, -38.0964766], [-3.7307661, -38.50626099999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+            poly_line_1b6d63507e9f3e47bbe0c0cab3e0f49b.bindTooltip(
+                `<div>
+                     Peso: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4b5c21d23f469b0b293cae532133790e = L.polyline(
+                [[-6.7943548, -39.2982103], [-3.7307661, -38.50626099999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f91c79b6e01927a10dbff4109c53042f);
+        
+    
+            poly_line_4b5c21d23f469b0b293cae532133790e.bindTooltip(
+                `<div>
+                     Peso: 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_f91c79b6e01927a10dbff4109c53042f.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

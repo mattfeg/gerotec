@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_82414e274fd6e11dfe394ed8e08f93e2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_82414e274fd6e11dfe394ed8e08f93e2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_82414e274fd6e11dfe394ed8e08f93e2 = L.map(
+                "map_82414e274fd6e11dfe394ed8e08f93e2",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_199a89ca27c4690eb1a2226474baf931 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_199a89ca27c4690eb1a2226474baf931.addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+            var circle_marker_2ba4e1a17ceba1fc2362708176f39e22 = L.circleMarker(
+                [-5.17808, -40.6696229],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+        var popup_6482f6af5c7622291ee0428f9ea2ac96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df2e2e284f1d7b7b8ab0bcbbd58f6426 = $(`<div id="html_df2e2e284f1d7b7b8ab0bcbbd58f6426" style="width: 100.0%; height: 100.0%;">CRATEUS, CE</div>`)[0];
+                popup_6482f6af5c7622291ee0428f9ea2ac96.setContent(html_df2e2e284f1d7b7b8ab0bcbbd58f6426);
+            
+        
+
+        circle_marker_2ba4e1a17ceba1fc2362708176f39e22.bindPopup(popup_6482f6af5c7622291ee0428f9ea2ac96)
+        ;
+
+        
+    
+    
+            var circle_marker_0bfb1a84f59a3b083187bf3aac6a8be4 = L.circleMarker(
+                [-5.182763636489275, -40.66716290409968],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+        var popup_d85df542ece15a844b5dd05f7a76f823 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e22b03b75273701e99facba8459b833f = $(`<div id="html_e22b03b75273701e99facba8459b833f" style="width: 100.0%; height: 100.0%;">HOSPITAL SAO LUCAS</div>`)[0];
+                popup_d85df542ece15a844b5dd05f7a76f823.setContent(html_e22b03b75273701e99facba8459b833f);
+            
+        
+
+        circle_marker_0bfb1a84f59a3b083187bf3aac6a8be4.bindPopup(popup_d85df542ece15a844b5dd05f7a76f823)
+        ;
+
+        
+    
+    
+            var circle_marker_6cc95a8c63c22de03a9b49a86fc252a3 = L.circleMarker(
+                [-4.5425528, -40.71728780000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+        var popup_f3d21df93f684fe6d533ca56ed3313c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19f04ebf03eadb963618ebf26df2061f = $(`<div id="html_19f04ebf03eadb963618ebf26df2061f" style="width: 100.0%; height: 100.0%;">IPUEIRAS, CE</div>`)[0];
+                popup_f3d21df93f684fe6d533ca56ed3313c0.setContent(html_19f04ebf03eadb963618ebf26df2061f);
+            
+        
+
+        circle_marker_6cc95a8c63c22de03a9b49a86fc252a3.bindPopup(popup_f3d21df93f684fe6d533ca56ed3313c0)
+        ;
+
+        
+    
+    
+            var circle_marker_a8f02b4bc0f592e8087b18271092654a = L.circleMarker(
+                [-4.5425791, -40.7173442],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+        var popup_bb837e69db70ab8c87b61d6eb2ca864e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b70b0cd167cf45c5b6264f8a3449a020 = $(`<div id="html_b70b0cd167cf45c5b6264f8a3449a020" style="width: 100.0%; height: 100.0%;">HOSP MATERN OTACILIO MOTA</div>`)[0];
+                popup_bb837e69db70ab8c87b61d6eb2ca864e.setContent(html_b70b0cd167cf45c5b6264f8a3449a020);
+            
+        
+
+        circle_marker_a8f02b4bc0f592e8087b18271092654a.bindPopup(popup_bb837e69db70ab8c87b61d6eb2ca864e)
+        ;
+
+        
+    
+    
+            var circle_marker_4a8f812aa7267ad1d49f53f3e998116f = L.circleMarker(
+                [-4.4151213, -40.9042025],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+        var popup_8ae52c51768250c1ac9a8700c30179f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c820308d12171e9a7173120ae06184f = $(`<div id="html_8c820308d12171e9a7173120ae06184f" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL MONSENHOR ANTONINO</div>`)[0];
+                popup_8ae52c51768250c1ac9a8700c30179f9.setContent(html_8c820308d12171e9a7173120ae06184f);
+            
+        
+
+        circle_marker_4a8f812aa7267ad1d49f53f3e998116f.bindPopup(popup_8ae52c51768250c1ac9a8700c30179f9)
+        ;
+
+        
+    
+    
+            var poly_line_699f722ae62e707c64cc5348ff51c89b = L.polyline(
+                [[-5.17808, -40.6696229], [-5.182763636489275, -40.66716290409968]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+            poly_line_699f722ae62e707c64cc5348ff51c89b.bindTooltip(
+                `<div>
+                     Peso: 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4474a7777422e2e71ac0c86ddada0368 = L.polyline(
+                [[-4.5425528, -40.71728780000001], [-4.5425791, -40.7173442]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+            poly_line_4474a7777422e2e71ac0c86ddada0368.bindTooltip(
+                `<div>
+                     Peso: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b606a65805d24b4e9168ded4d172f86a = L.polyline(
+                [[-4.5425528, -40.71728780000001], [-5.182763636489275, -40.66716290409968]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+            poly_line_b606a65805d24b4e9168ded4d172f86a.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9cf16f037ae7958e2904d83a9e8b4ca7 = L.polyline(
+                [[-4.5425528, -40.71728780000001], [-4.4151213, -40.9042025]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_82414e274fd6e11dfe394ed8e08f93e2);
+        
+    
+            poly_line_9cf16f037ae7958e2904d83a9e8b4ca7.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_82414e274fd6e11dfe394ed8e08f93e2.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

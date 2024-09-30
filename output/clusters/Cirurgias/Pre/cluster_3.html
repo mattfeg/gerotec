@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a5f7f5f5a80ede1c6e2474c314b574c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a5f7f5f5a80ede1c6e2474c314b574c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a5f7f5f5a80ede1c6e2474c314b574c = L.map(
+                "map_5a5f7f5f5a80ede1c6e2474c314b574c",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_035b13c68368fecb27a08a444d652583 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_035b13c68368fecb27a08a444d652583.addTo(map_5a5f7f5f5a80ede1c6e2474c314b574c);
+        
+    
+            var circle_marker_5780efd71bf9201665c239eb83f9dcba = L.circleMarker(
+                [-4.0467078, -40.7526274],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5a5f7f5f5a80ede1c6e2474c314b574c);
+        
+    
+        var popup_77f7b981c6e3bd6438931a2635b5638a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8bd3151082f41655cdc06ec91226ac3 = $(`<div id="html_c8bd3151082f41655cdc06ec91226ac3" style="width: 100.0%; height: 100.0%;">GRACA, CE</div>`)[0];
+                popup_77f7b981c6e3bd6438931a2635b5638a.setContent(html_c8bd3151082f41655cdc06ec91226ac3);
+            
+        
+
+        circle_marker_5780efd71bf9201665c239eb83f9dcba.bindPopup(popup_77f7b981c6e3bd6438931a2635b5638a)
+        ;
+
+        
+    
+    
+            var circle_marker_beccadbf754b61c528d1c7c51164e716 = L.circleMarker(
+                [-3.7627591, -38.5317896],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5a5f7f5f5a80ede1c6e2474c314b574c);
+        
+    
+        var popup_bad73a66ff04ca3b9e741b173bde9cf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fafec9d2a9115bf2c906b98d058003fa = $(`<div id="html_fafec9d2a9115bf2c906b98d058003fa" style="width: 100.0%; height: 100.0%;">HIAS HOSPITAL INFANTIL ALBERT SABIN</div>`)[0];
+                popup_bad73a66ff04ca3b9e741b173bde9cf5.setContent(html_fafec9d2a9115bf2c906b98d058003fa);
+            
+        
+
+        circle_marker_beccadbf754b61c528d1c7c51164e716.bindPopup(popup_bad73a66ff04ca3b9e741b173bde9cf5)
+        ;
+
+        
+    
+    
+            var circle_marker_13a1cc0ef72b1896f7e31a4a7ec2ca7d = L.circleMarker(
+                [-3.4947131, -39.5803861],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5a5f7f5f5a80ede1c6e2474c314b574c);
+        
+    
+        var popup_7fdb46eb78cb9f70781abaa63e28d516 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6f873cfae2a776e0b271e25ece1bd7f = $(`<div id="html_e6f873cfae2a776e0b271e25ece1bd7f" style="width: 100.0%; height: 100.0%;">ITAPIPOCA, CE</div>`)[0];
+                popup_7fdb46eb78cb9f70781abaa63e28d516.setContent(html_e6f873cfae2a776e0b271e25ece1bd7f);
+            
+        
+
+        circle_marker_13a1cc0ef72b1896f7e31a4a7ec2ca7d.bindPopup(popup_7fdb46eb78cb9f70781abaa63e28d516)
+        ;
+
+        
+    
+    
+            var circle_marker_683ea2310f82b7de0b1c7ce7031285dc = L.circleMarker(
+                [-3.351651036262417, -40.46502393979452],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5a5f7f5f5a80ede1c6e2474c314b574c);
+        
+    
+        var popup_c28c77ef484788ca32d2067f41e4ef25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69ce242ea76615d01b141f565e3dd90e = $(`<div id="html_69ce242ea76615d01b141f565e3dd90e" style="width: 100.0%; height: 100.0%;">SENADOR SA, CE</div>`)[0];
+                popup_c28c77ef484788ca32d2067f41e4ef25.setContent(html_69ce242ea76615d01b141f565e3dd90e);
+            
+        
+
+        circle_marker_683ea2310f82b7de0b1c7ce7031285dc.bindPopup(popup_c28c77ef484788ca32d2067f41e4ef25)
+        ;
+
+        
+    
+    
+            var poly_line_97da8f4b15b63ef8065288d4178dd6ab = L.polyline(
+                [[-4.0467078, -40.7526274], [-3.7627591, -38.5317896]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5a5f7f5f5a80ede1c6e2474c314b574c);
+        
+    
+            poly_line_97da8f4b15b63ef8065288d4178dd6ab.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_17f245bd540ae1e3eecd2d14b6e0977f = L.polyline(
+                [[-3.4947131, -39.5803861], [-3.7627591, -38.5317896]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5a5f7f5f5a80ede1c6e2474c314b574c);
+        
+    
+            poly_line_17f245bd540ae1e3eecd2d14b6e0977f.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4c23098970ce9bb4b307eaadaebcc262 = L.polyline(
+                [[-3.351651036262417, -40.46502393979452], [-3.7627591, -38.5317896]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5a5f7f5f5a80ede1c6e2474c314b574c);
+        
+    
+            poly_line_4c23098970ce9bb4b307eaadaebcc262.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_5a5f7f5f5a80ede1c6e2474c314b574c.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

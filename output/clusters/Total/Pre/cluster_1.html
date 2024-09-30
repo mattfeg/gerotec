@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ed23836f020bf448ee46e1ad446cb700 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ed23836f020bf448ee46e1ad446cb700" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ed23836f020bf448ee46e1ad446cb700 = L.map(
+                "map_ed23836f020bf448ee46e1ad446cb700",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a958f91262d3c0e8254a7a8856d3b20e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a958f91262d3c0e8254a7a8856d3b20e.addTo(map_ed23836f020bf448ee46e1ad446cb700);
+        
+    
+            var circle_marker_ace694dc56e5097220ca9f74ec2c00dd = L.circleMarker(
+                [-4.2238817, -38.7302215],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ed23836f020bf448ee46e1ad446cb700);
+        
+    
+        var popup_43a8510de5d03c4440ba0a48cfa5086b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_816b783cbb4e2427f99163420dd6dab8 = $(`<div id="html_816b783cbb4e2427f99163420dd6dab8" style="width: 100.0%; height: 100.0%;">REDENCAO, CE</div>`)[0];
+                popup_43a8510de5d03c4440ba0a48cfa5086b.setContent(html_816b783cbb4e2427f99163420dd6dab8);
+            
+        
+
+        circle_marker_ace694dc56e5097220ca9f74ec2c00dd.bindPopup(popup_43a8510de5d03c4440ba0a48cfa5086b)
+        ;
+
+        
+    
+    
+            var circle_marker_091209552daa66cd9f11d389c19524fa = L.circleMarker(
+                [-4.224501286840884, -38.72827271402963],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ed23836f020bf448ee46e1ad446cb700);
+        
+    
+        var popup_91a531491215b14bb638a1e8a186843a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d17198cce5d2e4395da6a40eb8d0ccb = $(`<div id="html_7d17198cce5d2e4395da6a40eb8d0ccb" style="width: 100.0%; height: 100.0%;">HOSP MATERN PAULO SARASATE</div>`)[0];
+                popup_91a531491215b14bb638a1e8a186843a.setContent(html_7d17198cce5d2e4395da6a40eb8d0ccb);
+            
+        
+
+        circle_marker_091209552daa66cd9f11d389c19524fa.bindPopup(popup_91a531491215b14bb638a1e8a186843a)
+        ;
+
+        
+    
+    
+            var poly_line_cc38ddaeccd364ac1408a24fdcb4010e = L.polyline(
+                [[-4.2238817, -38.7302215], [-4.224501286840884, -38.72827271402963]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ed23836f020bf448ee46e1ad446cb700);
+        
+    
+            poly_line_cc38ddaeccd364ac1408a24fdcb4010e.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_ed23836f020bf448ee46e1ad446cb700.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

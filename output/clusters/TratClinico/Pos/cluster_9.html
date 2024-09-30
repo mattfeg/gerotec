@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ad9df566eb1110019d0fceb4c1cac9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6ad9df566eb1110019d0fceb4c1cac9b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6ad9df566eb1110019d0fceb4c1cac9b = L.map(
+                "map_6ad9df566eb1110019d0fceb4c1cac9b",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_31f2fcc2f03b824bcf3439648a15de2d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_31f2fcc2f03b824bcf3439648a15de2d.addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+            var circle_marker_76b4a0f139f8daaab6f4f2a6a7f6ef6f = L.circleMarker(
+                [-2.9008418, -40.84209999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+        var popup_28da7a7e2f77be21dc6979b300b31588 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e3ca9c2209682af6c4f2f41ca633da1 = $(`<div id="html_4e3ca9c2209682af6c4f2f41ca633da1" style="width: 100.0%; height: 100.0%;">CAMOCIM, CE</div>`)[0];
+                popup_28da7a7e2f77be21dc6979b300b31588.setContent(html_4e3ca9c2209682af6c4f2f41ca633da1);
+            
+        
+
+        circle_marker_76b4a0f139f8daaab6f4f2a6a7f6ef6f.bindPopup(popup_28da7a7e2f77be21dc6979b300b31588)
+        ;
+
+        
+    
+    
+            var circle_marker_a8810b24578bf346585be1c195398038 = L.circleMarker(
+                [-3.4947131, -39.5803861],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+        var popup_328388aea1d40dd822314185e3e39864 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bba16baee93d156889b76ba69c67e5bf = $(`<div id="html_bba16baee93d156889b76ba69c67e5bf" style="width: 100.0%; height: 100.0%;">ITAPIPOCA, CE</div>`)[0];
+                popup_328388aea1d40dd822314185e3e39864.setContent(html_bba16baee93d156889b76ba69c67e5bf);
+            
+        
+
+        circle_marker_a8810b24578bf346585be1c195398038.bindPopup(popup_328388aea1d40dd822314185e3e39864)
+        ;
+
+        
+    
+    
+            var circle_marker_deb409c36aa926d2454cc85fc88ef37b = L.circleMarker(
+                [-7.3119638, -39.3027232],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+        var popup_2470f674b13364b164d013f698f6e327 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cf6a21118fa4259b6191e07095b5c38 = $(`<div id="html_0cf6a21118fa4259b6191e07095b5c38" style="width: 100.0%; height: 100.0%;">HOSPITAL MATERNIDADE SAO VICENTE DE PAULO</div>`)[0];
+                popup_2470f674b13364b164d013f698f6e327.setContent(html_0cf6a21118fa4259b6191e07095b5c38);
+            
+        
+
+        circle_marker_deb409c36aa926d2454cc85fc88ef37b.bindPopup(popup_2470f674b13364b164d013f698f6e327)
+        ;
+
+        
+    
+    
+            var circle_marker_c80ece2671c531b4251a1cfde14c855d = L.circleMarker(
+                [-3.4965655728494274, -39.59765856838256],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+        var popup_ea589e38fb299897d46f13c6f32655ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aa1e79013c9a0e452c12a064dbe8a30 = $(`<div id="html_0aa1e79013c9a0e452c12a064dbe8a30" style="width: 100.0%; height: 100.0%;">HOSPITAL REGIONAL DE ITAPIPOCA</div>`)[0];
+                popup_ea589e38fb299897d46f13c6f32655ea.setContent(html_0aa1e79013c9a0e452c12a064dbe8a30);
+            
+        
+
+        circle_marker_c80ece2671c531b4251a1cfde14c855d.bindPopup(popup_ea589e38fb299897d46f13c6f32655ea)
+        ;
+
+        
+    
+    
+            var circle_marker_387000350fa299942f1dbbfdd8a38962 = L.circleMarker(
+                [-2.9008808, -40.8419427],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+        var popup_9834eef182641868bb93c67c87d7e8d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3abe0752bad889fcdefc0ac849fc1d21 = $(`<div id="html_3abe0752bad889fcdefc0ac849fc1d21" style="width: 100.0%; height: 100.0%;">HOSPITAL DEPUTADO MURILO AGUIAR</div>`)[0];
+                popup_9834eef182641868bb93c67c87d7e8d1.setContent(html_3abe0752bad889fcdefc0ac849fc1d21);
+            
+        
+
+        circle_marker_387000350fa299942f1dbbfdd8a38962.bindPopup(popup_9834eef182641868bb93c67c87d7e8d1)
+        ;
+
+        
+    
+    
+            var poly_line_f20db94b1c9855c111c174d17487180d = L.polyline(
+                [[-2.9008418, -40.84209999999999], [-2.9008808, -40.8419427]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+            poly_line_f20db94b1c9855c111c174d17487180d.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3a058598f358be563beea055753d7c29 = L.polyline(
+                [[-3.4947131, -39.5803861], [-7.3119638, -39.3027232]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+            poly_line_3a058598f358be563beea055753d7c29.bindTooltip(
+                `<div>
+                     Peso: 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2908e6bc333265e206f11dc180eb8f61 = L.polyline(
+                [[-3.4947131, -39.5803861], [-3.4965655728494274, -39.59765856838256]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_6ad9df566eb1110019d0fceb4c1cac9b);
+        
+    
+            poly_line_2908e6bc333265e206f11dc180eb8f61.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_6ad9df566eb1110019d0fceb4c1cac9b.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

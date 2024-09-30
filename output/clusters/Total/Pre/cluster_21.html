@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8f8b419de57b6711d8e7d8ed093dbd1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8f8b419de57b6711d8e7d8ed093dbd1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8f8b419de57b6711d8e7d8ed093dbd1 = L.map(
+                "map_a8f8b419de57b6711d8e7d8ed093dbd1",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d2c5a08ac01aea861d2094572cf90d95 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d2c5a08ac01aea861d2094572cf90d95.addTo(map_a8f8b419de57b6711d8e7d8ed093dbd1);
+        
+    
+            var circle_marker_d7673961c81197bbc0644f1c08a590b4 = L.circleMarker(
+                [-3.9717463, -38.52959999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a8f8b419de57b6711d8e7d8ed093dbd1);
+        
+    
+        var popup_b3798b170f0369022a0e4cb9e13053af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a6d789e88a4af46dced0b86aa3bed4f = $(`<div id="html_5a6d789e88a4af46dced0b86aa3bed4f" style="width: 100.0%; height: 100.0%;">ITAITINGA, CE</div>`)[0];
+                popup_b3798b170f0369022a0e4cb9e13053af.setContent(html_5a6d789e88a4af46dced0b86aa3bed4f);
+            
+        
+
+        circle_marker_d7673961c81197bbc0644f1c08a590b4.bindPopup(popup_b3798b170f0369022a0e4cb9e13053af)
+        ;
+
+        
+    
+    
+            var circle_marker_2521d01dad03fb1a7e9cb326efce7d56 = L.circleMarker(
+                [-3.972865399999999, -38.5211706],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a8f8b419de57b6711d8e7d8ed093dbd1);
+        
+    
+        var popup_4f7c9d3ff7e675936c99e4091c018ed4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e5777cab49d11a5741d3e3fdc1ebe22 = $(`<div id="html_4e5777cab49d11a5741d3e3fdc1ebe22" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE ESTER CAVALCANTE ASSUNCAO</div>`)[0];
+                popup_4f7c9d3ff7e675936c99e4091c018ed4.setContent(html_4e5777cab49d11a5741d3e3fdc1ebe22);
+            
+        
+
+        circle_marker_2521d01dad03fb1a7e9cb326efce7d56.bindPopup(popup_4f7c9d3ff7e675936c99e4091c018ed4)
+        ;
+
+        
+    
+    
+            var poly_line_e5ed2108310e480718260bb7d622df9d = L.polyline(
+                [[-3.9717463, -38.52959999999999], [-3.972865399999999, -38.5211706]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_a8f8b419de57b6711d8e7d8ed093dbd1);
+        
+    
+            poly_line_e5ed2108310e480718260bb7d622df9d.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_a8f8b419de57b6711d8e7d8ed093dbd1.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d865bab9e30bfa9badd17f88eefa1f4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d865bab9e30bfa9badd17f88eefa1f4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d865bab9e30bfa9badd17f88eefa1f4 = L.map(
+                "map_1d865bab9e30bfa9badd17f88eefa1f4",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_efdef78fe6dc6c9ce7f399da333f539d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_efdef78fe6dc6c9ce7f399da333f539d.addTo(map_1d865bab9e30bfa9badd17f88eefa1f4);
+        
+    
+            var circle_marker_576facb6c089f3958df327b8e85d2209 = L.circleMarker(
+                [-5.0728291, -37.9894863],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1d865bab9e30bfa9badd17f88eefa1f4);
+        
+    
+        var popup_7f11d268d0541a0d2b0687cc35eade14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e47ed508bc50a7d2030b6a4b53939a79 = $(`<div id="html_e47ed508bc50a7d2030b6a4b53939a79" style="width: 100.0%; height: 100.0%;">QUIXERE, CE</div>`)[0];
+                popup_7f11d268d0541a0d2b0687cc35eade14.setContent(html_e47ed508bc50a7d2030b6a4b53939a79);
+            
+        
+
+        circle_marker_576facb6c089f3958df327b8e85d2209.bindPopup(popup_7f11d268d0541a0d2b0687cc35eade14)
+        ;
+
+        
+    
+    
+            var circle_marker_4a512fe3f9a5f286c9bde692987e6d60 = L.circleMarker(
+                [-5.074420477760048, -37.98889649191031],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1d865bab9e30bfa9badd17f88eefa1f4);
+        
+    
+        var popup_0193e77b3d51d39a228ae9665e0a02e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_243d4a497d62254f957af3876629ecee = $(`<div id="html_243d4a497d62254f957af3876629ecee" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOAQUIM MANOEL OLIVEIRA</div>`)[0];
+                popup_0193e77b3d51d39a228ae9665e0a02e1.setContent(html_243d4a497d62254f957af3876629ecee);
+            
+        
+
+        circle_marker_4a512fe3f9a5f286c9bde692987e6d60.bindPopup(popup_0193e77b3d51d39a228ae9665e0a02e1)
+        ;
+
+        
+    
+    
+            var poly_line_020977ec171ee1a768441ba655c8b873 = L.polyline(
+                [[-5.0728291, -37.9894863], [-5.074420477760048, -37.98889649191031]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1d865bab9e30bfa9badd17f88eefa1f4);
+        
+    
+            poly_line_020977ec171ee1a768441ba655c8b873.bindTooltip(
+                `<div>
+                     Peso: 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_1d865bab9e30bfa9badd17f88eefa1f4.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

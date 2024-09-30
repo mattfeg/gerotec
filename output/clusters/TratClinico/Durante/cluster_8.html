@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7467ebee2175fb4ddd18038a28a8b8b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7467ebee2175fb4ddd18038a28a8b8b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7467ebee2175fb4ddd18038a28a8b8b8 = L.map(
+                "map_7467ebee2175fb4ddd18038a28a8b8b8",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0aaa3440d44bec93bfe519e16778f95 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b0aaa3440d44bec93bfe519e16778f95.addTo(map_7467ebee2175fb4ddd18038a28a8b8b8);
+        
+    
+            var circle_marker_4eeafff90c3492006f2e2b3710129965 = L.circleMarker(
+                [-6.3587958, -39.29805899999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7467ebee2175fb4ddd18038a28a8b8b8);
+        
+    
+        var popup_61321aa678e68094a18aca162f9ec411 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97ffe0f1488ae7a0d208b4f59ce3f353 = $(`<div id="html_97ffe0f1488ae7a0d208b4f59ce3f353" style="width: 100.0%; height: 100.0%;">IGUATU, CE</div>`)[0];
+                popup_61321aa678e68094a18aca162f9ec411.setContent(html_97ffe0f1488ae7a0d208b4f59ce3f353);
+            
+        
+
+        circle_marker_4eeafff90c3492006f2e2b3710129965.bindPopup(popup_61321aa678e68094a18aca162f9ec411)
+        ;
+
+        
+    
+    
+            var circle_marker_70b63627875e57f8e2cc1d7eec946116 = L.circleMarker(
+                [-6.3587958, -39.29805899999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7467ebee2175fb4ddd18038a28a8b8b8);
+        
+    
+        var popup_899c75327e10571fe4e2613a6f9e1c52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d93e21e67a9f21a07c6990986fa5756d = $(`<div id="html_d93e21e67a9f21a07c6990986fa5756d" style="width: 100.0%; height: 100.0%;">HOSPITAL REGIONAL DE IGUATU</div>`)[0];
+                popup_899c75327e10571fe4e2613a6f9e1c52.setContent(html_d93e21e67a9f21a07c6990986fa5756d);
+            
+        
+
+        circle_marker_70b63627875e57f8e2cc1d7eec946116.bindPopup(popup_899c75327e10571fe4e2613a6f9e1c52)
+        ;
+
+        
+    
+    
+            var poly_line_ea461ee111be39f71c09d8b8a6e56959 = L.polyline(
+                [[-6.3587958, -39.29805899999999], [-6.3587958, -39.29805899999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7467ebee2175fb4ddd18038a28a8b8b8);
+        
+    
+            poly_line_ea461ee111be39f71c09d8b8a6e56959.bindTooltip(
+                `<div>
+                     Peso: 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_7467ebee2175fb4ddd18038a28a8b8b8.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

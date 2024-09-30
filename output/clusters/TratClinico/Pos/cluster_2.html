@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_16142dfa775dac0158c265963de9a474 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_16142dfa775dac0158c265963de9a474" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_16142dfa775dac0158c265963de9a474 = L.map(
+                "map_16142dfa775dac0158c265963de9a474",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_16bfc7239ddcfd18d26d985f93fb68f7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_16bfc7239ddcfd18d26d985f93fb68f7.addTo(map_16142dfa775dac0158c265963de9a474);
+        
+    
+            var circle_marker_fa63dae602c8c4ae0ca3ec6241ff82f7 = L.circleMarker(
+                [-5.306357999999999, -38.9203167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_16142dfa775dac0158c265963de9a474);
+        
+    
+        var popup_3f4953d80452e846da4fc27735eae4c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d4c30fe6258aa5ba799a98507d956f4 = $(`<div id="html_2d4c30fe6258aa5ba799a98507d956f4" style="width: 100.0%; height: 100.0%;">BANABUIU, CE</div>`)[0];
+                popup_3f4953d80452e846da4fc27735eae4c9.setContent(html_2d4c30fe6258aa5ba799a98507d956f4);
+            
+        
+
+        circle_marker_fa63dae602c8c4ae0ca3ec6241ff82f7.bindPopup(popup_3f4953d80452e846da4fc27735eae4c9)
+        ;
+
+        
+    
+    
+            var circle_marker_eaa9df32f9b83bd1a7f74c9fd1a6ae5b = L.circleMarker(
+                [-5.308903, -38.9226043],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_16142dfa775dac0158c265963de9a474);
+        
+    
+        var popup_ecda084f5cb003b84a84365230ac6732 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc752be28749f1bd985d5b7d95067b80 = $(`<div id="html_bc752be28749f1bd985d5b7d95067b80" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL SENADOR CARLOS JEREISSATI</div>`)[0];
+                popup_ecda084f5cb003b84a84365230ac6732.setContent(html_bc752be28749f1bd985d5b7d95067b80);
+            
+        
+
+        circle_marker_eaa9df32f9b83bd1a7f74c9fd1a6ae5b.bindPopup(popup_ecda084f5cb003b84a84365230ac6732)
+        ;
+
+        
+    
+    
+            var poly_line_628b76d45cd93012ea1905d1e1e0bf5b = L.polyline(
+                [[-5.306357999999999, -38.9203167], [-5.308903, -38.9226043]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_16142dfa775dac0158c265963de9a474);
+        
+    
+            poly_line_628b76d45cd93012ea1905d1e1e0bf5b.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_16142dfa775dac0158c265963de9a474.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

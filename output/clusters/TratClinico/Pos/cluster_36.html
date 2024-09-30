@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_880ff27e3fdb5c1178d36971b29b6f99 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_880ff27e3fdb5c1178d36971b29b6f99" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_880ff27e3fdb5c1178d36971b29b6f99 = L.map(
+                "map_880ff27e3fdb5c1178d36971b29b6f99",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_872097162a9bc82bd5ecf4c911f2b11f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_872097162a9bc82bd5ecf4c911f2b11f.addTo(map_880ff27e3fdb5c1178d36971b29b6f99);
+        
+    
+            var circle_marker_1414c639340c78482008cdd0d4413a9d = L.circleMarker(
+                [-6.520597599999999, -39.5245509],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_880ff27e3fdb5c1178d36971b29b6f99);
+        
+    
+        var popup_4581199142973bfd91ce264b5986eb37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_698c71d48e0eec498ac4e2df1669b096 = $(`<div id="html_698c71d48e0eec498ac4e2df1669b096" style="width: 100.0%; height: 100.0%;">JUCAS, CE</div>`)[0];
+                popup_4581199142973bfd91ce264b5986eb37.setContent(html_698c71d48e0eec498ac4e2df1669b096);
+            
+        
+
+        circle_marker_1414c639340c78482008cdd0d4413a9d.bindPopup(popup_4581199142973bfd91ce264b5986eb37)
+        ;
+
+        
+    
+    
+            var circle_marker_60edef0c19df651ef9eda26b38d57435 = L.circleMarker(
+                [-6.514021899999999, -39.51603619999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_880ff27e3fdb5c1178d36971b29b6f99);
+        
+    
+        var popup_9948eed42e0514d00adef07d068aeb89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b793bad6ebc5c4476fcb5ebcb64f790a = $(`<div id="html_b793bad6ebc5c4476fcb5ebcb64f790a" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOSE FACUNDO FILHO</div>`)[0];
+                popup_9948eed42e0514d00adef07d068aeb89.setContent(html_b793bad6ebc5c4476fcb5ebcb64f790a);
+            
+        
+
+        circle_marker_60edef0c19df651ef9eda26b38d57435.bindPopup(popup_9948eed42e0514d00adef07d068aeb89)
+        ;
+
+        
+    
+    
+            var poly_line_be24ba76c2b31c93bf529eb045680111 = L.polyline(
+                [[-6.520597599999999, -39.5245509], [-6.514021899999999, -39.51603619999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_880ff27e3fdb5c1178d36971b29b6f99);
+        
+    
+            poly_line_be24ba76c2b31c93bf529eb045680111.bindTooltip(
+                `<div>
+                     Peso: 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_880ff27e3fdb5c1178d36971b29b6f99.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

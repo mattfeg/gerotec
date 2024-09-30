@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b2003d8be87a9d11af99238fa95a54c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b2003d8be87a9d11af99238fa95a54c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b2003d8be87a9d11af99238fa95a54c = L.map(
+                "map_6b2003d8be87a9d11af99238fa95a54c",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d437ee22b866461b9aa7765496bf498a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d437ee22b866461b9aa7765496bf498a.addTo(map_6b2003d8be87a9d11af99238fa95a54c);
+        
+    
+            var circle_marker_effb0431ae787a91dd4d5f7de41d8965 = L.circleMarker(
+                [-3.5511302, -40.6550293],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6b2003d8be87a9d11af99238fa95a54c);
+        
+    
+        var popup_a8e4db2271c4389b28f6784b138ebaeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_852ca3a8b84365f9c0c263adb41e6795 = $(`<div id="html_852ca3a8b84365f9c0c263adb41e6795" style="width: 100.0%; height: 100.0%;">COREAU, CE</div>`)[0];
+                popup_a8e4db2271c4389b28f6784b138ebaeb.setContent(html_852ca3a8b84365f9c0c263adb41e6795);
+            
+        
+
+        circle_marker_effb0431ae787a91dd4d5f7de41d8965.bindPopup(popup_a8e4db2271c4389b28f6784b138ebaeb)
+        ;
+
+        
+    
+    
+            var circle_marker_410a7f49759e86dbaefd7fd1b52cb995 = L.circleMarker(
+                [-3.5518461, -40.6527136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6b2003d8be87a9d11af99238fa95a54c);
+        
+    
+        var popup_276bb5af4c4c76724af89b0e111d8c14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_561faec8cbe93f0e3aec5bafcc639d81 = $(`<div id="html_561faec8cbe93f0e3aec5bafcc639d81" style="width: 100.0%; height: 100.0%;">HOSPITAL FERNANDO TELES CAMILO</div>`)[0];
+                popup_276bb5af4c4c76724af89b0e111d8c14.setContent(html_561faec8cbe93f0e3aec5bafcc639d81);
+            
+        
+
+        circle_marker_410a7f49759e86dbaefd7fd1b52cb995.bindPopup(popup_276bb5af4c4c76724af89b0e111d8c14)
+        ;
+
+        
+    
+    
+            var poly_line_edc4ecab485506fae30b0b317a59c82a = L.polyline(
+                [[-3.5511302, -40.6550293], [-3.5518461, -40.6527136]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_6b2003d8be87a9d11af99238fa95a54c);
+        
+    
+            poly_line_edc4ecab485506fae30b0b317a59c82a.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_6b2003d8be87a9d11af99238fa95a54c.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_464cc32e6e0702910c431728fef41ecc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_464cc32e6e0702910c431728fef41ecc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_464cc32e6e0702910c431728fef41ecc = L.map(
+                "map_464cc32e6e0702910c431728fef41ecc",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4ba1d4d000a87224ceffc8e8c6159d3e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4ba1d4d000a87224ceffc8e8c6159d3e.addTo(map_464cc32e6e0702910c431728fef41ecc);
+        
+    
+            var circle_marker_9d4c32ba7946a91abc88520e084387ff = L.circleMarker(
+                [-4.4194845, -39.0463956],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_464cc32e6e0702910c431728fef41ecc);
+        
+    
+        var popup_bee8f6eee25518330b40ce7fd606361b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0324ce20765b0b0dd28727345ba25bf9 = $(`<div id="html_0324ce20765b0b0dd28727345ba25bf9" style="width: 100.0%; height: 100.0%;">ARATUBA, CE</div>`)[0];
+                popup_bee8f6eee25518330b40ce7fd606361b.setContent(html_0324ce20765b0b0dd28727345ba25bf9);
+            
+        
+
+        circle_marker_9d4c32ba7946a91abc88520e084387ff.bindPopup(popup_bee8f6eee25518330b40ce7fd606361b)
+        ;
+
+        
+    
+    
+            var circle_marker_936908ee18bac40b35979b19e744deb5 = L.circleMarker(
+                [-4.419082614330919, -39.0448010131946],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_464cc32e6e0702910c431728fef41ecc);
+        
+    
+        var popup_b035285ef3d5ba6f58ee2aee5abcffb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0b8f7bb9345b4e63924c06f2b5691a5 = $(`<div id="html_b0b8f7bb9345b4e63924c06f2b5691a5" style="width: 100.0%; height: 100.0%;">SOCIEDADE HOSPITALAR PE DIONISIO</div>`)[0];
+                popup_b035285ef3d5ba6f58ee2aee5abcffb4.setContent(html_b0b8f7bb9345b4e63924c06f2b5691a5);
+            
+        
+
+        circle_marker_936908ee18bac40b35979b19e744deb5.bindPopup(popup_b035285ef3d5ba6f58ee2aee5abcffb4)
+        ;
+
+        
+    
+    
+            var poly_line_f642adb989a1325946ce285d9891552b = L.polyline(
+                [[-4.4194845, -39.0463956], [-4.419082614330919, -39.0448010131946]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_464cc32e6e0702910c431728fef41ecc);
+        
+    
+            poly_line_f642adb989a1325946ce285d9891552b.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_464cc32e6e0702910c431728fef41ecc.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

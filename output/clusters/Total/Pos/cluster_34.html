@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e22950f8d2efdca751a212e3201d3181 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e22950f8d2efdca751a212e3201d3181" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e22950f8d2efdca751a212e3201d3181 = L.map(
+                "map_e22950f8d2efdca751a212e3201d3181",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad0a6c66ca50c260dfd170a7df7fbe4c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ad0a6c66ca50c260dfd170a7df7fbe4c.addTo(map_e22950f8d2efdca751a212e3201d3181);
+        
+    
+            var circle_marker_b33a2a0cb4df47b3f645018ac2fca3d3 = L.circleMarker(
+                [-6.4005677, -38.8571841],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e22950f8d2efdca751a212e3201d3181);
+        
+    
+        var popup_71723582cc1c68b9aa169ca772419f7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d970e6b68c014e522bed24f54dc0a76 = $(`<div id="html_6d970e6b68c014e522bed24f54dc0a76" style="width: 100.0%; height: 100.0%;">ICO, CE</div>`)[0];
+                popup_71723582cc1c68b9aa169ca772419f7d.setContent(html_6d970e6b68c014e522bed24f54dc0a76);
+            
+        
+
+        circle_marker_b33a2a0cb4df47b3f645018ac2fca3d3.bindPopup(popup_71723582cc1c68b9aa169ca772419f7d)
+        ;
+
+        
+    
+    
+            var circle_marker_739a3bcea528d5fcaba5e22da08608db = L.circleMarker(
+                [-6.4005677, -38.8571841],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e22950f8d2efdca751a212e3201d3181);
+        
+    
+        var popup_f0a1e5102c903fe560e4d7bec52b236b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4ebfbf01f9c2fa7d1f71c1d60cf2da1 = $(`<div id="html_a4ebfbf01f9c2fa7d1f71c1d60cf2da1" style="width: 100.0%; height: 100.0%;">HOSPITAL REGIONAL DE ICO DEPUTADO ORIEL GUIMARAES NUNES</div>`)[0];
+                popup_f0a1e5102c903fe560e4d7bec52b236b.setContent(html_a4ebfbf01f9c2fa7d1f71c1d60cf2da1);
+            
+        
+
+        circle_marker_739a3bcea528d5fcaba5e22da08608db.bindPopup(popup_f0a1e5102c903fe560e4d7bec52b236b)
+        ;
+
+        
+    
+    
+            var poly_line_b45f104bc33cbdc3f59c8579ff27b528 = L.polyline(
+                [[-6.4005677, -38.8571841], [-6.4005677, -38.8571841]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_e22950f8d2efdca751a212e3201d3181);
+        
+    
+            poly_line_b45f104bc33cbdc3f59c8579ff27b528.bindTooltip(
+                `<div>
+                     Peso: 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_e22950f8d2efdca751a212e3201d3181.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38ac05acc0e4533c22dd81d9c72453b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_38ac05acc0e4533c22dd81d9c72453b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_38ac05acc0e4533c22dd81d9c72453b8 = L.map(
+                "map_38ac05acc0e4533c22dd81d9c72453b8",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3986cba725fe3678010e802638130744 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3986cba725fe3678010e802638130744.addTo(map_38ac05acc0e4533c22dd81d9c72453b8);
+        
+    
+            var circle_marker_7a485dcfd22980fe99ae25b5252d0951 = L.circleMarker(
+                [-7.0907724, -40.0273072],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_38ac05acc0e4533c22dd81d9c72453b8);
+        
+    
+        var popup_c20c7fe70a756c56f74333325de39a0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c905ef3ae88c06c29fbe11971cfb7ff = $(`<div id="html_7c905ef3ae88c06c29fbe11971cfb7ff" style="width: 100.0%; height: 100.0%;">POTENGI, CE</div>`)[0];
+                popup_c20c7fe70a756c56f74333325de39a0c.setContent(html_7c905ef3ae88c06c29fbe11971cfb7ff);
+            
+        
+
+        circle_marker_7a485dcfd22980fe99ae25b5252d0951.bindPopup(popup_c20c7fe70a756c56f74333325de39a0c)
+        ;
+
+        
+    
+    
+            var circle_marker_6cf99e194261c3924bd75f8171a581a6 = L.circleMarker(
+                [-7.0907724, -40.0273072],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_38ac05acc0e4533c22dd81d9c72453b8);
+        
+    
+        var popup_1637372fff0da8cc3f43bafd5373a5ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6b0fd96e1f3b334c5bfc29ef5234054 = $(`<div id="html_c6b0fd96e1f3b334c5bfc29ef5234054" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE POTENGI</div>`)[0];
+                popup_1637372fff0da8cc3f43bafd5373a5ee.setContent(html_c6b0fd96e1f3b334c5bfc29ef5234054);
+            
+        
+
+        circle_marker_6cf99e194261c3924bd75f8171a581a6.bindPopup(popup_1637372fff0da8cc3f43bafd5373a5ee)
+        ;
+
+        
+    
+    
+            var poly_line_e9e8467d3c94390a79cb0b1724f4b1b6 = L.polyline(
+                [[-7.0907724, -40.0273072], [-7.0907724, -40.0273072]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_38ac05acc0e4533c22dd81d9c72453b8);
+        
+    
+            poly_line_e9e8467d3c94390a79cb0b1724f4b1b6.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_38ac05acc0e4533c22dd81d9c72453b8.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

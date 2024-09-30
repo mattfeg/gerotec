@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_10aa1aacec832b6470060d7cd7f0b9f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_10aa1aacec832b6470060d7cd7f0b9f7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_10aa1aacec832b6470060d7cd7f0b9f7 = L.map(
+                "map_10aa1aacec832b6470060d7cd7f0b9f7",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_53bdbd6f6bcc126ba8410629afd04c39 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_53bdbd6f6bcc126ba8410629afd04c39.addTo(map_10aa1aacec832b6470060d7cd7f0b9f7);
+        
+    
+            var circle_marker_d7865020c96611ca4700a54857634177 = L.circleMarker(
+                [-6.537221199999999, -39.4958339],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10aa1aacec832b6470060d7cd7f0b9f7);
+        
+    
+        var popup_3f0905c6f18f106ace27a7a8591749ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db11ce0cb9a824e78a00208a76e402c3 = $(`<div id="html_db11ce0cb9a824e78a00208a76e402c3" style="width: 100.0%; height: 100.0%;">CARIUS, CE</div>`)[0];
+                popup_3f0905c6f18f106ace27a7a8591749ce.setContent(html_db11ce0cb9a824e78a00208a76e402c3);
+            
+        
+
+        circle_marker_d7865020c96611ca4700a54857634177.bindPopup(popup_3f0905c6f18f106ace27a7a8591749ce)
+        ;
+
+        
+    
+    
+            var circle_marker_eba350e2e7f01e982d39387655db61d5 = L.circleMarker(
+                [-6.5376738290645635, -39.49601994649563],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10aa1aacec832b6470060d7cd7f0b9f7);
+        
+    
+        var popup_4c40affcaa044eeeaaa1c71a1782ddd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2af28bdc8626c0d5bbb30cbfb439d90b = $(`<div id="html_2af28bdc8626c0d5bbb30cbfb439d90b" style="width: 100.0%; height: 100.0%;">HOSP DR THADEU DE PAULO BRITO</div>`)[0];
+                popup_4c40affcaa044eeeaaa1c71a1782ddd0.setContent(html_2af28bdc8626c0d5bbb30cbfb439d90b);
+            
+        
+
+        circle_marker_eba350e2e7f01e982d39387655db61d5.bindPopup(popup_4c40affcaa044eeeaaa1c71a1782ddd0)
+        ;
+
+        
+    
+    
+            var poly_line_c92f8a6be3831790b6bb70dc6d2d64cc = L.polyline(
+                [[-6.537221199999999, -39.4958339], [-6.5376738290645635, -39.49601994649563]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10aa1aacec832b6470060d7cd7f0b9f7);
+        
+    
+            poly_line_c92f8a6be3831790b6bb70dc6d2d64cc.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_10aa1aacec832b6470060d7cd7f0b9f7.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

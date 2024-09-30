@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be4c5c40709c131cbddc71f0789b105d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be4c5c40709c131cbddc71f0789b105d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be4c5c40709c131cbddc71f0789b105d = L.map(
+                "map_be4c5c40709c131cbddc71f0789b105d",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aa5423e4b673d3c4475f474a8c472cbd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_aa5423e4b673d3c4475f474a8c472cbd.addTo(map_be4c5c40709c131cbddc71f0789b105d);
+        
+    
+            var circle_marker_199801560b2481af54cea7f6eee6a675 = L.circleMarker(
+                [-5.810713499999999, -38.3040228],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_be4c5c40709c131cbddc71f0789b105d);
+        
+    
+        var popup_384e66f7abfa3b50b2438e0ad58c6083 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24e9694ab9fd6602e084a8103a1ff43e = $(`<div id="html_24e9694ab9fd6602e084a8103a1ff43e" style="width: 100.0%; height: 100.0%;">IRACEMA, CE</div>`)[0];
+                popup_384e66f7abfa3b50b2438e0ad58c6083.setContent(html_24e9694ab9fd6602e084a8103a1ff43e);
+            
+        
+
+        circle_marker_199801560b2481af54cea7f6eee6a675.bindPopup(popup_384e66f7abfa3b50b2438e0ad58c6083)
+        ;
+
+        
+    
+    
+            var circle_marker_40e459bcaf8c3c278a5f9a076b778eac = L.circleMarker(
+                [-5.8096095, -38.3015293],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_be4c5c40709c131cbddc71f0789b105d);
+        
+    
+        var popup_002f27be785dbf65aeacde351de11de5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7790104d31be3a3d1822cb71790ce15 = $(`<div id="html_e7790104d31be3a3d1822cb71790ce15" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE MARIA ROQUE DE MACEDO</div>`)[0];
+                popup_002f27be785dbf65aeacde351de11de5.setContent(html_e7790104d31be3a3d1822cb71790ce15);
+            
+        
+
+        circle_marker_40e459bcaf8c3c278a5f9a076b778eac.bindPopup(popup_002f27be785dbf65aeacde351de11de5)
+        ;
+
+        
+    
+    
+            var poly_line_2528d3c9e6573f68b108ae3e04cd5317 = L.polyline(
+                [[-5.810713499999999, -38.3040228], [-5.8096095, -38.3015293]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_be4c5c40709c131cbddc71f0789b105d);
+        
+    
+            poly_line_2528d3c9e6573f68b108ae3e04cd5317.bindTooltip(
+                `<div>
+                     Peso: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_be4c5c40709c131cbddc71f0789b105d.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

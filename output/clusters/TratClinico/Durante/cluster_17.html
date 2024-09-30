@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1e7ab1f5906fb917435a85606a442a5a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1e7ab1f5906fb917435a85606a442a5a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1e7ab1f5906fb917435a85606a442a5a = L.map(
+                "map_1e7ab1f5906fb917435a85606a442a5a",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_503372a7143bb719384ac65caa583196 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_503372a7143bb719384ac65caa583196.addTo(map_1e7ab1f5906fb917435a85606a442a5a);
+        
+    
+            var circle_marker_a27031454c20e6df8aa44f7e98bc172c = L.circleMarker(
+                [-5.1982962, -39.2955312],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1e7ab1f5906fb917435a85606a442a5a);
+        
+    
+        var popup_c83de5c0499cccde8522c8d2793021b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f10a1a6d19da4fbdcd7fc4b6b371c46 = $(`<div id="html_1f10a1a6d19da4fbdcd7fc4b6b371c46" style="width: 100.0%; height: 100.0%;">QUIXERAMOBIM, CE</div>`)[0];
+                popup_c83de5c0499cccde8522c8d2793021b8.setContent(html_1f10a1a6d19da4fbdcd7fc4b6b371c46);
+            
+        
+
+        circle_marker_a27031454c20e6df8aa44f7e98bc172c.bindPopup(popup_c83de5c0499cccde8522c8d2793021b8)
+        ;
+
+        
+    
+    
+            var circle_marker_997826bcb5b4009a7d6634787f9ec6d6 = L.circleMarker(
+                [-5.1954883, -39.3117054],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1e7ab1f5906fb917435a85606a442a5a);
+        
+    
+        var popup_51be2a006517c0e09032335df78522f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b50a960d3a42ce996d9d26007b09462d = $(`<div id="html_b50a960d3a42ce996d9d26007b09462d" style="width: 100.0%; height: 100.0%;">HOSPITAL REGIONAL DR PONTES NETO</div>`)[0];
+                popup_51be2a006517c0e09032335df78522f6.setContent(html_b50a960d3a42ce996d9d26007b09462d);
+            
+        
+
+        circle_marker_997826bcb5b4009a7d6634787f9ec6d6.bindPopup(popup_51be2a006517c0e09032335df78522f6)
+        ;
+
+        
+    
+    
+            var circle_marker_68dd695b737e58d8871214b3d132841a = L.circleMarker(
+                [-4.1000116, -39.2391473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1e7ab1f5906fb917435a85606a442a5a);
+        
+    
+        var popup_2e1e4003febddd3bb2dc2489d8e7be47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_528445486d2c9b5a0b39f6d951679de8 = $(`<div id="html_528445486d2c9b5a0b39f6d951679de8" style="width: 100.0%; height: 100.0%;">PARAMOTI, CE</div>`)[0];
+                popup_2e1e4003febddd3bb2dc2489d8e7be47.setContent(html_528445486d2c9b5a0b39f6d951679de8);
+            
+        
+
+        circle_marker_68dd695b737e58d8871214b3d132841a.bindPopup(popup_2e1e4003febddd3bb2dc2489d8e7be47)
+        ;
+
+        
+    
+    
+            var circle_marker_68bce02be61d6ce86c8589702737480e = L.circleMarker(
+                [-5.1832747, -39.2616355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1e7ab1f5906fb917435a85606a442a5a);
+        
+    
+        var popup_b38daaa47cc5bc9ea7e9a9b6591f8220 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51fff3e6b88a518b9a94c1b1f4e6733e = $(`<div id="html_51fff3e6b88a518b9a94c1b1f4e6733e" style="width: 100.0%; height: 100.0%;">HOSPITAL REGIONAL DO SERTAO CENTRAL</div>`)[0];
+                popup_b38daaa47cc5bc9ea7e9a9b6591f8220.setContent(html_51fff3e6b88a518b9a94c1b1f4e6733e);
+            
+        
+
+        circle_marker_68bce02be61d6ce86c8589702737480e.bindPopup(popup_b38daaa47cc5bc9ea7e9a9b6591f8220)
+        ;
+
+        
+    
+    
+            var poly_line_9e0cb9bd27900d20feda99883bb851c5 = L.polyline(
+                [[-5.1982962, -39.2955312], [-5.1954883, -39.3117054]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1e7ab1f5906fb917435a85606a442a5a);
+        
+    
+            poly_line_9e0cb9bd27900d20feda99883bb851c5.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c5cacb6063c7f2c0195f805fd07c0092 = L.polyline(
+                [[-5.1982962, -39.2955312], [-5.1832747, -39.2616355]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1e7ab1f5906fb917435a85606a442a5a);
+        
+    
+            poly_line_c5cacb6063c7f2c0195f805fd07c0092.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1bfd3f8d949664e37ba51bf441e76289 = L.polyline(
+                [[-4.1000116, -39.2391473], [-5.1832747, -39.2616355]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1e7ab1f5906fb917435a85606a442a5a);
+        
+    
+            poly_line_1bfd3f8d949664e37ba51bf441e76289.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_1e7ab1f5906fb917435a85606a442a5a.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

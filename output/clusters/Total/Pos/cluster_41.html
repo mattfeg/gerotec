@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_14c37338d7ff7abb5a7452f808d3824b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_14c37338d7ff7abb5a7452f808d3824b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_14c37338d7ff7abb5a7452f808d3824b = L.map(
+                "map_14c37338d7ff7abb5a7452f808d3824b",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ee0492d4e87b52fdffbe9648e5a53166 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ee0492d4e87b52fdffbe9648e5a53166.addTo(map_14c37338d7ff7abb5a7452f808d3824b);
+        
+    
+            var circle_marker_6758e1e3e51abc67b3bc867a1a5a5182 = L.circleMarker(
+                [-6.889683799999999, -39.21822600000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_14c37338d7ff7abb5a7452f808d3824b);
+        
+    
+        var popup_825ee66bba0281ae35f97c5e2b3b56a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9c76042749b328d7181b4cf950aa60c = $(`<div id="html_e9c76042749b328d7181b4cf950aa60c" style="width: 100.0%; height: 100.0%;">GRANJEIRO, CE</div>`)[0];
+                popup_825ee66bba0281ae35f97c5e2b3b56a7.setContent(html_e9c76042749b328d7181b4cf950aa60c);
+            
+        
+
+        circle_marker_6758e1e3e51abc67b3bc867a1a5a5182.bindPopup(popup_825ee66bba0281ae35f97c5e2b3b56a7)
+        ;
+
+        
+    
+    
+            var circle_marker_5df2af8acbe94127d8293f64b654bb8d = L.circleMarker(
+                [-6.889104799999999, -39.2255098],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_14c37338d7ff7abb5a7452f808d3824b);
+        
+    
+        var popup_c21de51054fd01edea9d7197c67cb117 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ab23fc1da0ba1e54c418ee63e09d9fa = $(`<div id="html_1ab23fc1da0ba1e54c418ee63e09d9fa" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE GRANJEIRO</div>`)[0];
+                popup_c21de51054fd01edea9d7197c67cb117.setContent(html_1ab23fc1da0ba1e54c418ee63e09d9fa);
+            
+        
+
+        circle_marker_5df2af8acbe94127d8293f64b654bb8d.bindPopup(popup_c21de51054fd01edea9d7197c67cb117)
+        ;
+
+        
+    
+    
+            var poly_line_9bf0085d1c3c4af89e9fc8d4600cdac3 = L.polyline(
+                [[-6.889683799999999, -39.21822600000001], [-6.889104799999999, -39.2255098]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_14c37338d7ff7abb5a7452f808d3824b);
+        
+    
+            poly_line_9bf0085d1c3c4af89e9fc8d4600cdac3.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_14c37338d7ff7abb5a7452f808d3824b.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

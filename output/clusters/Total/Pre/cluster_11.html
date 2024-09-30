@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_baeaf4a70ffe8cf7bff169815af1713c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_baeaf4a70ffe8cf7bff169815af1713c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_baeaf4a70ffe8cf7bff169815af1713c = L.map(
+                "map_baeaf4a70ffe8cf7bff169815af1713c",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac95c4e9db2b498b623ac2aac16b7728 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ac95c4e9db2b498b623ac2aac16b7728.addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+            var circle_marker_cab37eaed1a5e77fe322acf6212c3bdf = L.circleMarker(
+                [-6.3587958, -39.29805899999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+        var popup_4bd09154d9c4e98647f58347b93d5e75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a466d8ea5160fcd62add11696f9db1c4 = $(`<div id="html_a466d8ea5160fcd62add11696f9db1c4" style="width: 100.0%; height: 100.0%;">IGUATU, CE</div>`)[0];
+                popup_4bd09154d9c4e98647f58347b93d5e75.setContent(html_a466d8ea5160fcd62add11696f9db1c4);
+            
+        
+
+        circle_marker_cab37eaed1a5e77fe322acf6212c3bdf.bindPopup(popup_4bd09154d9c4e98647f58347b93d5e75)
+        ;
+
+        
+    
+    
+            var circle_marker_fb0c3a36bf581fdc5f17d9b27459b303 = L.circleMarker(
+                [-6.3587958, -39.29805899999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+        var popup_ac3c7f549b6624dfdfbea1d5b2fd113f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ad9ecfa0e2db819557a1487c65339c1 = $(`<div id="html_9ad9ecfa0e2db819557a1487c65339c1" style="width: 100.0%; height: 100.0%;">HOSPITAL REGIONAL DE IGUATU</div>`)[0];
+                popup_ac3c7f549b6624dfdfbea1d5b2fd113f.setContent(html_9ad9ecfa0e2db819557a1487c65339c1);
+            
+        
+
+        circle_marker_fb0c3a36bf581fdc5f17d9b27459b303.bindPopup(popup_ac3c7f549b6624dfdfbea1d5b2fd113f)
+        ;
+
+        
+    
+    
+            var circle_marker_496d59ffdfcdef66c1066b535c447417 = L.circleMarker(
+                [-6.2525243, -39.19886169999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+        var popup_22009280c05d2666538ea9defbd7a946 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfc1622b58e83af12a7d889d812ddede = $(`<div id="html_dfc1622b58e83af12a7d889d812ddede" style="width: 100.0%; height: 100.0%;">QUIXELO, CE</div>`)[0];
+                popup_22009280c05d2666538ea9defbd7a946.setContent(html_dfc1622b58e83af12a7d889d812ddede);
+            
+        
+
+        circle_marker_496d59ffdfcdef66c1066b535c447417.bindPopup(popup_22009280c05d2666538ea9defbd7a946)
+        ;
+
+        
+    
+    
+            var circle_marker_0acf9c2508c835d77c084acb5f3cbc84 = L.circleMarker(
+                [-6.254303816543978, -39.19982494072888],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+        var popup_62a92480b620eb82c5c60b67d5301947 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_740d220c2acf1434b1c0e81886459e18 = $(`<div id="html_740d220c2acf1434b1c0e81886459e18" style="width: 100.0%; height: 100.0%;">HOSP MUNIC DE QUIXELO</div>`)[0];
+                popup_62a92480b620eb82c5c60b67d5301947.setContent(html_740d220c2acf1434b1c0e81886459e18);
+            
+        
+
+        circle_marker_0acf9c2508c835d77c084acb5f3cbc84.bindPopup(popup_62a92480b620eb82c5c60b67d5301947)
+        ;
+
+        
+    
+    
+            var circle_marker_186eb8d54c80b3ff649640c9cce3c2f0 = L.circleMarker(
+                [-6.0931519, -39.4531552],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+        var popup_9de4aa916c23c2aff3429365443db65c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15e53f62f8d1388581ef7669e06be7ca = $(`<div id="html_15e53f62f8d1388581ef7669e06be7ca" style="width: 100.0%; height: 100.0%;">ACOPIARA, CE</div>`)[0];
+                popup_9de4aa916c23c2aff3429365443db65c.setContent(html_15e53f62f8d1388581ef7669e06be7ca);
+            
+        
+
+        circle_marker_186eb8d54c80b3ff649640c9cce3c2f0.bindPopup(popup_9de4aa916c23c2aff3429365443db65c)
+        ;
+
+        
+    
+    
+            var poly_line_312604ab85203b6898dcbbff8189f451 = L.polyline(
+                [[-6.3587958, -39.29805899999999], [-6.3587958, -39.29805899999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+            poly_line_312604ab85203b6898dcbbff8189f451.bindTooltip(
+                `<div>
+                     Peso: 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_106af3bae814ee742436ece0a09d1010 = L.polyline(
+                [[-6.2525243, -39.19886169999999], [-6.254303816543978, -39.19982494072888]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+            poly_line_106af3bae814ee742436ece0a09d1010.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eb8cc15c947198f4a4520d1ceb9e8f40 = L.polyline(
+                [[-6.2525243, -39.19886169999999], [-6.3587958, -39.29805899999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+            poly_line_eb8cc15c947198f4a4520d1ceb9e8f40.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e93b143b0a4744c0ae1dd086f7eaaed9 = L.polyline(
+                [[-6.0931519, -39.4531552], [-6.3587958, -39.29805899999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_baeaf4a70ffe8cf7bff169815af1713c);
+        
+    
+            poly_line_e93b143b0a4744c0ae1dd086f7eaaed9.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_baeaf4a70ffe8cf7bff169815af1713c.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

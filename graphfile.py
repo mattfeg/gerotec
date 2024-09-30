@@ -163,9 +163,9 @@ def plotar_grafo(G, partition=None):
     hospitais = gdf_nodes[gdf_nodes['bipartite'] == 1]
 
     if not municipios.empty:
-        municipios.plot(ax=ax, colormap='tab20', column='cluster', markersize=50)
+        municipios.plot(ax=ax, cmap='tab20', column='cluster', markersize=50)
     if not hospitais.empty:
-        hospitais.plot(ax=ax, colormap='tab20', column='cluster', markersize=50)
+        hospitais.plot(ax=ax, cmap='tab20', column='cluster', markersize=50)
 
     # Plot edges
     for u, v, data in G.edges(data=True):

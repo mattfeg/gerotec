@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4d19dba7b5dea708b07911102c7683aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4d19dba7b5dea708b07911102c7683aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4d19dba7b5dea708b07911102c7683aa = L.map(
+                "map_4d19dba7b5dea708b07911102c7683aa",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7a3c91977aaea1a121a35246d9ffbaf4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7a3c91977aaea1a121a35246d9ffbaf4.addTo(map_4d19dba7b5dea708b07911102c7683aa);
+        
+    
+            var circle_marker_e4ef8073cc95c33ac57a4636b80e5f88 = L.circleMarker(
+                [-5.306357999999999, -38.9203167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4d19dba7b5dea708b07911102c7683aa);
+        
+    
+        var popup_0ab882e8b433b8214cd9450a5fbb1be2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2aeb58d2c7ed558f2d478e82a8b572e = $(`<div id="html_f2aeb58d2c7ed558f2d478e82a8b572e" style="width: 100.0%; height: 100.0%;">BANABUIU, CE</div>`)[0];
+                popup_0ab882e8b433b8214cd9450a5fbb1be2.setContent(html_f2aeb58d2c7ed558f2d478e82a8b572e);
+            
+        
+
+        circle_marker_e4ef8073cc95c33ac57a4636b80e5f88.bindPopup(popup_0ab882e8b433b8214cd9450a5fbb1be2)
+        ;
+
+        
+    
+    
+            var circle_marker_73b5e6f5b49055927de3611c6c1bd964 = L.circleMarker(
+                [-5.308903, -38.9226043],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4d19dba7b5dea708b07911102c7683aa);
+        
+    
+        var popup_d8cfcebfea7aa4da245a60e8c1f45395 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4e902fb91cc72668f73e8da74b8dd99 = $(`<div id="html_d4e902fb91cc72668f73e8da74b8dd99" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL SENADOR CARLOS JEREISSATI</div>`)[0];
+                popup_d8cfcebfea7aa4da245a60e8c1f45395.setContent(html_d4e902fb91cc72668f73e8da74b8dd99);
+            
+        
+
+        circle_marker_73b5e6f5b49055927de3611c6c1bd964.bindPopup(popup_d8cfcebfea7aa4da245a60e8c1f45395)
+        ;
+
+        
+    
+    
+            var circle_marker_68e7d2835f4c72a1f3b8d6fca4e46671 = L.circleMarker(
+                [-3.9056382, -40.7450185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4d19dba7b5dea708b07911102c7683aa);
+        
+    
+        var popup_c0123274ffe19bff03a0b95752303ef8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1dd92f9b3b548d38c465ae6da92aeca = $(`<div id="html_d1dd92f9b3b548d38c465ae6da92aeca" style="width: 100.0%; height: 100.0%;">MUCAMBO, CE</div>`)[0];
+                popup_c0123274ffe19bff03a0b95752303ef8.setContent(html_d1dd92f9b3b548d38c465ae6da92aeca);
+            
+        
+
+        circle_marker_68e7d2835f4c72a1f3b8d6fca4e46671.bindPopup(popup_c0123274ffe19bff03a0b95752303ef8)
+        ;
+
+        
+    
+    
+            var poly_line_3ac09ed0399caf4adc6df13135d94559 = L.polyline(
+                [[-5.306357999999999, -38.9203167], [-5.308903, -38.9226043]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4d19dba7b5dea708b07911102c7683aa);
+        
+    
+            poly_line_3ac09ed0399caf4adc6df13135d94559.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c02b3e0684880df65cd5fc0f17680164 = L.polyline(
+                [[-3.9056382, -40.7450185], [-5.308903, -38.9226043]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4d19dba7b5dea708b07911102c7683aa);
+        
+    
+            poly_line_c02b3e0684880df65cd5fc0f17680164.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_4d19dba7b5dea708b07911102c7683aa.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

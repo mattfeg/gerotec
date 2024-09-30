@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3d2f1b5dede010a7ee02d551e53759a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3d2f1b5dede010a7ee02d551e53759a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3d2f1b5dede010a7ee02d551e53759a0 = L.map(
+                "map_3d2f1b5dede010a7ee02d551e53759a0",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_10e7e1c8741fd80a3940638ba1a05737 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_10e7e1c8741fd80a3940638ba1a05737.addTo(map_3d2f1b5dede010a7ee02d551e53759a0);
+        
+    
+            var circle_marker_f94541c10141543ae4ed8670c206b28a = L.circleMarker(
+                [-2.9220001, -40.1758022],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3d2f1b5dede010a7ee02d551e53759a0);
+        
+    
+        var popup_bfde5a3c11a1259cc31d6b5dcc51674c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbbdac71c2b1f3c754052f22dd499ed3 = $(`<div id="html_bbbdac71c2b1f3c754052f22dd499ed3" style="width: 100.0%; height: 100.0%;">CRUZ, CE</div>`)[0];
+                popup_bfde5a3c11a1259cc31d6b5dcc51674c.setContent(html_bbbdac71c2b1f3c754052f22dd499ed3);
+            
+        
+
+        circle_marker_f94541c10141543ae4ed8670c206b28a.bindPopup(popup_bfde5a3c11a1259cc31d6b5dcc51674c)
+        ;
+
+        
+    
+    
+            var circle_marker_62460502658a6eddd79fde0aac8d9a14 = L.circleMarker(
+                [-2.9219179279275855, -40.18268711683469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3d2f1b5dede010a7ee02d551e53759a0);
+        
+    
+        var popup_99800882b969982a3e417385e3c984f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dec14c2ceb62677a7bd7fd45b191a99 = $(`<div id="html_3dec14c2ceb62677a7bd7fd45b191a99" style="width: 100.0%; height: 100.0%;">HOSP MUNIC DONA MARIA MUNIZ</div>`)[0];
+                popup_99800882b969982a3e417385e3c984f0.setContent(html_3dec14c2ceb62677a7bd7fd45b191a99);
+            
+        
+
+        circle_marker_62460502658a6eddd79fde0aac8d9a14.bindPopup(popup_99800882b969982a3e417385e3c984f0)
+        ;
+
+        
+    
+    
+            var poly_line_98a98fe6c3fc584e5e8ae99f352447ac = L.polyline(
+                [[-2.9220001, -40.1758022], [-2.9219179279275855, -40.18268711683469]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3d2f1b5dede010a7ee02d551e53759a0);
+        
+    
+            poly_line_98a98fe6c3fc584e5e8ae99f352447ac.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_3d2f1b5dede010a7ee02d551e53759a0.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

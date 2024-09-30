@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_093f17efde5cea035cfc9a967fac3031 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_093f17efde5cea035cfc9a967fac3031" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_093f17efde5cea035cfc9a967fac3031 = L.map(
+                "map_093f17efde5cea035cfc9a967fac3031",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_efee232a6b7d5b911f7940a108b2e9d4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_efee232a6b7d5b911f7940a108b2e9d4.addTo(map_093f17efde5cea035cfc9a967fac3031);
+        
+    
+            var circle_marker_391b65ce68ad207794e0c48cd8e630b6 = L.circleMarker(
+                [-4.8378331, -37.7828916],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_093f17efde5cea035cfc9a967fac3031);
+        
+    
+        var popup_b5e6a52d38504b4dc8b628528b161ff2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c16301efae9e5313a27f657e0f381cc5 = $(`<div id="html_c16301efae9e5313a27f657e0f381cc5" style="width: 100.0%; height: 100.0%;">JAGUARUANA, CE</div>`)[0];
+                popup_b5e6a52d38504b4dc8b628528b161ff2.setContent(html_c16301efae9e5313a27f657e0f381cc5);
+            
+        
+
+        circle_marker_391b65ce68ad207794e0c48cd8e630b6.bindPopup(popup_b5e6a52d38504b4dc8b628528b161ff2)
+        ;
+
+        
+    
+    
+            var circle_marker_bebecf90b5c80cc34855d321523d5223 = L.circleMarker(
+                [-4.7474946, -37.9618088],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_093f17efde5cea035cfc9a967fac3031);
+        
+    
+        var popup_3ddb29b426d53de8d6c87fa6a855a161 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb5c04b8db00f1d329823fd82bf52812 = $(`<div id="html_eb5c04b8db00f1d329823fd82bf52812" style="width: 100.0%; height: 100.0%;">PALHANO, CE</div>`)[0];
+                popup_3ddb29b426d53de8d6c87fa6a855a161.setContent(html_eb5c04b8db00f1d329823fd82bf52812);
+            
+        
+
+        circle_marker_bebecf90b5c80cc34855d321523d5223.bindPopup(popup_3ddb29b426d53de8d6c87fa6a855a161)
+        ;
+
+        
+    
+    
+            var circle_marker_9eeb4bd519dcfeae4f5fa885a2bd4623 = L.circleMarker(
+                [-4.9380111, -37.9695161],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_093f17efde5cea035cfc9a967fac3031);
+        
+    
+        var popup_f41545b7de19520f83a4735570a51c34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffa3156051c75e0ef514910929ac480f = $(`<div id="html_ffa3156051c75e0ef514910929ac480f" style="width: 100.0%; height: 100.0%;">HOSPITAL E CASA DE SAUDE DE RUSSAS</div>`)[0];
+                popup_f41545b7de19520f83a4735570a51c34.setContent(html_ffa3156051c75e0ef514910929ac480f);
+            
+        
+
+        circle_marker_9eeb4bd519dcfeae4f5fa885a2bd4623.bindPopup(popup_f41545b7de19520f83a4735570a51c34)
+        ;
+
+        
+    
+    
+            var circle_marker_94749493f49889eeabeadbe91dd74f75 = L.circleMarker(
+                [-4.9414188, -37.976262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_093f17efde5cea035cfc9a967fac3031);
+        
+    
+        var popup_e20055e18870e4759dfd5e7391dfdf56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_833e9e3b9b80c5397f4682083e4711e4 = $(`<div id="html_833e9e3b9b80c5397f4682083e4711e4" style="width: 100.0%; height: 100.0%;">RUSSAS, CE</div>`)[0];
+                popup_e20055e18870e4759dfd5e7391dfdf56.setContent(html_833e9e3b9b80c5397f4682083e4711e4);
+            
+        
+
+        circle_marker_94749493f49889eeabeadbe91dd74f75.bindPopup(popup_e20055e18870e4759dfd5e7391dfdf56)
+        ;
+
+        
+    
+    
+            var poly_line_e50ce6052ad20ad9bbbf65cda0a73a82 = L.polyline(
+                [[-4.8378331, -37.7828916], [-4.9380111, -37.9695161]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_093f17efde5cea035cfc9a967fac3031);
+        
+    
+            poly_line_e50ce6052ad20ad9bbbf65cda0a73a82.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_adf4977305ab13ec323faadd31626fa4 = L.polyline(
+                [[-4.7474946, -37.9618088], [-4.9380111, -37.9695161]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_093f17efde5cea035cfc9a967fac3031);
+        
+    
+            poly_line_adf4977305ab13ec323faadd31626fa4.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e0afc400f5ee26333c3b043ecd4ee3f8 = L.polyline(
+                [[-4.9414188, -37.976262], [-4.9380111, -37.9695161]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_093f17efde5cea035cfc9a967fac3031);
+        
+    
+            poly_line_e0afc400f5ee26333c3b043ecd4ee3f8.bindTooltip(
+                `<div>
+                     Peso: 32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_093f17efde5cea035cfc9a967fac3031.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

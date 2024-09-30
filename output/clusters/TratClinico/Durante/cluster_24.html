@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d2176ddcbc0a9c642c27ad2b81a8e16 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6d2176ddcbc0a9c642c27ad2b81a8e16" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6d2176ddcbc0a9c642c27ad2b81a8e16 = L.map(
+                "map_6d2176ddcbc0a9c642c27ad2b81a8e16",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b7414a68f8e19f129882c7eb2f27209c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b7414a68f8e19f129882c7eb2f27209c.addTo(map_6d2176ddcbc0a9c642c27ad2b81a8e16);
+        
+    
+            var circle_marker_40189f2b6fe23f532a0297dd8a54944a = L.circleMarker(
+                [-4.4073419, -40.4040465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6d2176ddcbc0a9c642c27ad2b81a8e16);
+        
+    
+        var popup_90e70e9e589b07747d743cd60e2a6fd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_011fc8ff328f92863747323f34b263c1 = $(`<div id="html_011fc8ff328f92863747323f34b263c1" style="width: 100.0%; height: 100.0%;">HIDROLANDIA, CE</div>`)[0];
+                popup_90e70e9e589b07747d743cd60e2a6fd0.setContent(html_011fc8ff328f92863747323f34b263c1);
+            
+        
+
+        circle_marker_40189f2b6fe23f532a0297dd8a54944a.bindPopup(popup_90e70e9e589b07747d743cd60e2a6fd0)
+        ;
+
+        
+    
+    
+            var circle_marker_0fe1f6805c453e6f040666253585a1a7 = L.circleMarker(
+                [-4.41129873253632, -40.40060409011666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_6d2176ddcbc0a9c642c27ad2b81a8e16);
+        
+    
+        var popup_19f57e2545abcb63a95c70571aeb5569 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_500b11e37a3c4957a4dddd686cb932e6 = $(`<div id="html_500b11e37a3c4957a4dddd686cb932e6" style="width: 100.0%; height: 100.0%;">HOSPITAL MATERNIDADE DR LUIZ DE GONZAGA FONSECA MOTA</div>`)[0];
+                popup_19f57e2545abcb63a95c70571aeb5569.setContent(html_500b11e37a3c4957a4dddd686cb932e6);
+            
+        
+
+        circle_marker_0fe1f6805c453e6f040666253585a1a7.bindPopup(popup_19f57e2545abcb63a95c70571aeb5569)
+        ;
+
+        
+    
+    
+            var poly_line_de3b070aee07a674f8e2741fcd3c2f3a = L.polyline(
+                [[-4.4073419, -40.4040465], [-4.41129873253632, -40.40060409011666]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_6d2176ddcbc0a9c642c27ad2b81a8e16);
+        
+    
+            poly_line_de3b070aee07a674f8e2741fcd3c2f3a.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_6d2176ddcbc0a9c642c27ad2b81a8e16.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

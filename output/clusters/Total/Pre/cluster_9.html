@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05bf88adf3ea0ab9455472c3e9061ce6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05bf88adf3ea0ab9455472c3e9061ce6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05bf88adf3ea0ab9455472c3e9061ce6 = L.map(
+                "map_05bf88adf3ea0ab9455472c3e9061ce6",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a65cb680a8946d3a3ee520c6011a0d96 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a65cb680a8946d3a3ee520c6011a0d96.addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+            var circle_marker_cd8c0a90267025bfd12a0f4541c9f6f7 = L.circleMarker(
+                [-5.1084179, -38.3720034],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+        var popup_0dc0a75976d6eef262a85b6cc51d09e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14f8b7d190346ba0bfc539a39768fbe8 = $(`<div id="html_14f8b7d190346ba0bfc539a39768fbe8" style="width: 100.0%; height: 100.0%;">MORADA NOVA, CE</div>`)[0];
+                popup_0dc0a75976d6eef262a85b6cc51d09e0.setContent(html_14f8b7d190346ba0bfc539a39768fbe8);
+            
+        
+
+        circle_marker_cd8c0a90267025bfd12a0f4541c9f6f7.bindPopup(popup_0dc0a75976d6eef262a85b6cc51d09e0)
+        ;
+
+        
+    
+    
+            var circle_marker_4d3c0f2bd1acdd55fd1fcfb5f8726106 = L.circleMarker(
+                [-4.9380111, -37.9695161],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+        var popup_e840784c427715b46fe7d34b03f02c58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b87f9aea4a99a25dde19849da790e58 = $(`<div id="html_4b87f9aea4a99a25dde19849da790e58" style="width: 100.0%; height: 100.0%;">HOSPITAL E CASA DE SAUDE DE RUSSAS</div>`)[0];
+                popup_e840784c427715b46fe7d34b03f02c58.setContent(html_4b87f9aea4a99a25dde19849da790e58);
+            
+        
+
+        circle_marker_4d3c0f2bd1acdd55fd1fcfb5f8726106.bindPopup(popup_e840784c427715b46fe7d34b03f02c58)
+        ;
+
+        
+    
+    
+            var circle_marker_8bb72a455d9dcf8138eaad75bfd0f15c = L.circleMarker(
+                [-4.9414188, -37.976262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+        var popup_fc3995adf460aa99a4fac334f89c1ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afc393b56ff8bf74f7b9daf73d94d6d8 = $(`<div id="html_afc393b56ff8bf74f7b9daf73d94d6d8" style="width: 100.0%; height: 100.0%;">RUSSAS, CE</div>`)[0];
+                popup_fc3995adf460aa99a4fac334f89c1ff4.setContent(html_afc393b56ff8bf74f7b9daf73d94d6d8);
+            
+        
+
+        circle_marker_8bb72a455d9dcf8138eaad75bfd0f15c.bindPopup(popup_fc3995adf460aa99a4fac334f89c1ff4)
+        ;
+
+        
+    
+    
+            var circle_marker_50f985eb9e25c0580084b848efc492ee = L.circleMarker(
+                [-4.8378331, -37.7828916],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+        var popup_c4df4a59895625f6a9b96ce3caf8ad13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55400419f2c9f4bbe29b2adae9c08cb6 = $(`<div id="html_55400419f2c9f4bbe29b2adae9c08cb6" style="width: 100.0%; height: 100.0%;">JAGUARUANA, CE</div>`)[0];
+                popup_c4df4a59895625f6a9b96ce3caf8ad13.setContent(html_55400419f2c9f4bbe29b2adae9c08cb6);
+            
+        
+
+        circle_marker_50f985eb9e25c0580084b848efc492ee.bindPopup(popup_c4df4a59895625f6a9b96ce3caf8ad13)
+        ;
+
+        
+    
+    
+            var circle_marker_c4ff0a1375c6cd759cdeabcee3c5197c = L.circleMarker(
+                [-4.839481789883542, -37.78442368313681],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+        var popup_0bc51005e669ed501b9ea84320396fc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d70e36e31a410cdc8753dbf7bfcc303 = $(`<div id="html_7d70e36e31a410cdc8753dbf7bfcc303" style="width: 100.0%; height: 100.0%;">HOSPITAL MATERNIDADE NOSSA SENHORA DA EXPECTACAO</div>`)[0];
+                popup_0bc51005e669ed501b9ea84320396fc0.setContent(html_7d70e36e31a410cdc8753dbf7bfcc303);
+            
+        
+
+        circle_marker_c4ff0a1375c6cd759cdeabcee3c5197c.bindPopup(popup_0bc51005e669ed501b9ea84320396fc0)
+        ;
+
+        
+    
+    
+            var circle_marker_80091becf0d02ab63e878073fc7dfdef = L.circleMarker(
+                [-5.110884599999999, -38.3690232],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+        var popup_44ebc9b419ede5016343967b7a627920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9569cf2f78b63fb4b16bf485e606f35 = $(`<div id="html_e9569cf2f78b63fb4b16bf485e606f35" style="width: 100.0%; height: 100.0%;">SANTA CASA DE MORADA NOVA</div>`)[0];
+                popup_44ebc9b419ede5016343967b7a627920.setContent(html_e9569cf2f78b63fb4b16bf485e606f35);
+            
+        
+
+        circle_marker_80091becf0d02ab63e878073fc7dfdef.bindPopup(popup_44ebc9b419ede5016343967b7a627920)
+        ;
+
+        
+    
+    
+            var poly_line_e22070a1d45ec72d63a12928dad02dc8 = L.polyline(
+                [[-5.1084179, -38.3720034], [-5.110884599999999, -38.3690232]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+            poly_line_e22070a1d45ec72d63a12928dad02dc8.bindTooltip(
+                `<div>
+                     Peso: 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0a3179e5cb0f50c3ee733464706f6488 = L.polyline(
+                [[-5.1084179, -38.3720034], [-4.9380111, -37.9695161]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+            poly_line_0a3179e5cb0f50c3ee733464706f6488.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1c681eacdcb52e70eaaf63a0eedd023f = L.polyline(
+                [[-4.9414188, -37.976262], [-4.9380111, -37.9695161]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+            poly_line_1c681eacdcb52e70eaaf63a0eedd023f.bindTooltip(
+                `<div>
+                     Peso: 26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b0338ecb99d3b30ca056b21402efc99c = L.polyline(
+                [[-4.8378331, -37.7828916], [-4.9380111, -37.9695161]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+            poly_line_b0338ecb99d3b30ca056b21402efc99c.bindTooltip(
+                `<div>
+                     Peso: 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d54ff9a1fa11fd1451c8cdfbd651afff = L.polyline(
+                [[-4.8378331, -37.7828916], [-4.839481789883542, -37.78442368313681]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_05bf88adf3ea0ab9455472c3e9061ce6);
+        
+    
+            poly_line_d54ff9a1fa11fd1451c8cdfbd651afff.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_05bf88adf3ea0ab9455472c3e9061ce6.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

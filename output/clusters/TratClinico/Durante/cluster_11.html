@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88414074b3e575e9d370a43df4369a6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88414074b3e575e9d370a43df4369a6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_88414074b3e575e9d370a43df4369a6f = L.map(
+                "map_88414074b3e575e9d370a43df4369a6f",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_26302fc1c61c24cf7fe2d2738b7db145 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_26302fc1c61c24cf7fe2d2738b7db145.addTo(map_88414074b3e575e9d370a43df4369a6f);
+        
+    
+            var circle_marker_39d864154f4d34ddf21a1a4e4e175691 = L.circleMarker(
+                [-3.918004, -38.603557],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_88414074b3e575e9d370a43df4369a6f);
+        
+    
+        var popup_0c421f63e43a6d1b5956c2efa113cd30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bae044aa1a358b41cd4d537d3ae90ed = $(`<div id="html_3bae044aa1a358b41cd4d537d3ae90ed" style="width: 100.0%; height: 100.0%;">PACATUBA, CE</div>`)[0];
+                popup_0c421f63e43a6d1b5956c2efa113cd30.setContent(html_3bae044aa1a358b41cd4d537d3ae90ed);
+            
+        
+
+        circle_marker_39d864154f4d34ddf21a1a4e4e175691.bindPopup(popup_0c421f63e43a6d1b5956c2efa113cd30)
+        ;
+
+        
+    
+    
+            var circle_marker_15166b0e433ad8e419d7f267a48f3e18 = L.circleMarker(
+                [-3.9824484, -38.619293],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_88414074b3e575e9d370a43df4369a6f);
+        
+    
+        var popup_b030ace3c9e02edd1f5d574ccd992d7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d17a3651c025bbaea66db75cdc839ea5 = $(`<div id="html_d17a3651c025bbaea66db75cdc839ea5" style="width: 100.0%; height: 100.0%;">HOSPITAL RAIMUNDO CELIO RODRIGUES</div>`)[0];
+                popup_b030ace3c9e02edd1f5d574ccd992d7d.setContent(html_d17a3651c025bbaea66db75cdc839ea5);
+            
+        
+
+        circle_marker_15166b0e433ad8e419d7f267a48f3e18.bindPopup(popup_b030ace3c9e02edd1f5d574ccd992d7d)
+        ;
+
+        
+    
+    
+            var poly_line_bc207e2b56dafb3589494f0a404ac0d3 = L.polyline(
+                [[-3.918004, -38.603557], [-3.9824484, -38.619293]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_88414074b3e575e9d370a43df4369a6f);
+        
+    
+            poly_line_bc207e2b56dafb3589494f0a404ac0d3.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_88414074b3e575e9d370a43df4369a6f.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

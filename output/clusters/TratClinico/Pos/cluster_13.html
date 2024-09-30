@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0bfd2fd5723ef7873670e1ab4e0c7faa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0bfd2fd5723ef7873670e1ab4e0c7faa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0bfd2fd5723ef7873670e1ab4e0c7faa = L.map(
+                "map_0bfd2fd5723ef7873670e1ab4e0c7faa",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_74965ba187ed79b5bbec33947d95e3ec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_74965ba187ed79b5bbec33947d95e3ec.addTo(map_0bfd2fd5723ef7873670e1ab4e0c7faa);
+        
+    
+            var circle_marker_8eafa36b607181aaa4963662f215aa03 = L.circleMarker(
+                [-5.7419856, -39.6269112],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0bfd2fd5723ef7873670e1ab4e0c7faa);
+        
+    
+        var popup_f04c9e7dc375b3fc485764c7d24d9d0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bf3c0a5c6cd8808c768d1efa0ca4786 = $(`<div id="html_8bf3c0a5c6cd8808c768d1efa0ca4786" style="width: 100.0%; height: 100.0%;">MOMBACA, CE</div>`)[0];
+                popup_f04c9e7dc375b3fc485764c7d24d9d0b.setContent(html_8bf3c0a5c6cd8808c768d1efa0ca4786);
+            
+        
+
+        circle_marker_8eafa36b607181aaa4963662f215aa03.bindPopup(popup_f04c9e7dc375b3fc485764c7d24d9d0b)
+        ;
+
+        
+    
+    
+            var circle_marker_135d0376dd5ef0a464b669b293c1cf25 = L.circleMarker(
+                [-5.74745594232208, -39.63152567670205],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0bfd2fd5723ef7873670e1ab4e0c7faa);
+        
+    
+        var popup_c20252cdb2aeef6ccb016b166beb6c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb02a994f452409dd9907fd6424f79a1 = $(`<div id="html_cb02a994f452409dd9907fd6424f79a1" style="width: 100.0%; height: 100.0%;">HOSP MATERN ANT ADERALDO CASTELO</div>`)[0];
+                popup_c20252cdb2aeef6ccb016b166beb6c8f.setContent(html_cb02a994f452409dd9907fd6424f79a1);
+            
+        
+
+        circle_marker_135d0376dd5ef0a464b669b293c1cf25.bindPopup(popup_c20252cdb2aeef6ccb016b166beb6c8f)
+        ;
+
+        
+    
+    
+            var poly_line_7ff506e8a7ee93d43e803335b351d61f = L.polyline(
+                [[-5.7419856, -39.6269112], [-5.74745594232208, -39.63152567670205]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0bfd2fd5723ef7873670e1ab4e0c7faa);
+        
+    
+            poly_line_7ff506e8a7ee93d43e803335b351d61f.bindTooltip(
+                `<div>
+                     Peso: 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_0bfd2fd5723ef7873670e1ab4e0c7faa.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

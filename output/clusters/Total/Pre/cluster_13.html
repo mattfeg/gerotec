@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1411582ac6438da520797aacc718e3aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1411582ac6438da520797aacc718e3aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1411582ac6438da520797aacc718e3aa = L.map(
+                "map_1411582ac6438da520797aacc718e3aa",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3944a520668b19a283892c09717bb644 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3944a520668b19a283892c09717bb644.addTo(map_1411582ac6438da520797aacc718e3aa);
+        
+    
+            var circle_marker_5f962a7d6567b10bda6561bee18edf5c = L.circleMarker(
+                [-5.5874425, -39.373166],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1411582ac6438da520797aacc718e3aa);
+        
+    
+        var popup_2259c12ce036aeb9b57deb20372a4e6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cc3e4ede6edea1e459e34ee7f261118 = $(`<div id="html_7cc3e4ede6edea1e459e34ee7f261118" style="width: 100.0%; height: 100.0%;">SENADOR POMPEU, CE</div>`)[0];
+                popup_2259c12ce036aeb9b57deb20372a4e6c.setContent(html_7cc3e4ede6edea1e459e34ee7f261118);
+            
+        
+
+        circle_marker_5f962a7d6567b10bda6561bee18edf5c.bindPopup(popup_2259c12ce036aeb9b57deb20372a4e6c)
+        ;
+
+        
+    
+    
+            var circle_marker_3d59a15dbad08d9780eff4cc222e2e74 = L.circleMarker(
+                [-5.593502099999999, -39.37673119999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1411582ac6438da520797aacc718e3aa);
+        
+    
+        var popup_7f8e18a712b75240ef9aab34d893e519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d812e229915c08266901bb2539ed4bc4 = $(`<div id="html_d812e229915c08266901bb2539ed4bc4" style="width: 100.0%; height: 100.0%;">MATERNIDADE E HOSPITAL SANTA ISABEL</div>`)[0];
+                popup_7f8e18a712b75240ef9aab34d893e519.setContent(html_d812e229915c08266901bb2539ed4bc4);
+            
+        
+
+        circle_marker_3d59a15dbad08d9780eff4cc222e2e74.bindPopup(popup_7f8e18a712b75240ef9aab34d893e519)
+        ;
+
+        
+    
+    
+            var poly_line_fa4596a3eeac7b2f9730be4cf2a60fdb = L.polyline(
+                [[-5.5874425, -39.373166], [-5.593502099999999, -39.37673119999999]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1411582ac6438da520797aacc718e3aa);
+        
+    
+            poly_line_fa4596a3eeac7b2f9730be4cf2a60fdb.bindTooltip(
+                `<div>
+                     Peso: 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_1411582ac6438da520797aacc718e3aa.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>
