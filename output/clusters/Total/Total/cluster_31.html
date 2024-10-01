@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd67d71912f8bbde860a4544936f8c71 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dd67d71912f8bbde860a4544936f8c71" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd67d71912f8bbde860a4544936f8c71 = L.map(
+                "map_dd67d71912f8bbde860a4544936f8c71",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eadb596a743e7bb8c94f9d8d1cefc0d2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_eadb596a743e7bb8c94f9d8d1cefc0d2.addTo(map_dd67d71912f8bbde860a4544936f8c71);
+        
+    
+            var circle_marker_1dd417b2044a1127619abf5b0488e755 = L.circleMarker(
+                [-4.649025, -40.1999281],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_dd67d71912f8bbde860a4544936f8c71);
+        
+    
+        var popup_e4cbea4b5a88dce5661e99f3f7a8f319 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ecc968f64c9be6429bd8f548712ca5f = $(`<div id="html_7ecc968f64c9be6429bd8f548712ca5f" style="width: 100.0%; height: 100.0%;">CATUNDA, CE</div>`)[0];
+                popup_e4cbea4b5a88dce5661e99f3f7a8f319.setContent(html_7ecc968f64c9be6429bd8f548712ca5f);
+            
+        
+
+        circle_marker_1dd417b2044a1127619abf5b0488e755.bindPopup(popup_e4cbea4b5a88dce5661e99f3f7a8f319)
+        ;
+
+        
+    
+    
+            var circle_marker_823f929d3e4fd941c78234fc9b52bb97 = L.circleMarker(
+                [-4.649025, -40.1999281],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_dd67d71912f8bbde860a4544936f8c71);
+        
+    
+        var popup_5f18c19b0c49ac1cf3b582d688f30d52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b9729dc1bc873bc31654eba3e068bd2 = $(`<div id="html_6b9729dc1bc873bc31654eba3e068bd2" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE CATUNDA FRANCISCA GONCALVES DE OLIVEIR</div>`)[0];
+                popup_5f18c19b0c49ac1cf3b582d688f30d52.setContent(html_6b9729dc1bc873bc31654eba3e068bd2);
+            
+        
+
+        circle_marker_823f929d3e4fd941c78234fc9b52bb97.bindPopup(popup_5f18c19b0c49ac1cf3b582d688f30d52)
+        ;
+
+        
+    
+    
+            var poly_line_db52ae7dd77b5c7de6e0ffb3c34c5a9a = L.polyline(
+                [[-4.649025, -40.1999281], [-4.649025, -40.1999281]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_dd67d71912f8bbde860a4544936f8c71);
+        
+    
+            poly_line_db52ae7dd77b5c7de6e0ffb3c34c5a9a.bindTooltip(
+                `<div>
+                     Peso: 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_dd67d71912f8bbde860a4544936f8c71.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

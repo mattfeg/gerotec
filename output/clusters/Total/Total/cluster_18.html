@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d486c4bcf01df7f3422d0fb1df34008 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d486c4bcf01df7f3422d0fb1df34008" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d486c4bcf01df7f3422d0fb1df34008 = L.map(
+                "map_2d486c4bcf01df7f3422d0fb1df34008",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c5868f951819d0739f377cbf0b95d4a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9c5868f951819d0739f377cbf0b95d4a.addTo(map_2d486c4bcf01df7f3422d0fb1df34008);
+        
+    
+            var circle_marker_8b6c517ead7fa603cdb697be82bf41b5 = L.circleMarker(
+                [-4.9684385, -39.0161259],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2d486c4bcf01df7f3422d0fb1df34008);
+        
+    
+        var popup_ab294f1397d179434c013b75a264a19a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9669ff3579eaf4989a014e5edc079c2 = $(`<div id="html_b9669ff3579eaf4989a014e5edc079c2" style="width: 100.0%; height: 100.0%;">QUIXADA, CE</div>`)[0];
+                popup_ab294f1397d179434c013b75a264a19a.setContent(html_b9669ff3579eaf4989a014e5edc079c2);
+            
+        
+
+        circle_marker_8b6c517ead7fa603cdb697be82bf41b5.bindPopup(popup_ab294f1397d179434c013b75a264a19a)
+        ;
+
+        
+    
+    
+            var circle_marker_8387ac8e7f3527999f709ca2f112215d = L.circleMarker(
+                [-4.9684393, -39.0160315],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2d486c4bcf01df7f3422d0fb1df34008);
+        
+    
+        var popup_1e04c6bbd2035756f8d7edb1777b1e77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9929f821b7a98aaa5825b24705479c1e = $(`<div id="html_9929f821b7a98aaa5825b24705479c1e" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DR EUDASIO BARROSO HMEB</div>`)[0];
+                popup_1e04c6bbd2035756f8d7edb1777b1e77.setContent(html_9929f821b7a98aaa5825b24705479c1e);
+            
+        
+
+        circle_marker_8387ac8e7f3527999f709ca2f112215d.bindPopup(popup_1e04c6bbd2035756f8d7edb1777b1e77)
+        ;
+
+        
+    
+    
+            var circle_marker_d8f6ea1d947e43ce89c350da991f3958 = L.circleMarker(
+                [-4.9669795, -39.0245184],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2d486c4bcf01df7f3422d0fb1df34008);
+        
+    
+        var popup_72183532a230331a9133445b3bc21206 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_938908d27ecb71d2bafa7c451edb8ae9 = $(`<div id="html_938908d27ecb71d2bafa7c451edb8ae9" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE JESUS MARIA JOSE HMJMJ</div>`)[0];
+                popup_72183532a230331a9133445b3bc21206.setContent(html_938908d27ecb71d2bafa7c451edb8ae9);
+            
+        
+
+        circle_marker_d8f6ea1d947e43ce89c350da991f3958.bindPopup(popup_72183532a230331a9133445b3bc21206)
+        ;
+
+        
+    
+    
+            var poly_line_099141c24b0e65aaa57567c9b08ffd87 = L.polyline(
+                [[-4.9684385, -39.0161259], [-4.9684393, -39.0160315]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2d486c4bcf01df7f3422d0fb1df34008);
+        
+    
+            poly_line_099141c24b0e65aaa57567c9b08ffd87.bindTooltip(
+                `<div>
+                     Peso: 17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3e5f42170a64f831686207ddc719b0d6 = L.polyline(
+                [[-4.9684385, -39.0161259], [-4.9669795, -39.0245184]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2d486c4bcf01df7f3422d0fb1df34008);
+        
+    
+            poly_line_3e5f42170a64f831686207ddc719b0d6.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_2d486c4bcf01df7f3422d0fb1df34008.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

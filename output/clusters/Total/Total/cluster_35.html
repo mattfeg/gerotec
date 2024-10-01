@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_18ad17059aa3a59e2865635fcdfdf9c0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_18ad17059aa3a59e2865635fcdfdf9c0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_18ad17059aa3a59e2865635fcdfdf9c0 = L.map(
+                "map_18ad17059aa3a59e2865635fcdfdf9c0",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_72f63bba4160c45c196edc05b06e1b1e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_72f63bba4160c45c196edc05b06e1b1e.addTo(map_18ad17059aa3a59e2865635fcdfdf9c0);
+        
+    
+            var circle_marker_88895c1ce6f23c351e27508cdd03f9b7 = L.circleMarker(
+                [-4.561541099999999, -38.9206014],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_18ad17059aa3a59e2865635fcdfdf9c0);
+        
+    
+        var popup_dbfd5c628298a3966b3208221aad248c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_104d4c1b7706804637e3c9fd4e3099c6 = $(`<div id="html_104d4c1b7706804637e3c9fd4e3099c6" style="width: 100.0%; height: 100.0%;">ITAPIUNA, CE</div>`)[0];
+                popup_dbfd5c628298a3966b3208221aad248c.setContent(html_104d4c1b7706804637e3c9fd4e3099c6);
+            
+        
+
+        circle_marker_88895c1ce6f23c351e27508cdd03f9b7.bindPopup(popup_dbfd5c628298a3966b3208221aad248c)
+        ;
+
+        
+    
+    
+            var circle_marker_ec8b8fdc8c7e9a9c7cfbb3da6327c60f = L.circleMarker(
+                [-3.8321166, -38.4801848],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_18ad17059aa3a59e2865635fcdfdf9c0);
+        
+    
+        var popup_48906e512ccebd67e3907fdeb061191c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1db7cda78146f8a4f4d0967a356c2816 = $(`<div id="html_1db7cda78146f8a4f4d0967a356c2816" style="width: 100.0%; height: 100.0%;">HOSPITAL MATERNIDADE PROFESSOR WALDEMAR ALCANTARA</div>`)[0];
+                popup_48906e512ccebd67e3907fdeb061191c.setContent(html_1db7cda78146f8a4f4d0967a356c2816);
+            
+        
+
+        circle_marker_ec8b8fdc8c7e9a9c7cfbb3da6327c60f.bindPopup(popup_48906e512ccebd67e3907fdeb061191c)
+        ;
+
+        
+    
+    
+            var poly_line_19f6bdb99370fa09965f437a496d60fa = L.polyline(
+                [[-4.561541099999999, -38.9206014], [-3.8321166, -38.4801848]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_18ad17059aa3a59e2865635fcdfdf9c0);
+        
+    
+            poly_line_19f6bdb99370fa09965f437a496d60fa.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_18ad17059aa3a59e2865635fcdfdf9c0.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

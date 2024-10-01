@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9958798d518ab340869d5d0d1594f4ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9958798d518ab340869d5d0d1594f4ef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9958798d518ab340869d5d0d1594f4ef = L.map(
+                "map_9958798d518ab340869d5d0d1594f4ef",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a671316e8ddc43c23535563f5688b87e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a671316e8ddc43c23535563f5688b87e.addTo(map_9958798d518ab340869d5d0d1594f4ef);
+        
+    
+            var circle_marker_fde3b548f1d1e6f0d14576488d07ebc8 = L.circleMarker(
+                [-3.9496044, -40.4740505],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_9958798d518ab340869d5d0d1594f4ef);
+        
+    
+        var popup_3aa65476263fa5dfd1dedfa35c0ee7df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1739b35e99ac81a8368ee0871a6306b5 = $(`<div id="html_1739b35e99ac81a8368ee0871a6306b5" style="width: 100.0%; height: 100.0%;">CARIRE, CE</div>`)[0];
+                popup_3aa65476263fa5dfd1dedfa35c0ee7df.setContent(html_1739b35e99ac81a8368ee0871a6306b5);
+            
+        
+
+        circle_marker_fde3b548f1d1e6f0d14576488d07ebc8.bindPopup(popup_3aa65476263fa5dfd1dedfa35c0ee7df)
+        ;
+
+        
+    
+    
+            var circle_marker_0197eaeaf1acfbe9f71139e0d9047e2c = L.circleMarker(
+                [-3.9482476, -40.4724338],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_9958798d518ab340869d5d0d1594f4ef);
+        
+    
+        var popup_cb23c9c1db29ba86022b1ad84d806c6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_036fd3c50341f41f952e4a0da0f2c647 = $(`<div id="html_036fd3c50341f41f952e4a0da0f2c647" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL DE CARIRE</div>`)[0];
+                popup_cb23c9c1db29ba86022b1ad84d806c6c.setContent(html_036fd3c50341f41f952e4a0da0f2c647);
+            
+        
+
+        circle_marker_0197eaeaf1acfbe9f71139e0d9047e2c.bindPopup(popup_cb23c9c1db29ba86022b1ad84d806c6c)
+        ;
+
+        
+    
+    
+            var poly_line_af17d5732752ff8e30133faf4bfefff6 = L.polyline(
+                [[-3.9496044, -40.4740505], [-3.9482476, -40.4724338]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9958798d518ab340869d5d0d1594f4ef);
+        
+    
+            poly_line_af17d5732752ff8e30133faf4bfefff6.bindTooltip(
+                `<div>
+                     Peso: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_9958798d518ab340869d5d0d1594f4ef.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

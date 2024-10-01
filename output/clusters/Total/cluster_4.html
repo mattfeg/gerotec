@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5fcd1244508374df5f1628a0ad3e5bbc {
+                #map_69fb1649427ce8f9becafbbe37ade0ac {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_5fcd1244508374df5f1628a0ad3e5bbc" ></div>
+            <div class="folium-map" id="map_69fb1649427ce8f9becafbbe37ade0ac" ></div>
         
 </body>
 <script>
     
     
-            var map_5fcd1244508374df5f1628a0ad3e5bbc = L.map(
-                "map_5fcd1244508374df5f1628a0ad3e5bbc",
+            var map_69fb1649427ce8f9becafbbe37ade0ac = L.map(
+                "map_69fb1649427ce8f9becafbbe37ade0ac",
                 {
                     center: [-5.2, -39.5],
                     crs: L.CRS.EPSG3857,
@@ -60,37 +60,37 @@
 
         
     
-            var tile_layer_3c1e16643f4384fe5c751249d6a39f58 = L.tileLayer(
+            var tile_layer_596b2a349068a091d0423ad585a15b48 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_3c1e16643f4384fe5c751249d6a39f58.addTo(map_5fcd1244508374df5f1628a0ad3e5bbc);
+            tile_layer_596b2a349068a091d0423ad585a15b48.addTo(map_69fb1649427ce8f9becafbbe37ade0ac);
         
     
-            var circle_marker_feb062e09dfd8c73444964a211ac5b00 = L.circleMarker(
-                [-7.826668460884462, -39.08349220012412],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_5fcd1244508374df5f1628a0ad3e5bbc);
+            var circle_marker_25764a95b7b8b62b21e9e0eef6756026 = L.circleMarker(
+                [-6.0453716976661545, -38.4599073930398],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_69fb1649427ce8f9becafbbe37ade0ac);
         
     
-        var popup_a9e1436c5d05131f3e6a406f0bcb0a70 = L.popup({"maxWidth": "100%"});
+        var popup_01bd380936ef01bb56b41f7394c60de4 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_6fd59bb362bdc8c11c67afedd267f780 = $(`<div id="html_6fd59bb362bdc8c11c67afedd267f780" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOAO MUNIZ</div>`)[0];
-                popup_a9e1436c5d05131f3e6a406f0bcb0a70.setContent(html_6fd59bb362bdc8c11c67afedd267f780);
+                var html_575cf938851c6f34f5e732c317c847ea = $(`<div id="html_575cf938851c6f34f5e732c317c847ea" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL HUMBERTO DE QUEIROZ</div>`)[0];
+                popup_01bd380936ef01bb56b41f7394c60de4.setContent(html_575cf938851c6f34f5e732c317c847ea);
             
         
 
-        circle_marker_feb062e09dfd8c73444964a211ac5b00.bindPopup(popup_a9e1436c5d05131f3e6a406f0bcb0a70)
+        circle_marker_25764a95b7b8b62b21e9e0eef6756026.bindPopup(popup_01bd380936ef01bb56b41f7394c60de4)
         ;
 
         
     
     
-            map_5fcd1244508374df5f1628a0ad3e5bbc.fitBounds(
+            map_69fb1649427ce8f9becafbbe37ade0ac.fitBounds(
                 [[-7.5, -41.5], [-2.5, -37.0]],
                 {}
             );

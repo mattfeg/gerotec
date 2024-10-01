@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_17b00cd19e60697399b2d5e7d9c7f867 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_17b00cd19e60697399b2d5e7d9c7f867" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_17b00cd19e60697399b2d5e7d9c7f867 = L.map(
+                "map_17b00cd19e60697399b2d5e7d9c7f867",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_abb898e0d06603a50bd9be0a46014b76 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_abb898e0d06603a50bd9be0a46014b76.addTo(map_17b00cd19e60697399b2d5e7d9c7f867);
+        
+    
+            var circle_marker_fab2524075de5792ac91e462552b14d1 = L.circleMarker(
+                [-2.8979192, -40.11921770000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_17b00cd19e60697399b2d5e7d9c7f867);
+        
+    
+        var popup_4b89e267b2645ba0bab3547dedbc030b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5b410d8b6327009380eb6d85e21a761 = $(`<div id="html_e5b410d8b6327009380eb6d85e21a761" style="width: 100.0%; height: 100.0%;">ACARAU, CE</div>`)[0];
+                popup_4b89e267b2645ba0bab3547dedbc030b.setContent(html_e5b410d8b6327009380eb6d85e21a761);
+            
+        
+
+        circle_marker_fab2524075de5792ac91e462552b14d1.bindPopup(popup_4b89e267b2645ba0bab3547dedbc030b)
+        ;
+
+        
+    
+    
+            var circle_marker_2bd388c74bd52a5ede8a6374ced4a83c = L.circleMarker(
+                [-3.8321166, -38.4801848],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_17b00cd19e60697399b2d5e7d9c7f867);
+        
+    
+        var popup_7b155aa88da5c548369cbdfa4dfbd975 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfaf4320754fa623c1c72f5415045f6f = $(`<div id="html_cfaf4320754fa623c1c72f5415045f6f" style="width: 100.0%; height: 100.0%;">HOSPITAL GERAL DR WALDEMAR ALCANTARA</div>`)[0];
+                popup_7b155aa88da5c548369cbdfa4dfbd975.setContent(html_cfaf4320754fa623c1c72f5415045f6f);
+            
+        
+
+        circle_marker_2bd388c74bd52a5ede8a6374ced4a83c.bindPopup(popup_7b155aa88da5c548369cbdfa4dfbd975)
+        ;
+
+        
+    
+    
+            var poly_line_08b2d8513ffcd271ddf6dfb808b83dd0 = L.polyline(
+                [[-2.8979192, -40.11921770000001], [-3.8321166, -38.4801848]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_17b00cd19e60697399b2d5e7d9c7f867);
+        
+    
+            poly_line_08b2d8513ffcd271ddf6dfb808b83dd0.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_17b00cd19e60697399b2d5e7d9c7f867.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

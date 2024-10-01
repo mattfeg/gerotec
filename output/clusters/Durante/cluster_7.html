@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_7a92f8da2bf28e10750ee97173a5173b {
+                #map_c65d0e3be8e85007aaa65e499bc4c41b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_7a92f8da2bf28e10750ee97173a5173b" ></div>
+            <div class="folium-map" id="map_c65d0e3be8e85007aaa65e499bc4c41b" ></div>
         
 </body>
 <script>
     
     
-            var map_7a92f8da2bf28e10750ee97173a5173b = L.map(
-                "map_7a92f8da2bf28e10750ee97173a5173b",
+            var map_c65d0e3be8e85007aaa65e499bc4c41b = L.map(
+                "map_c65d0e3be8e85007aaa65e499bc4c41b",
                 {
                     center: [-5.2, -39.5],
                     crs: L.CRS.EPSG3857,
@@ -60,37 +60,107 @@
 
         
     
-            var tile_layer_d4951f288d6ff99bd38300d62d00deac = L.tileLayer(
+            var tile_layer_681ee39d5bf13f63d0626f6ee5892bef = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_d4951f288d6ff99bd38300d62d00deac.addTo(map_7a92f8da2bf28e10750ee97173a5173b);
+            tile_layer_681ee39d5bf13f63d0626f6ee5892bef.addTo(map_c65d0e3be8e85007aaa65e499bc4c41b);
         
     
-            var circle_marker_5355490d0b3db3a08c9fa2dcd8669f7f = L.circleMarker(
-                [-4.140736873364953, -40.57734831645635],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_7a92f8da2bf28e10750ee97173a5173b);
+            var circle_marker_194d4b9fe1a95105df3c3c0a4c090f9b = L.circleMarker(
+                [-4.4151213, -40.9042025],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c65d0e3be8e85007aaa65e499bc4c41b);
         
     
-        var popup_9ce1abb3c477ce95bef189820545d479 = L.popup({"maxWidth": "100%"});
+        var popup_226e5d9045f97dd8163a14bc49061330 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_55db1e7a95ac1ebd8afafa8622157bc1 = $(`<div id="html_55db1e7a95ac1ebd8afafa8622157bc1" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE RITA DO VALE REGO</div>`)[0];
-                popup_9ce1abb3c477ce95bef189820545d479.setContent(html_55db1e7a95ac1ebd8afafa8622157bc1);
+                var html_6e8a193b4cbada8bd0e80c439ebfb250 = $(`<div id="html_6e8a193b4cbada8bd0e80c439ebfb250" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL MONSENHOR ANTONINO</div>`)[0];
+                popup_226e5d9045f97dd8163a14bc49061330.setContent(html_6e8a193b4cbada8bd0e80c439ebfb250);
             
         
 
-        circle_marker_5355490d0b3db3a08c9fa2dcd8669f7f.bindPopup(popup_9ce1abb3c477ce95bef189820545d479)
+        circle_marker_194d4b9fe1a95105df3c3c0a4c090f9b.bindPopup(popup_226e5d9045f97dd8163a14bc49061330)
         ;
 
         
     
     
-            map_7a92f8da2bf28e10750ee97173a5173b.fitBounds(
+            var circle_marker_22b5a73bc0dd58c9659e66f9f1f05de9 = L.circleMarker(
+                [-3.7222056, -38.527551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c65d0e3be8e85007aaa65e499bc4c41b);
+        
+    
+        var popup_348a5b45890a2e97d31244344111549f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dead65e9630d32083ff510574160bef6 = $(`<div id="html_dead65e9630d32083ff510574160bef6" style="width: 100.0%; height: 100.0%;">SANTA CASA DE MISERICORDIA DE FORTALEZA</div>`)[0];
+                popup_348a5b45890a2e97d31244344111549f.setContent(html_dead65e9630d32083ff510574160bef6);
+            
+        
+
+        circle_marker_22b5a73bc0dd58c9659e66f9f1f05de9.bindPopup(popup_348a5b45890a2e97d31244344111549f)
+        ;
+
+        
+    
+    
+            var circle_marker_4ad57d3f3f00c88fc40758a6b90c49b4 = L.circleMarker(
+                [-3.972865399999999, -38.5211706],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c65d0e3be8e85007aaa65e499bc4c41b);
+        
+    
+        var popup_b7a51e0e4d385e7341dd5d0ab7281236 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_608580e25381a56ff2a6ca54a80e7082 = $(`<div id="html_608580e25381a56ff2a6ca54a80e7082" style="width: 100.0%; height: 100.0%;">HOSPITAL E MATERNIDADE ESTER CAVALCANTE ASSUNCAO</div>`)[0];
+                popup_b7a51e0e4d385e7341dd5d0ab7281236.setContent(html_608580e25381a56ff2a6ca54a80e7082);
+            
+        
+
+        circle_marker_4ad57d3f3f00c88fc40758a6b90c49b4.bindPopup(popup_b7a51e0e4d385e7341dd5d0ab7281236)
+        ;
+
+        
+    
+    
+            var poly_line_c61746210d891904ef71d2ec71635cc9 = L.polyline(
+                [[-4.4151213, -40.9042025], [-3.7222056, -38.527551]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c65d0e3be8e85007aaa65e499bc4c41b);
+        
+    
+            poly_line_c61746210d891904ef71d2ec71635cc9.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c5899e2906d0f0f24904432fd1e53c74 = L.polyline(
+                [[-3.7222056, -38.527551], [-3.972865399999999, -38.5211706]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c65d0e3be8e85007aaa65e499bc4c41b);
+        
+    
+            poly_line_c5899e2906d0f0f24904432fd1e53c74.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_c65d0e3be8e85007aaa65e499bc4c41b.fitBounds(
                 [[-7.5, -41.5], [-2.5, -37.0]],
                 {}
             );

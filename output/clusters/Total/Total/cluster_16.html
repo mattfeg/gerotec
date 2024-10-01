@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_175593cc52087fc6be1c7b0f5eb77c51 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_175593cc52087fc6be1c7b0f5eb77c51" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_175593cc52087fc6be1c7b0f5eb77c51 = L.map(
+                "map_175593cc52087fc6be1c7b0f5eb77c51",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c6757af6be7382c73aa0a66752095b65 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c6757af6be7382c73aa0a66752095b65.addTo(map_175593cc52087fc6be1c7b0f5eb77c51);
+        
+    
+            var circle_marker_7f77df4d7223333618132ac306d8d68a = L.circleMarker(
+                [-6.0032698, -40.2946389],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_175593cc52087fc6be1c7b0f5eb77c51);
+        
+    
+        var popup_3b2c14b6511b31d3bf3e65ce5e25ba6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dcda9d933dc471c69f94aae04a2d18c = $(`<div id="html_5dcda9d933dc471c69f94aae04a2d18c" style="width: 100.0%; height: 100.0%;">TAUA, CE</div>`)[0];
+                popup_3b2c14b6511b31d3bf3e65ce5e25ba6e.setContent(html_5dcda9d933dc471c69f94aae04a2d18c);
+            
+        
+
+        circle_marker_7f77df4d7223333618132ac306d8d68a.bindPopup(popup_3b2c14b6511b31d3bf3e65ce5e25ba6e)
+        ;
+
+        
+    
+    
+            var circle_marker_57be02be11a805b0dcdc1b6b718d00ab = L.circleMarker(
+                [-6.0032289, -40.3004006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_175593cc52087fc6be1c7b0f5eb77c51);
+        
+    
+        var popup_2817c084665fb942318aa54dc99c18fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b3fb57b77e1ef59155d8323a20bf022 = $(`<div id="html_7b3fb57b77e1ef59155d8323a20bf022" style="width: 100.0%; height: 100.0%;">HOSPITAL DR ALBERTO FEITOSA LIMA</div>`)[0];
+                popup_2817c084665fb942318aa54dc99c18fc.setContent(html_7b3fb57b77e1ef59155d8323a20bf022);
+            
+        
+
+        circle_marker_57be02be11a805b0dcdc1b6b718d00ab.bindPopup(popup_2817c084665fb942318aa54dc99c18fc)
+        ;
+
+        
+    
+    
+            var poly_line_9910f3effcc0c56ffb2c4524349ec44d = L.polyline(
+                [[-6.0032698, -40.2946389], [-6.0032289, -40.3004006]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_175593cc52087fc6be1c7b0f5eb77c51);
+        
+    
+            poly_line_9910f3effcc0c56ffb2c4524349ec44d.bindTooltip(
+                `<div>
+                     Peso: 26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_175593cc52087fc6be1c7b0f5eb77c51.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>

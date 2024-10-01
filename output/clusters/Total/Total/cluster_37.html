@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0743440ebc5b297a450b3aef90ab2b22 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0743440ebc5b297a450b3aef90ab2b22" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0743440ebc5b297a450b3aef90ab2b22 = L.map(
+                "map_0743440ebc5b297a450b3aef90ab2b22",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d2632e59eac5cb66cc0a223d641ab867 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d2632e59eac5cb66cc0a223d641ab867.addTo(map_0743440ebc5b297a450b3aef90ab2b22);
+        
+    
+            var circle_marker_b6fe4382373a3f5573455fa748e96501 = L.circleMarker(
+                [-5.733074999999999, -39.0099963],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0743440ebc5b297a450b3aef90ab2b22);
+        
+    
+        var popup_d2cc0cc46c81bf3f8024b4d2a5a333b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38d6a82435daa4c7140e81e7903b6810 = $(`<div id="html_38d6a82435daa4c7140e81e7903b6810" style="width: 100.0%; height: 100.0%;">SOLONOPOLE, CE</div>`)[0];
+                popup_d2cc0cc46c81bf3f8024b4d2a5a333b5.setContent(html_38d6a82435daa4c7140e81e7903b6810);
+            
+        
+
+        circle_marker_b6fe4382373a3f5573455fa748e96501.bindPopup(popup_d2cc0cc46c81bf3f8024b4d2a5a333b5)
+        ;
+
+        
+    
+    
+            var circle_marker_8e167c41786b521eb1d5e4c9e662e359 = L.circleMarker(
+                [-5.733378692447756, -39.01051372747882],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_0743440ebc5b297a450b3aef90ab2b22);
+        
+    
+        var popup_c0700160b9e85a19d01e0f96831f86cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2028469015970dcf0a0de80f21bd0165 = $(`<div id="html_2028469015970dcf0a0de80f21bd0165" style="width: 100.0%; height: 100.0%;">HOSPITAL MATERNIDADE MARIA SUELLY NOGUEIRA PINHEIRO</div>`)[0];
+                popup_c0700160b9e85a19d01e0f96831f86cd.setContent(html_2028469015970dcf0a0de80f21bd0165);
+            
+        
+
+        circle_marker_8e167c41786b521eb1d5e4c9e662e359.bindPopup(popup_c0700160b9e85a19d01e0f96831f86cd)
+        ;
+
+        
+    
+    
+            var poly_line_107788b5155c375fd720ddead9457a4e = L.polyline(
+                [[-5.733074999999999, -39.0099963], [-5.733378692447756, -39.01051372747882]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_0743440ebc5b297a450b3aef90ab2b22);
+        
+    
+            poly_line_107788b5155c375fd720ddead9457a4e.bindTooltip(
+                `<div>
+                     Peso: 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_0743440ebc5b297a450b3aef90ab2b22.fitBounds(
+                [[-7.5, -41.5], [-2.5, -37.0]],
+                {}
+            );
+        
+</script>
+</html>
