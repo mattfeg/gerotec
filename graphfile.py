@@ -138,7 +138,7 @@ def detectar_clusters(G):
     
     return partition
 
-def plotar_grafo(G, partition=None):
+def plotar_grafo(G, partition=None,save=True):
     """
     Plots a directed bipartite graph on a georeferenced map, coloring nodes based on their communities.
 
@@ -185,8 +185,9 @@ def plotar_grafo(G, partition=None):
     plt.legend(title='Comunidades')
     plt.xlabel('Longitude')
     plt.ylabel('Latitude')
-    plt.savefig('./output/Imagens/img1.png', format='png', transparent=True)
     plt.show()
+    if(save==True):
+     plt.savefig('./output/Imagens/img1.png', format='png', transparent=True)
 
 def projetar_grafo_hospitais(G):
     """
@@ -619,3 +620,14 @@ def plotar_grafo_por_macrorregiao(G, macrorregiao, municipios_macrorregiao, outp
     # Exibir o mapa
     return m
 
+def criar_grafo_por_macrorregiao(G, municipios_macrorregiao):
+    subgrafo = nx.DiGraph()
+
+    for municipio in municipios_macrorregiao:
+        if municipio in G.nodes:
+            subgrafo.add_node(municipio, **G.nodes[municipio])
+            for hospital in G.neighbors(municipio):
+                if hospital not in subgrafo.nodes:
+                    subgrafo.add_node(hospital, **G.nodes[hospital])
+                subgrafo.add_edge(municipio, hospital, **G.edges[municipio, hospital])
+    return subgrafo
