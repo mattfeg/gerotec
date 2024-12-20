@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6d77e91bad7c10321abd0955cc94b2bd {
+                #map_ded65e4f51818910849f93f861a88dc2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_6d77e91bad7c10321abd0955cc94b2bd" ></div>
+            <div class="folium-map" id="map_ded65e4f51818910849f93f861a88dc2" ></div>
         
 </body>
 <script>
     
     
-            var map_6d77e91bad7c10321abd0955cc94b2bd = L.map(
-                "map_6d77e91bad7c10321abd0955cc94b2bd",
+            var map_ded65e4f51818910849f93f861a88dc2 = L.map(
+                "map_ded65e4f51818910849f93f861a88dc2",
                 {
                     center: [-5.2, -39.5],
                     crs: L.CRS.EPSG3857,
@@ -60,37 +60,72 @@
 
         
     
-            var tile_layer_8a2fbfedb34aeacfb837a1baa1607866 = L.tileLayer(
+            var tile_layer_5cd659ad409b4f81ce90547953106953 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_8a2fbfedb34aeacfb837a1baa1607866.addTo(map_6d77e91bad7c10321abd0955cc94b2bd);
+            tile_layer_5cd659ad409b4f81ce90547953106953.addTo(map_ded65e4f51818910849f93f861a88dc2);
         
     
-            var circle_marker_11d8500b6177596063fb39370eb7089c = L.circleMarker(
-                [-7.826668460884462, -39.08349220012412],
+            var circle_marker_f1a4bc78b2d7b27a13bb4ffb31eace53 = L.circleMarker(
+                [-3.9247142, -40.8900189],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_6d77e91bad7c10321abd0955cc94b2bd);
+            ).addTo(map_ded65e4f51818910849f93f861a88dc2);
         
     
-        var popup_a4cfaee7fd479eba08293799b3c2bd4c = L.popup({"maxWidth": "100%"});
+        var popup_5cf0fdd4db3d782f32e26287590449d3 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_38ee990708854596e1af3c230b2564be = $(`<div id="html_38ee990708854596e1af3c230b2564be" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL JOAO MUNIZ</div>`)[0];
-                popup_a4cfaee7fd479eba08293799b3c2bd4c.setContent(html_38ee990708854596e1af3c230b2564be);
+                var html_8fbbabf502b40fbeedd174090958d15b = $(`<div id="html_8fbbabf502b40fbeedd174090958d15b" style="width: 100.0%; height: 100.0%;">HOSPITAL MUNICIPAL MARIA WANDERLENE NEGREIROS DE QUEIROZ</div>`)[0];
+                popup_5cf0fdd4db3d782f32e26287590449d3.setContent(html_8fbbabf502b40fbeedd174090958d15b);
             
         
 
-        circle_marker_11d8500b6177596063fb39370eb7089c.bindPopup(popup_a4cfaee7fd479eba08293799b3c2bd4c)
+        circle_marker_f1a4bc78b2d7b27a13bb4ffb31eace53.bindPopup(popup_5cf0fdd4db3d782f32e26287590449d3)
         ;
 
         
     
     
-            map_6d77e91bad7c10321abd0955cc94b2bd.fitBounds(
+            var circle_marker_82ed102b7eefe73c521827f18bddd7a1 = L.circleMarker(
+                [-3.7254174826556783, -40.99131157224586],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ded65e4f51818910849f93f861a88dc2);
+        
+    
+        var popup_f29eb6cce866a52068727a3c267b93e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c57ff7092a0deee360358708ee77bc6e = $(`<div id="html_c57ff7092a0deee360358708ee77bc6e" style="width: 100.0%; height: 100.0%;">HOSPITAL MATERNIDADE MADALENA NUNES</div>`)[0];
+                popup_f29eb6cce866a52068727a3c267b93e4.setContent(html_c57ff7092a0deee360358708ee77bc6e);
+            
+        
+
+        circle_marker_82ed102b7eefe73c521827f18bddd7a1.bindPopup(popup_f29eb6cce866a52068727a3c267b93e4)
+        ;
+
+        
+    
+    
+            var poly_line_fd9e6de537ed460da39c4ff4503dff68 = L.polyline(
+                [[-3.9247142, -40.8900189], [-3.7254174826556783, -40.99131157224586]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ded65e4f51818910849f93f861a88dc2);
+        
+    
+            poly_line_fd9e6de537ed460da39c4ff4503dff68.bindTooltip(
+                `<div>
+                     Peso: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_ded65e4f51818910849f93f861a88dc2.fitBounds(
                 [[-7.5, -41.5], [-2.5, -37.0]],
                 {}
             );

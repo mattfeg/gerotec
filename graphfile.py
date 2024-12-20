@@ -539,16 +539,17 @@ def plotar_municipios_por_hospital(G, output_dir='output/hospitals'):
         # Salvar o mapa com o nome do hospital
         hospital_map.save(os.path.join(output_dir, f'{hospital}.html'))
 
-def plotar_grafo_por_macrorregiao(G, macrorregiao, municipios_macrorregiao, output_dir='output/macrorregioes'):
+def plotar_grafo_por_macrorregiao(G, macrorregiao, municipios_macrorregiao, output_dir='output/macrorregioes', grafo_anterior=None):
     """
     Plota um grafo contendo apenas os nós dos municípios de uma determinada macrorregião de saúde 
-    e os hospitais que se ligam a esses municípios.
+    e os hospitais que se ligam a esses municípios, destacando arestas novas.
     
     Args:
     - G (nx.DiGraph): Grafo bipartido direcionado.
     - macrorregiao (str): Nome da macrorregião de saúde.
     - municipios_macrorregiao (list): Lista dos nomes dos municípios que pertencem à macrorregião.
     - output_dir (str): Diretório para salvar o arquivo HTML do mapa interativo.
+    - grafo_anterior (nx.DiGraph): Grafo do período anterior para comparar novas arestas.
     
     Returns:
     - folium.Map: Mapa interativo gerado ou None se não houver nós na macrorregião.
@@ -584,13 +585,19 @@ def plotar_grafo_por_macrorregiao(G, macrorregiao, municipios_macrorregiao, outp
         u_lon = subgrafo.nodes[u]['longitude']
         v_lat = subgrafo.nodes[v]['latitude']
         v_lon = subgrafo.nodes[v]['longitude']
-        
+
+        # Definir cor com base na existência no grafo anterior
+        if grafo_anterior and not grafo_anterior.has_edge(u, v):
+            color = 'red'  # Cor para arestas novas
+        else:
+            color = 'gray'   # Cor para arestas existentes
+
         folium.PolyLine(
             locations=[[u_lat, u_lon], [v_lat, v_lon]],
-            color='gray',
+            color=color,
             weight=2,
             opacity=0.5,
-            tooltip=f"Frequência: {data['weight']}"
+            tooltip=f"Frequência: {data.get('weight', 'N/A')}"
         ).add_to(m)
 
     # Adicionar os nós ao mapa
